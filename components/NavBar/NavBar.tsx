@@ -67,9 +67,20 @@ export default function NavBar({ openNav }: Props) {
 
   const { theme } = useTheme();
   const [mounted, setMounted] = useState(false);
+  const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
     setMounted(true);
+
+    const handleScroll = () => {
+      setScrollY(window.scrollY); // Update scroll position
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll); // Clean up event listener
+    };
   }, []);
 
   if (!mounted) return null;
@@ -81,61 +92,79 @@ export default function NavBar({ openNav }: Props) {
         : "light"
       : theme;
 
+  const isScrolled = scrollY > 50; // Toggle class when scrolled more than 50px
+
   return (
     <>
-      <div
-        className={`my_container`}
-      >
-        <div className="menu_container_dark bg-white rounded-2xl w-full flex xl:items-center xl:gap-[15px] items-center justify-between dark:bg-black dark:text-white">
-          {/* logo */}
-          <div className="logo xl:w-32">
-            <Link href="/">
-              <Image
-                src={currentTheme === "dark" ? whiteLogo : blackLogo}
-                alt="logo"
-                className="xl:w-[130px] w-40 object-cover overflow-hidden logo"
-              />
-            </Link>
-          </div>
-          {/* navbar */}
-          <div className="hidden xl:flex xl:flex-grow items-center gap-[11px] nav_gap">
-            {navLinks.map((nav) => {
-              const isActive = pathname === nav.url;
-              return (
-                <Link
-                  href={nav.url}
-                  key={nav.id}
-                  className={`group flex items-center gap-[.25rem] xl:text-[16px] xl:font-medium text-[#576076] leading-[120%] rounded-lg py-[10px] px-[12px] transition-all duration-300 ${
-                    isActive
-                      ? currentTheme === "dark"
-                        ? "my_active_dark"
-                        : "my_active"
-                      : currentTheme === "dark"
-                      ? "my_link_hover_dark"
-                      : "my_link_hover"
-                  }`}
-                >
-                  {nav.icon}
-                  <p className="nav_font">{nav.label}</p>
-                </Link>
-              );
-            })}
-            <div className="flex items-center">
-              <button className="w-[40px] h-[40px] rounded-[5px] bg-transparent flex justify-center items-center transition-all dark:hover:bg-[#0E1018]  hover:bg-[#F0F2F5]">
-                {/* <FaMoon /> */}
-                <DarkModeSwitch />
-              </button>
-              <Link
-                href=""
-                className="bg-[#1a1f2c] rounded-[8px] py-[16px] px-[24px] text-[16px] leading-[1.2em] font-semibold text-white ml-4 flex items-center hover:bg-[#4770ff] transition-all duration-300"
-              >
-                Let's Talk
-                <IconArrowElbowRight stroke={2} className="ml-[8px]" />
+      <div className="sticky top-0 z-50">
+        <div
+          className={`my_container ${
+            isScrolled ? "scrolled-navbar" : ""
+          } transition-all duration-300`}
+        >
+          {/* nav bar */}
+          <div
+            className={`menu_container_dark bg-white ${
+              isScrolled ? "shadow-md" : ""
+            } w-full flex xl:items-center xl:gap-[15px] items-center justify-between dark:bg-black dark:text-white transition-all duration-300 rounded-2xl`}
+          >
+            {/* logo */}
+            <div className="logo xl:w-32">
+              <Link href="/">
+                <Image
+                  src={currentTheme === "dark" ? whiteLogo : blackLogo}
+                  alt="logo"
+                  className="xl:w-[130px] w-40 object-cover overflow-hidden logo"
+                />
               </Link>
             </div>
+
+            {/* navbar links */}
+            <div className="hidden xl:flex xl:flex-grow items-center gap-[11px] nav_gap">
+              {navLinks.map((nav) => {
+                const isActive = pathname === nav.url;
+                return (
+                  <Link
+                    href={nav.url}
+                    key={nav.id}
+                    className={`group flex items-center gap-[.25rem] xl:text-[16px] xl:font-medium text-[#576076] leading-[120%] rounded-lg py-[10px] px-[12px] transition-all duration-300 ${
+                      isActive
+                        ? currentTheme === "dark"
+                          ? "my_active_dark"
+                          : "my_active"
+                        : currentTheme === "dark"
+                        ? "my_link_hover_dark"
+                        : "my_link_hover"
+                    }`}
+                  >
+                    {nav.icon}
+                    <p className="nav_font">{nav.label}</p>
+                  </Link>
+                );
+              })}
+
+              {/* dark mode switch & call to action */}
+              <div className="flex items-center">
+                <button className="w-[40px] h-[40px] rounded-[5px] bg-transparent flex justify-center items-center transition-all dark:hover:bg-[#0E1018] hover:bg-[#F0F2F5]">
+                  <DarkModeSwitch />
+                </button>
+                <Link
+                  href=""
+                  className="bg-[#1a1f2c] rounded-[8px] py-[16px] px-[24px] text-[16px] leading-[1.2em] font-semibold text-white ml-4 flex items-center hover:bg-[#4770ff] transition-all duration-300"
+                >
+                  Let's Talk
+                  <IconArrowElbowRight stroke={2} className="ml-[8px]" />
+                </Link>
+              </div>
+            </div>
+
+            {/* mobile menu */}
+            <IconMenu2
+              stroke={2}
+              onClick={openNav}
+              className="xl:hidden cursor-pointer"
+            />
           </div>
-          {/* mobile menu */}
-          <IconMenu2 stroke={2} onClick={openNav} className="xl:hidden cursor-pointer" />
         </div>
       </div>
     </>
