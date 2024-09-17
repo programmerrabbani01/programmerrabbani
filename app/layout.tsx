@@ -26,11 +26,11 @@ export default function RootLayout({
         <DarkLight>
           <ResponsiveNav />
           <div className="my_container">
-            <div className="xl:flex xl:items-start">
-              <div className="xl:w-[33%] w-full xl:px-3 xl:mt-6">
+            <div className="xl:flex xl:items-start pt-[12vh]">
+              <div className="xl:w-[33%] w-full xl:px-3 mt-6">
                 <StaticSidebar />
               </div>
-              <div className="xl:w-[66%] w-full xl:px-3 xl:mt-6">
+              <div className="xl:w-[66%] w-full xl:px-3 mt-6">
                 {children}
               </div>
             </div>

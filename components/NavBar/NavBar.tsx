@@ -64,7 +64,6 @@ const navLinks = [
 
 export default function NavBar({ openNav }: Props) {
   const pathname = usePathname();
-
   const { theme } = useTheme();
   const [mounted, setMounted] = useState(false);
   const [scrollY, setScrollY] = useState(0);
@@ -72,14 +71,25 @@ export default function NavBar({ openNav }: Props) {
   useEffect(() => {
     setMounted(true);
 
-    const handleScroll = () => {
-      setScrollY(window.scrollY); // Update scroll position
+    // Debounce function to limit scroll event calls
+    const debounce = (func: () => void, wait: number) => {
+      let timeout: NodeJS.Timeout;
+      return () => {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => {
+          func();
+        }, wait);
+      };
     };
+
+    const handleScroll = debounce(() => {
+      setScrollY(window.scrollY);
+    }, 10); // Set a small wait time for debouncing
 
     window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll); // Clean up event listener
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -92,21 +102,19 @@ export default function NavBar({ openNav }: Props) {
         : "light"
       : theme;
 
-  const isScrolled = scrollY > 50; // Toggle class when scrolled more than 50px
+  const isScrolled = scrollY > 50;
 
   return (
     <>
-      <div className="sticky top-0 z-50">
-        <div
-          className={`my_container ${
-            isScrolled ? "scrolled-navbar" : ""
-          } transition-all duration-300`}
-        >
+      <div
+        className={`z-50 w-full fixed ${
+          isScrolled ? "top-0" : ""
+        } transition-transform duration-500 ease-in-out`}
+      >
+        <div className="my_container transition-all duration-300">
           {/* nav bar */}
           <div
-            className={`menu_container_dark bg-white ${
-              isScrolled ? "shadow-md" : ""
-            } w-full flex xl:items-center xl:gap-[15px] items-center justify-between dark:bg-black dark:text-white transition-all duration-300 rounded-2xl`}
+            className={`menu_container_dark bg-white w-full flex xl:items-center xl:gap-[15px] items-center justify-between dark:bg-black dark:text-white rounded-2xl transition-all duration-300`}
           >
             {/* logo */}
             <div className="logo xl:w-32">
@@ -114,7 +122,7 @@ export default function NavBar({ openNav }: Props) {
                 <Image
                   src={currentTheme === "dark" ? whiteLogo : blackLogo}
                   alt="logo"
-                  className="xl:w-[130px] w-40 object-cover overflow-hidden logo"
+                  className="xl:w-[130px] w-40 object-cover overflow-hidden"
                 />
               </Link>
             </div>
