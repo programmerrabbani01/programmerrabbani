@@ -2,8 +2,33 @@ import Image from "next/image";
 import React from "react";
 import profile from "@/public/images/hero.png";
 import Link from "next/link";
+import { IconCopy, IconPhoneCall } from "@tabler/icons-react";
+import { FaFacebook, FaGithub, FaPinterest, FaYoutube } from "react-icons/fa";
 
 type Props = {};
+
+const socialLinks = [
+  {
+    id: 1,
+    url: "",
+    icon: <FaFacebook />,
+  },
+  {
+    id: 2,
+    url: "",
+    icon: <FaPinterest />,
+  },
+  {
+    id: 3,
+    url: "",
+    icon: <FaGithub />,
+  },
+  {
+    id: 4,
+    url: "",
+    icon: <FaYoutube />,
+  },
+];
 
 export default function StaticSidebar({}: Props) {
   return (
@@ -40,9 +65,28 @@ export default function StaticSidebar({}: Props) {
               </span>{" "}
               of Experiences over 24+ Country Worldwide.
             </p>
-            <div className="xl:mt-6">
-              <Link href="">Book A call</Link>
-              <button>Copy Email</button>
+            {/* button */}
+            <div className="xl:mt-6 flex items-center space-x-2">
+              <button className="py-4 px-[13px] text-[15px] bg-[#4770ff] rounded-lg font-medium leading-[1.5em] text-white hover:bg-[#2563eb] transition-all duration-300 flex items-center">
+                <IconPhoneCall stroke={2} className="mr-2" />
+                Book A call
+              </button>
+              <button className="py-4 px-[13px] text-[15px] rounded-lg font-medium leading-[1.5em] bg-transparent hover:bg-[#f0f2f5] transition-all duration-300 border-[1px] border-[#dbdfe5] dark:border-[#1a1f2c] text-[#1a1f2c] dark:text-[rgba(240,242,245,.7)] flex items-center">
+                <IconCopy stroke={2} className="mr-2" />
+                Copy Email
+              </button>
+            </div>
+            {/* social icon */}
+            <div className="mt-[30px]">
+              <ul className="list-none">
+                {socialLinks.map((social) => {
+                  return (
+                    <li key={social.id} className="inline-block mr-[6px]">
+                      <Link href={social.url}>{social.icon}</Link>
+                    </li>
+                  );
+                })}
+              </ul>
             </div>
           </div>
         </div>

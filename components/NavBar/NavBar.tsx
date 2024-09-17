@@ -6,8 +6,8 @@ import blackLogo from "@/public/images/blacklogo.png";
 import whiteLogo from "@/public/images/whitelogo.png";
 import Image from "next/image";
 import {
-  IconArrowElbowRight,
   IconBrandAppleArcade,
+  IconBrandSkype,
   IconDeviceMobileVibration,
   IconMenu2,
   IconMessage,
@@ -158,10 +158,11 @@ export default function NavBar({ openNav }: Props) {
                 </button>
                 <Link
                   href=""
+                  target="_blank"
                   className="bg-[#1a1f2c] rounded-[8px] py-[16px] px-[24px] text-[16px] leading-[1.2em] font-semibold text-white ml-4 flex items-center hover:bg-[#4770ff] transition-all duration-300"
                 >
                   Let's Talk
-                  <IconArrowElbowRight stroke={2} className="ml-[8px]" />
+                  <IconBrandSkype stroke={2} className="ml-[8px]" />
                 </Link>
               </div>
             </div>

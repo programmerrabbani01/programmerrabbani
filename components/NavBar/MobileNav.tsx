@@ -1,12 +1,11 @@
 "use client";
 
 import Link from "next/link.js";
-import { CgClose } from "react-icons/cg";
 import blackLogo from "@/public/images/blacklogo.png";
 import whiteLogo from "@/public/images/whitelogo.png";
 import {
-  IconArrowElbowRight,
   IconBrandAppleArcade,
+  IconBrandSkype,
   IconDeviceMobileVibration,
   IconMessage,
   IconPencilHeart,
@@ -148,7 +147,7 @@ export default function MobileNav({ showNav, closeNav }: Props) {
             className="bg-[#1a1f2c] rounded-[8px] py-[16px] px-[24px] text-[16px] leading-[1.2em] font-semibold text-white flex items-center hover:bg-[#4770ff] transition-all duration-300 w-fit"
           >
             Let's Talk
-            <IconArrowElbowRight stroke={2} className="ml-[8px]" />
+            <IconBrandSkype stroke={2} className="ml-[8px]" />
           </Link>
         </div>
       </div>
