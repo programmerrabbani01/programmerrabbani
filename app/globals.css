@@ -4,7 +4,7 @@
 
 @layer components {
   .my_container {
-    @apply w-[87%] px-3 mx-auto;
+    @apply xl:w-[90%] xl:px-6 lg:w-[960px] lg:px-[12px] md:w-[720px] md:px-[12px] px-[12px] mx-auto;
   }
   .menu_container_dark {
     box-shadow: 0 1px 2px 0 rgba(26, 31, 44, 0.25);
@@ -26,6 +26,10 @@
   }
   .my_link_hover_dark {
     @apply hover:bg-[#0E1018] hover:text-white;
+  }
+
+  .staticBar_shadow {
+    box-shadow: 0 1px 2px 0 rgba(26, 31, 44, 0.25);
   }
 }
 

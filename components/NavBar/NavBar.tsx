@@ -84,7 +84,7 @@ export default function NavBar({ openNav }: Props) {
   return (
     <>
       <div
-        className={`xl:w-[90%] xl:px-6 lg:w-[960px] lg:px-[12px] md:w-[720px] md:px-[12px] px-[12px] mx-auto `}
+        className={`my_container`}
       >
         <div className="menu_container_dark bg-white rounded-2xl w-full flex xl:items-center xl:gap-[15px] items-center justify-between dark:bg-black dark:text-white">
           {/* logo */}
@@ -98,7 +98,7 @@ export default function NavBar({ openNav }: Props) {
             </Link>
           </div>
           {/* navbar */}
-          <div className="hidden xl:flex xl:flex-grow items-center gap-[12px] nav_gap">
+          <div className="hidden xl:flex xl:flex-grow items-center gap-[11px] nav_gap">
             {navLinks.map((nav) => {
               const isActive = pathname === nav.url;
               return (
