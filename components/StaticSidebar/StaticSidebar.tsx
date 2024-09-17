@@ -71,7 +71,7 @@ export default function StaticSidebar({}: Props) {
                 <IconPhoneCall stroke={2} className="mr-2" />
                 Book A call
               </button>
-              <button className="py-4 px-[13px] text-[15px] rounded-lg font-medium leading-[1.5em] bg-transparent hover:bg-[#f0f2f5] transition-all duration-300 border-[1px] border-[#dbdfe5] dark:border-[#1a1f2c] text-[#1a1f2c] dark:text-[rgba(240,242,245,.7)] flex items-center">
+              <button className="py-4 px-[13px] text-[15px] rounded-lg font-medium leading-[1.5em] bg-transparent hover:bg-[#f0f2f5] dark:hover:bg-[#1a1f2c] dark:hover:text-white transition-all duration-300 border border-[#dbdfe5] dark:border-[#1a1f2c] text-[#1a1f2c] dark:text-[rgba(240,242,245,.7)] flex items-center">
                 <IconCopy stroke={2} className="mr-2" />
                 Copy Email
               </button>
@@ -81,8 +81,16 @@ export default function StaticSidebar({}: Props) {
               <ul className="list-none">
                 {socialLinks.map((social) => {
                   return (
-                    <li key={social.id} className="inline-block mr-[6px]">
-                      <Link href={social.url}>{social.icon}</Link>
+                    <li
+                      key={social.id}
+                      className="inline-block mr-[6px] rounded-lg border border-[#dbdfe5] dark:border-none dark:bg-[#0e1018]"
+                    >
+                      <Link
+                        href={social.url}
+                        className="text-xl text-center flex items-center justify-center leading-10 w-10 h-10 dark:text-[#64748b] dark:hover:text-[#4770ff]"
+                      >
+                        {social.icon}
+                      </Link>
                     </li>
                   );
                 })}
