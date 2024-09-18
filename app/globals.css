@@ -28,8 +28,21 @@
     @apply hover:bg-[#0E1018] hover:text-white;
   }
 
-  .staticBar_shadow {
+  .card_shadow {
     box-shadow: 0 1px 2px 0 rgba(26, 31, 44, 0.25);
+  }
+
+  .auto_scroll_list {
+    animation: scroll 10s linear infinite;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
   }
 }
 
