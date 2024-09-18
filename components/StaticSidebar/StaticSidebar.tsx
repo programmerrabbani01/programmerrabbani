@@ -42,15 +42,15 @@ export default function StaticSidebar({}: Props) {
               alt="profile"
               width={220}
               height={220}
-              className="xl:mt-[10px] object-cover  mx-auto profile_image"
+              className="lg:w-[426px] md:w-[311px] mt-[10px] object-cover  mx-auto profile_image"
             />
           </div>
           {/* text */}
-          <div className="xl:mt-6">
-            <h3 className="xl:text-2xl xl:mb-2 font-semibold leading-[1.333em]">
+          <div className="mt-6">
+            <h3 className="text-2xl mb-2 font-semibold leading-[1.333em]">
               Programmer Rabbani 👋
             </h3>
-            <p className="xl:mt-2 text-[#576076] dark:text-[rgba(240,242,245,.7)] xl:text-base xl:leading-[1.5em] font-medium">
+            <p className="mt-2 text-[#576076] dark:text-[rgba(240,242,245,.7)] text-base leading-[1.5em] font-medium">
               A Passionate &nbsp;
               <span className="font-semibold dark:text-white text-[#1a1f2c]">
                 Full Stack Developer &nbsp;
@@ -66,12 +66,12 @@ export default function StaticSidebar({}: Props) {
               of Experiences over 24+ Country Worldwide.
             </p>
             {/* button */}
-            <div className="xl:mt-6 flex items-center space-x-2">
-              <button className="py-4 px-[13px] text-[15px] bg-[#4770ff] rounded-lg font-medium leading-[1.5em] text-white hover:bg-[#2563eb] transition-all duration-300 flex items-center">
+            <div className="mt-6 flex items-center flex-wrap xl:flex-nowrap xl:space-x-2 lg:space-x-2 md:space-x-2 sm:space-x-2 gap-2">
+              <button className="py-4 px-6 xl:px-[13px] text-base xl:text-[14px] bg-[#4770ff] rounded-lg font-medium leading-[1.5em] text-white hover:bg-[#2563eb] transition-all duration-300 flex items-center call_btn">
                 <IconPhoneCall stroke={2} className="mr-2" />
                 Book A call
               </button>
-              <button className="py-4 px-[13px] text-[15px] rounded-lg font-medium leading-[1.5em] bg-transparent hover:bg-[#f0f2f5] dark:hover:bg-[#1a1f2c] dark:hover:text-white transition-all duration-300 border border-[#dbdfe5] dark:border-[#1a1f2c] text-[#1a1f2c] dark:text-[rgba(240,242,245,.7)] flex items-center">
+              <button className="py-4 px-6 xl:px-[13px] text-base xl:text-[14px] rounded-lg font-medium leading-[1.5em] bg-transparent hover:bg-[#f0f2f5] dark:hover:bg-[#1a1f2c] dark:hover:text-white transition-all duration-300 border border-[#dbdfe5] dark:border-[#1a1f2c] text-[#1a1f2c] dark:text-[rgba(240,242,245,.7)] flex items-center email_btn">
                 <IconCopy stroke={2} className="mr-2" />
                 Copy Email
               </button>

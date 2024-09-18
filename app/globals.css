@@ -56,10 +56,8 @@
     font-size: 16px;
     font-weight: 500;
   }
-  .profile_image {
-    width: 426px;
-  }
 }
+
 @media (max-width: 992px) {
   .mobile_nav_overlay {
     position: fixed;
