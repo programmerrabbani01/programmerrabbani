@@ -56,14 +56,15 @@ export default function StaticSidebar({}: Props) {
                 Full Stack Developer &nbsp;
               </span>
               🖥️ &amp; &nbsp;
-              <span className="font-semibold dark:text-white text-[#1a1f2c]">
+              {/* <span className="font-semibold dark:text-white text-[#1a1f2c]">
                 Product Designer &nbsp;
               </span>
-              having&nbsp;
+              having&nbsp; */}
+              Specializing in &nbsp;
               <span className="font-semibold dark:text-white text-[#1a1f2c]">
-                12 years
-              </span>{" "}
-              of Experiences over 24+ Country Worldwide.
+                MongoDB, Express, React, Node.js, Next.js, Redux Toolkit &nbsp;
+              </span>
+              and more.
             </p>
             {/* button */}
             <div className="mt-6 flex items-center flex-wrap xl:flex-nowrap xl:space-x-2 lg:space-x-2 md:space-x-2 sm:space-x-2 gap-2">
