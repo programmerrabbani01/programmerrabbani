@@ -33,7 +33,14 @@
   }
 
   .auto_scroll_list {
+    display: flex;
+    flex-direction: column;
     animation: scroll 10s linear infinite;
+    will-change: transform;
+  }
+
+  .auto_scroll_list:hover {
+    animation-play-state: paused;
   }
 
   @keyframes scroll {
@@ -41,7 +48,7 @@
       transform: translateY(0);
     }
     100% {
-      transform: translateY(-100%);
+      transform: translateY(-50%);
     }
   }
 }
