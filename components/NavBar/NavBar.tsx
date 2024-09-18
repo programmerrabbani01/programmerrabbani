@@ -157,7 +157,7 @@ export default function NavBar({ openNav }: Props) {
                   <DarkModeSwitch />
                 </button>
                 <Link
-                  href=""
+                  href="https://join.skype.com/invite/vlMuMR7U9iMP"
                   target="_blank"
                   className="bg-[#1a1f2c] rounded-[8px] py-[16px] px-[24px] text-[16px] leading-[1.2em] font-semibold text-white ml-4 flex items-center hover:bg-[#4770ff] transition-all duration-300"
                 >
