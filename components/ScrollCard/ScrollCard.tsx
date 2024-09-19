@@ -36,7 +36,7 @@ const experience = [
     subTitle: "Senior UI UX Designer",
     date: "2017-2018",
     src: adobe,
-    alt: "",
+    alt: "adobe",
   },
 ];
 

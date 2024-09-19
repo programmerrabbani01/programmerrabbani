@@ -40,9 +40,7 @@ export default function StaticSidebar({}: Props) {
             <Image
               src={profile}
               alt="profile"
-              width={220}
-              height={220}
-              className="lg:w-[426px] md:w-[311px] mt-[10px] object-cover  mx-auto profile_image"
+              className="xl:w-[265px] lg:w-[426px] md:w-[311px] mt-[10px] object-cover  mx-auto profile_image"
             />
           </div>
           {/* text */}
