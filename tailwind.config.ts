@@ -9,6 +9,9 @@ const config: Config = {
   darkMode: "class",
   theme: {
     extend: {
+      dropShadow: {
+        custom: "0 12px 12px rgba(26, 31, 44, 0.25)",
+      },
       screens: {
         md: "768px",
         lg: "992px",
