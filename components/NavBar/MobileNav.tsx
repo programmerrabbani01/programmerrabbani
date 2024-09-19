@@ -138,8 +138,7 @@ export default function MobileNav({ showNav, closeNav }: Props) {
         })}
         {/* dark light button */}
         <div className="flex flex-col pt-[26px]">
-          <button className="w-[40px] h-[40px] rounded-[5px] bg-transparent flex justify-center items-center transition-all hover:bg-[#F0F2F5 dark:hover:bg-[#0E1018] mb-3">
-            {/* <FaMoon /> */}
+          <button className="w-[40px] h-[40px] rounded-[5px] bg-transparent flex justify-center items-center transition-all hover:bg-[#F0F2F5] dark:hover:bg-[#0E1018] mb-3">
             <DarkModeSwitch />
           </button>
           <Link

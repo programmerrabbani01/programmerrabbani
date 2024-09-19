@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import profile from "@/public/images/hero.png";
 import Link from "next/link";
-import { IconCopy, IconPhoneCall } from "@tabler/icons-react";
+import { IconBrandSkype, IconCopy } from "@tabler/icons-react";
 import { FaFacebook, FaGithub, FaPinterest, FaYoutube } from "react-icons/fa";
 
 type Props = {};
@@ -66,10 +66,14 @@ export default function StaticSidebar({}: Props) {
             </p>
             {/* button */}
             <div className="mt-6 flex items-center flex-wrap xl:flex-nowrap xl:space-x-2 lg:space-x-2 md:space-x-2 sm:space-x-2 gap-2">
-              <button className="py-4 px-6 xl:px-[13px] text-base xl:text-[14px] bg-[#4770ff] rounded-lg font-medium leading-[1.5em] text-white hover:bg-[#2563eb] transition-all duration-300 flex items-center call_btn">
-                <IconPhoneCall stroke={2} className="mr-2" />
-                Book A call
-              </button>
+              <Link
+                href="https://join.skype.com/invite/tgCbJLbOkYD8"
+                target="_blank"
+                className="py-4 px-6 xl:px-[13px] text-base xl:text-[14px] bg-[#4770ff] rounded-lg font-medium leading-[1.5em] text-white hover:bg-[#2563eb] transition-all duration-300 flex items-center call_btn"
+              >
+                <IconBrandSkype stroke={2} className="mr-2" />
+                Let's Talk
+              </Link>
               <button className="py-4 px-6 xl:px-[13px] text-base xl:text-[14px] rounded-lg font-medium leading-[1.5em] bg-transparent hover:bg-[#f0f2f5] dark:hover:bg-[#1a1f2c] dark:hover:text-white transition-all duration-300 border border-[#dbdfe5] dark:border-[#1a1f2c] text-[#1a1f2c] dark:text-[rgba(240,242,245,.7)] flex items-center email_btn">
                 <IconCopy stroke={2} className="mr-2" />
                 Copy Email

@@ -19,9 +19,15 @@ export default function DarkModeSwitch() {
   return (
     <>
       {currentTheme === "dark" ? (
-        <FaSun className="text-yellow-500 " onClick={() => setTheme("light")} />
+        <FaSun
+          className="text-yellow-500"
+          onClick={() => setTheme("light")}
+        />
       ) : (
-        <FaMoon className="text-black" onClick={() => setTheme("dark")} />
+        <FaMoon
+          className="text-black"
+          onClick={() => setTheme("dark")}
+        />
       )}
     </>
   );
