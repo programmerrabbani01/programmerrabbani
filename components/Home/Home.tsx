@@ -2,16 +2,16 @@ import React from "react";
 import Card from "@/components/Card/Card.tsx";
 import ScrollCard from "@/components/ScrollCard/ScrollCard.tsx";
 import Image from "next/image";
-import figma from "@/public/images/figma.png";
-import notion from "@/public/images/notion.png";
-import miro from "@/public/images/mico.png";
-import framer from "@/public/images/framer.png";
-import webflow from "@/public/images/webflow.png";
-import zeplin from "@/public/images/zeplin.png";
+import figma from "@/public/images/expert/figma.png";
+import notion from "@/public/images/expert/notion.png";
+import miro from "@/public/images/expert/mico.png";
+import framer from "@/public/images/expert/framer.png";
+import webflow from "@/public/images/expert/webflow.png";
+import zeplin from "@/public/images/expert/zeplin.png";
 import Link from "next/link";
 import { IconArrowRightSquare, IconPlus } from "@tabler/icons-react";
-import project1 from "@/public/images/project-1.png";
-import project2 from "@/public/images/project-2.png";
+import project1 from "@/public/images/projects/project-1.png";
+import project2 from "@/public/images/projects/project-2.png";
 
 const expert = [
   {

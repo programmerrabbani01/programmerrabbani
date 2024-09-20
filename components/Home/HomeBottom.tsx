@@ -2,13 +2,45 @@ import React from "react";
 import Card from "../Card/Card.tsx";
 import { IconArrowRightSquare } from "@tabler/icons-react";
 import Link from "next/link";
+import Image from "next/image";
+import frontEnd from "@/public/images/services/frontend.png";
+import backEnd from "@/public/images/services/backend.png";
+import nodejs from "@/public/images/services/nodejs.png";
+import mongodb from "@/public/images/services/mongodb.png";
 
 type Props = {};
+
+const services = [
+  {
+    id: 1,
+    src: frontEnd,
+    alt: "frontend",
+    title: "Front-End Design",
+  },
+  {
+    id: 2,
+    src: backEnd,
+    alt: "backend",
+    title: "Back-End",
+  },
+  {
+    id: 3,
+    src: nodejs,
+    alt: "nodejs",
+    title: "Node JS",
+  },
+  {
+    id: 4,
+    src: mongodb,
+    alt: "mongodb",
+    title: "MongoDB",
+  },
+];
 
 export default function HomeBottom({}: Props) {
   return (
     <>
-      <div className="mt-6 flex flex-wrap">
+      <div className="mt-6 flex justify-start items-start">
         <div className="w-4/6">
           <Card>
             <div className="p-6">
@@ -22,7 +54,26 @@ export default function HomeBottom({}: Props) {
                 </Link>
               </h3>
               {/* items */}
-              <div className="mt-6">Hello</div>
+
+              <div className="flex">
+                {services.map((service) => {
+                  return (
+                    <div className="w-1/4 mt-6 px-3 flex" key={service.id}>
+                      <div
+                        className="p-4 px-4 pb-4 bg-[#f0f2f5] dark:bg-[#0e1018]
+                  rounded-2xl text-center"
+                      >
+                        <div className="py-6 px-[14px] bg-[#fff] dark:bg-[#000] rounded-lg ">
+                          <Image src={service.src} alt={service.alt} width={89} height={89} className="object-cover overflow-hidden" />
+                        </div>
+                        <div className="text-base font-medium text-[#1a1f2c] dark:text-[rgba(240,242,245,.7)] leading-[1.5em] mt-4 ">
+                          {service.title}
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           </Card>
         </div>

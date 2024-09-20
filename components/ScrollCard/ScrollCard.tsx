@@ -1,7 +1,7 @@
 import Image from "next/image";
-import adobe from "@/public/images/adobe.png";
-import google from "@/public/images/google.png";
-import meta from "@/public/images/meta.png";
+import adobe from "@/public/images/experience/adobe.png";
+import google from "@/public/images/experience/google.png";
+import meta from "@/public/images/experience/meta.png";
 
 type Props = {};
 
