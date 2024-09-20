@@ -80,7 +80,7 @@ type StaticImageData = {
 type Project = {
   id: number;
   title: string;
-  src: StaticImageData;
+  src: StaticImageData; // Assuming you're using Next.js Image component
   alt: string;
 };
 

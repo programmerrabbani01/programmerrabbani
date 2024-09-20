@@ -89,15 +89,17 @@ export default function HomeBottom({}: Props) {
             <div className="p-6">
               {/* scroll */}
               <div className="bg-[#f0f2f5] dark:bg-[#0e1018] rounded-lg h-14 mb-6 flex items-center overflow-hidden whitespace-nowrap">
-                <Marquee speed={100}>
-                  <div className="text-lg font-medium text-[#576076] mr-[10px] leading-[1.6em] ">
-                    Available For Hire 🚀 Crafting Digital Experiences 🎨
-                    Available For Hire 🚀 Crafting Digital Experiences 🎨
-                  </div>
-                </Marquee>
+                {/* <Marquee speed={100}> */}
+                <div className="text-lg font-medium text-[#576076] mr-[10px] leading-[1.6em] auto_scroll_list text_slider">
+                  Available For Hire 🚀 Crafting Digital Experiences 🎨
+                  Available For Hire 🚀 Crafting Digital Experiences 🎨
+                </div>
+                {/* </Marquee> */}
               </div>
               {/* text */}
-              <h3 className="">Let's👋<span className="">Work Together</span></h3>
+              <h3 className="">
+                Let's👋<span className="">Work Together</span>
+              </h3>
             </div>
           </Card>
         </div>
