@@ -25,7 +25,7 @@ const socialLinks = [
   },
   {
     id: 3,
-    url: "",
+    url: "https://wa.link/yryvca",
     icon: <FaWhatsappSquare />,
   },
   {
