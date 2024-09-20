@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Card from "@/components/Card/Card.tsx";
 import ScrollCard from "@/components/ScrollCard/ScrollCard.tsx";
 import Image from "next/image";
@@ -9,7 +11,7 @@ import framer from "@/public/images/expert/framer.png";
 import webflow from "@/public/images/expert/webflow.png";
 import zeplin from "@/public/images/expert/zeplin.png";
 import Link from "next/link";
-import { IconArrowRightSquare, IconPlus } from "@tabler/icons-react";
+import { IconArrowRightSquare, IconPlus, IconX } from "@tabler/icons-react";
 import project1 from "@/public/images/projects/project-1.png";
 import project2 from "@/public/images/projects/project-2.png";
 
@@ -67,9 +69,28 @@ const projects = [
   },
 ];
 
-type Props = {};
+type StaticImageData = {
+  src: string;
+  height: number;
+  width: number;
+  placeholder?: string;
+};
 
-export default function Home({}: Props) {
+// Define the Project type
+type Project = {
+  id: number;
+  title: string;
+  src: StaticImageData; // Assuming you're using Next.js Image component
+  alt: string;
+};
+
+export default function Home() {
+  const [selectedImage, setSelectedImage] = useState<StaticImageData | null>(
+    null
+  );
+
+  // Function to close the modal
+  const closeModal = () => setSelectedImage(null);
   return (
     <>
       <div className="flex items-start space-x-3">
@@ -147,15 +168,15 @@ export default function Home({}: Props) {
                           alt={project.alt}
                           className="w-full rounded-lg rounded-b-none"
                         />
-                        <Link
-                          href=""
+                        <button
+                          onClick={() => setSelectedImage(project.src)}
                           className="absolute top-1/2 left-1/2 transform -translate-x-1/2 z-[9] w-10 h-10 bg-white rounded-full leading-[38px] text-center filter drop-shadow-custom mt-[-10px] transition-all duration-200 opacity-0 group-hover:opacity-100 flex items-center justify-center "
                         >
                           <IconPlus
                             stroke={2}
                             className="w-[22px] h-[22px] text-[#4770ff]"
                           />
-                        </Link>
+                        </button>
 
                         <div className="absolute bottom-0 left-0 project_info w-full">
                           <span className="text-xs font-medium text-[#4770ff] bg-white rounded-[4px] py-1 px-2 m-4 leading-[1.33em] inline-block ">
@@ -172,6 +193,43 @@ export default function Home({}: Props) {
           </div>
         </div>
       </div>
+
+      {/* Image Modal */}
+      {/* {selectedImage && (
+        <div className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50">
+          <div className="relative">
+            <button
+              className="absolute top-4 right-4 text-white"
+              onClick={closeModal}
+            >
+              <IconX className="w-8 h-8" />
+            </button>
+            <Image
+              src={selectedImage}
+              alt="Selected Project"
+              className="max-w-[567px] max-h-[392px]"
+            />
+          </div>
+        </div>
+      )} */}
+      
+       {selectedImage && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50"
+          onClick={closeModal}
+        >
+          <div
+            className="relative"
+            onClick={(e) => e.stopPropagation()} // Prevents closing when clicking on the image
+          >
+            <Image
+              src={selectedImage}
+              alt="Selected Project"
+              className="max-w-[567px] max-h-[392px]"
+            />
+          </div>
+        </div>
+      )}
     </>
   );
 }

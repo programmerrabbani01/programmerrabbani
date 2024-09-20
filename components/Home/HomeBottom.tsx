@@ -64,7 +64,13 @@ export default function HomeBottom({}: Props) {
                   rounded-2xl text-center"
                       >
                         <div className="py-6 px-[14px] bg-[#fff] dark:bg-[#000] rounded-lg ">
-                          <Image src={service.src} alt={service.alt} width={89} height={89} className="object-cover overflow-hidden" />
+                          <Image
+                            src={service.src}
+                            alt={service.alt}
+                            width={89}
+                            height={89}
+                            className="mx-auto object-cover"
+                          />
                         </div>
                         <div className="text-base font-medium text-[#1a1f2c] dark:text-[rgba(240,242,245,.7)] leading-[1.5em] mt-4 ">
                           {service.title}
