@@ -7,6 +7,7 @@ import frontEnd from "@/public/images/services/frontend.png";
 import backEnd from "@/public/images/services/backend.png";
 import nodejs from "@/public/images/services/nodejs.png";
 import mongodb from "@/public/images/services/mongodb.png";
+import Marquee from "react-fast-marquee";
 
 type Props = {};
 
@@ -84,7 +85,21 @@ export default function HomeBottom({}: Props) {
           </Card>
         </div>
         <div className="w-2/6 pl-3">
-          <Card>|Bye</Card>
+          <Card>
+            <div className="p-6">
+              {/* scroll */}
+              <div className="bg-[#f0f2f5] dark:bg-[#0e1018] rounded-lg h-14 mb-6 flex items-center overflow-hidden whitespace-nowrap">
+                <Marquee speed={100}>
+                  <div className="text-lg font-medium text-[#576076] mr-[10px] leading-[1.6em] ">
+                    Available For Hire 🚀 Crafting Digital Experiences 🎨
+                    Available For Hire 🚀 Crafting Digital Experiences 🎨
+                  </div>
+                </Marquee>
+              </div>
+              {/* text */}
+              <h3 className="">Let's👋<span className="">Work Together</span></h3>
+            </div>
+          </Card>
         </div>
       </div>
     </>
