@@ -1,13 +1,12 @@
 import React from "react";
 import Card from "../Card/Card.tsx";
-import { IconArrowRightSquare } from "@tabler/icons-react";
+import { IconArrowRightSquare, IconBrandSkype } from "@tabler/icons-react";
 import Link from "next/link";
 import Image from "next/image";
 import frontEnd from "@/public/images/services/frontend.png";
 import backEnd from "@/public/images/services/backend.png";
 import nodejs from "@/public/images/services/nodejs.png";
 import mongodb from "@/public/images/services/mongodb.png";
-import Marquee from "react-fast-marquee";
 
 type Props = {};
 
@@ -41,7 +40,7 @@ const services = [
 export default function HomeBottom({}: Props) {
   return (
     <>
-      <div className="mt-6 flex justify-start items-start">
+      <div className="mt-6 flex">
         <div className="w-4/6">
           <Card>
             <div className="p-6">
@@ -68,8 +67,6 @@ export default function HomeBottom({}: Props) {
                           <Image
                             src={service.src}
                             alt={service.alt}
-                            width={89}
-                            height={89}
                             className="mx-auto object-cover"
                           />
                         </div>
@@ -97,9 +94,17 @@ export default function HomeBottom({}: Props) {
                 {/* </Marquee> */}
               </div>
               {/* text */}
-              <h3 className="">
-                Let's👋<span className="">Work Together</span>
+              <h3 className="text-[40px] font-semibold text-[#1a1f2c] leading-[1.375em] dark:text-[#f0f2f5] mb-6 ">
+                Let's👋<span className="block">Work Together</span>
               </h3>
+              <Link
+                href=""
+                className="text-base font-medium text-[#4770ff] border-b border-b-[#dbdfe5] hover:border-b-[#4770ff] transition-all duration-300 inline-block"
+              >
+                <div className="flex items-center mb-1">
+                  Let's Talk <IconBrandSkype stroke={2} className="ml-[8px]" />
+                </div>
+              </Link>
             </div>
           </Card>
         </div>

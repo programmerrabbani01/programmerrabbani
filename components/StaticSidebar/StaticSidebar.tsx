@@ -3,25 +3,30 @@ import React from "react";
 import profile from "@/public/images/hero.png";
 import Link from "next/link";
 import { IconBrandSkype, IconCopy } from "@tabler/icons-react";
-import { FaFacebook, FaGithub, FaPinterest, FaYoutube } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaWhatsappSquare,
+  FaYoutube,
+} from "react-icons/fa";
 
 type Props = {};
 
 const socialLinks = [
   {
     id: 1,
-    url: "",
-    icon: <FaFacebook />,
+    url: "https://github.com/programmerrabbani01",
+    icon: <FaGithub />,
   },
   {
     id: 2,
-    url: "",
-    icon: <FaPinterest />,
+    url: "https://www.linkedin.com/in/programmerrabbani/",
+    icon: <FaLinkedin />,
   },
   {
     id: 3,
     url: "",
-    icon: <FaGithub />,
+    icon: <FaWhatsappSquare />,
   },
   {
     id: 4,
@@ -89,6 +94,7 @@ export default function StaticSidebar({}: Props) {
                       className="inline-block mr-[6px] rounded-lg border border-[#dbdfe5] dark:border-none dark:bg-[#0e1018]"
                     >
                       <Link
+                        target="_blank"
                         href={social.url}
                         className="text-xl text-center flex items-center justify-center leading-10 w-10 h-10 dark:text-[#64748b] dark:hover:text-[#4770ff]"
                       >
