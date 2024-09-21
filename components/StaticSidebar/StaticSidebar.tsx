@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image";
 import React from "react";
 import profile from "@/public/images/hero.png";
@@ -9,6 +11,7 @@ import {
   FaWhatsappSquare,
   FaYoutube,
 } from "react-icons/fa";
+import Swal from "sweetalert2";
 
 type Props = {};
 
@@ -36,6 +39,30 @@ const socialLinks = [
 ];
 
 export default function StaticSidebar({}: Props) {
+  const email = "programmerrabbani@gmail.com";
+
+  const copyEmailToClipboard = () => {
+    navigator.clipboard.writeText(email).then(
+      () => {
+        Swal.fire({
+          icon: "success",
+          title: "Copied!",
+          text: "Email copied successful 🙂.",
+          showConfirmButton: false,
+          timer: 1500,
+        });
+      },
+      (err) => {
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Could not copy email!",
+          footer: err,
+        });
+      }
+    );
+  };
+
   return (
     <>
       <div className=" bg-white dark:bg-black card_shadow h-full border-none rounded-2xl">
@@ -79,7 +106,10 @@ export default function StaticSidebar({}: Props) {
                 <IconBrandSkype stroke={2} className="mr-2" />
                 Let's Talk
               </Link>
-              <button className="py-4 px-6 xl:px-[13px] text-base xl:text-[14px] rounded-lg font-medium leading-[1.5em] bg-transparent hover:bg-[#f0f2f5] dark:hover:bg-[#1a1f2c] dark:hover:text-white transition-all duration-300 border border-[#dbdfe5] dark:border-[#1a1f2c] text-[#1a1f2c] dark:text-[rgba(240,242,245,.7)] flex items-center email_btn">
+              <button
+                onClick={copyEmailToClipboard}
+                className="py-4 px-6 xl:px-[13px] text-base xl:text-[14px] rounded-lg font-medium leading-[1.5em] bg-transparent hover:bg-[#f0f2f5] dark:hover:bg-[#1a1f2c] dark:hover:text-white transition-all duration-300 border border-[#dbdfe5] dark:border-[#1a1f2c] text-[#1a1f2c] dark:text-[rgba(240,242,245,.7)] flex items-center email_btn"
+              >
                 <IconCopy stroke={2} className="mr-2" />
                 Copy Email
               </button>
