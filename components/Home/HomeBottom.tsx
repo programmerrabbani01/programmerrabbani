@@ -15,7 +15,7 @@ const services = [
     id: 1,
     src: frontEnd,
     alt: "frontend",
-    title: "Front-End Design",
+    title: "Front-End",
   },
   {
     id: 2,
@@ -40,11 +40,11 @@ const services = [
 export default function HomeBottom({}: Props) {
   return (
     <>
-      <div className="mt-6 flex">
-        <div className="w-4/6">
+      <div className="mt-6 flex xl:flex-row flex-col">
+        <div className="xl:w-4/6 w-full">
           <Card>
             <div className="p-6">
-              <h3 className="flex items-center gap-[15px] justify-between text-2xl font-semibold leading-[1.333em] mb-2">
+              <h3 className="flex xl:flex-row lg:flex-row md:flex-row sm:flex-row flex-col items-start xl:items-center lg:items-center md:items-center sm:items-center gap-[5px] xl:gap-[15px] lg:gap-[15px] md:gap-[15px] sm:gap-[15px]  justify-between text-2xl font-semibold leading-[1.333em] mb-2">
                 Services I Offered
                 <Link
                   href=""
@@ -55,10 +55,13 @@ export default function HomeBottom({}: Props) {
               </h3>
               {/* items */}
 
-              <div className="flex">
+              <div className="flex flex-wrap">
                 {services.map((service) => {
                   return (
-                    <div className="w-1/4 mt-6 px-3 flex" key={service.id}>
+                    <div
+                      className="xl:w-1/4 lg:w-1/4 md:w-1/4 sm:w-2/4 w-2/4 mt-6 px-3 flex service_items "
+                      key={service.id}
+                    >
                       <div
                         className="p-4 px-4 pb-4 bg-[#f0f2f5] dark:bg-[#0e1018]
                   rounded-2xl text-center"
@@ -81,7 +84,7 @@ export default function HomeBottom({}: Props) {
             </div>
           </Card>
         </div>
-        <div className="w-2/6 pl-3">
+        <div className="xl:w-2/6 w-full xl:pl-3 xl:mt-0 mt-6">
           <Card>
             <div className="p-6">
               {/* scroll */}

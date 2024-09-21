@@ -93,9 +93,9 @@ export default function Home() {
   const closeModal = () => setSelectedImage(null);
   return (
     <>
-      <div className="flex items-start space-x-3">
+      <div className="flex items-start xl:flex-row flex-col xl:space-x-3">
         {/* 1st side */}
-        <div className="xl:w-1/2">
+        <div className="xl:w-1/2 w-full">
           {/* card 1 */}
           <Card>
             {/* card body  */}
@@ -119,7 +119,7 @@ export default function Home() {
                     {/*  */}
                     {expert.map((experts) => {
                       return (
-                        <div className="xl:w-1/3 text-center" key={experts.id}>
+                        <div className="w-1/3 text-center" key={experts.id}>
                           <div className="px-[10px] mt-4">
                             <div className="bg-[#f0f2f5] dark:bg-[#0e1018] rounded-lg py-[14px] px-[10px]">
                               <Image
@@ -144,11 +144,11 @@ export default function Home() {
           </Card>
         </div>
         {/* second site */}
-        <div className="xl:w-1/2">
+        <div className="xl:w-1/2 w-full xl:mt-0 mt-6">
           <div className="border-none card_shadow bg-white dark:bg-black rounded-2xl h-full min-h-screen">
             <div className="p-6">
               {/* title */}
-              <h3 className="flex items-center gap-[15px] justify-between text-2xl font-semibold leading-[1.333em] mb-2">
+              <h3 className="flex xl:flex-row lg:flex-row md:flex-row sm:flex-row flex-col items-start xl:items-center lg:items-center md:items-center sm:items-center gap-[5px] xl:gap-[15px] lg:gap-[15px] md:gap-[15px] sm:gap-[15px] justify-between text-2xl font-semibold leading-[1.333em] mb-2">
                 Recent Projects
                 <Link
                   href=""
