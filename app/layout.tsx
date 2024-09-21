@@ -3,6 +3,7 @@ import "./globals.css";
 import { Bricolage_Grotesque } from "next/font/google";
 import ResponsiveNav from "@/components/NavBar/ResponsiveNav.tsx";
 import DarkLight from "@/components/DarkLight/DarkLight.tsx";
+import Footer from "@/components/Footer/Footer.tsx";
 
 const bricolage = Bricolage_Grotesque({
   weight: ["200", "300", "400", "500", "600", "700", "800"],
@@ -25,6 +26,7 @@ export default function RootLayout({
         <DarkLight>
           <ResponsiveNav />
           {children}
+          <Footer />
         </DarkLight>
       </body>
     </html>

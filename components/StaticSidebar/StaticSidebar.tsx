@@ -67,7 +67,7 @@ export default function StaticSidebar({}: Props) {
               <span className="font-semibold dark:text-white text-[#1a1f2c]">
                 MongoDB, Express, React, Node.js, Next.js, Redux Toolkit &nbsp;
               </span>
-              and more.
+              and more. I am dedicated to delivering web projects.
             </p>
             {/* button */}
             <div className="mt-6 flex items-center flex-wrap xl:flex-nowrap xl:space-x-2 lg:space-x-2 md:space-x-2 sm:space-x-2 gap-2">
