@@ -62,7 +62,7 @@ const projects = [
     alt: "project1",
   },
   {
-    id: 1,
+    id: 2,
     title: "Product Design",
     src: project2,
     alt: "project2",

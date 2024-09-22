@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import React from "react";
@@ -104,7 +104,7 @@ export default function StaticSidebar({}: Props) {
                 className="py-4 px-6 xl:px-[13px] text-base xl:text-[14px] bg-[#4770ff] rounded-lg font-medium leading-[1.5em] text-white hover:bg-[#2563eb] transition-all duration-300 flex items-center call_btn"
               >
                 <IconBrandSkype stroke={2} className="mr-2" />
-                Let's Talk
+                Book A Call
               </Link>
               <button
                 onClick={copyEmailToClipboard}

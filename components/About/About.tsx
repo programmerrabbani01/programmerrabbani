@@ -1,8 +1,30 @@
 import React from "react";
 import Card from "../Card/Card.tsx";
 import { FaCircle } from "react-icons/fa";
+import Image from "next/image";
+import arrowDown from "@/public/images/arrowDown.svg";
+import circleText from "@/public/images/circle-text.png";
+import circleTextLight from "@/public/images/circle-text-light.png";
 
 type Props = {};
+
+const counterItems = [
+  {
+    id: 1,
+    number: "40+",
+    title: "Year of Experience",
+  },
+  {
+    id: 2,
+    number: "86+",
+    title: "Project Completed",
+  },
+  {
+    id: 3,
+    number: "72+",
+    title: "Happy Client",
+  },
+];
 
 export default function About({}: Props) {
   return (
@@ -43,6 +65,50 @@ export default function About({}: Props) {
                 <FaCircle className="relative inline-flex h-2 w-2" />
               </span>
               Available For Hire
+            </div>
+          </div>
+          {/* counter area */}
+          <div className="flex justify-between gap-[30px] mb-[50px] ">
+            {/* counter */}
+            <div className="flex gap-[40px] max-w-[461px] flex-grow ">
+              {counterItems.map((items) => {
+                return (
+                  <div className="counter_items" key={items.id}>
+                    <h3 className="text-[40px] font-semibold text-[#1a1f2c] dark:text-[#f0f2f5] leading-[.9em] ">
+                      {items.number}
+                    </h3>
+                    <p className="text-base font-normal text-[#576076] leading-[1.5em] mt-2 ">
+                      {items.title}
+                    </p>
+                  </div>
+                );
+              })}
+            </div>
+            {/* circle */}
+
+            <div className="mt-[-70px] mr-[18px] flex-shrink-0 relative w-[131px] h-[138px]">
+              <div className="absolute inset-0 flex items-center justify-center">
+                {/* text image */}
+                <Image
+                  src={circleText}
+                  alt="circleText"
+                  className="dark:hidden block animate-spin-slow w-[100px] h-[100px]"
+                />
+                <Image
+                  src={circleTextLight}
+                  alt="circleTextLight"
+                  className="hidden dark:block animate-spin-slow w-[100px] h-[100px]"
+                />
+                {/* arrow image */}
+                <div className="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center">
+                  <div className="w-[70px] h-[70px] bg-[#4770ff] rounded-full flex items-center justify-center">
+                    <Image
+                      src={arrowDown}
+                      alt="arrowDown"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
