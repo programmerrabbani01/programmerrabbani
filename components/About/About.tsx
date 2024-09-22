@@ -5,8 +5,7 @@ import Image from "next/image";
 import arrowDown from "@/public/images/arrowDown.svg";
 import circleText from "@/public/images/circle-text.png";
 import circleTextLight from "@/public/images/circle-text-light.png";
-
-type Props = {};
+import WorkingArea from "../WorkingArea/WorkingArea.tsx";
 
 const counterItems = [
   {
@@ -26,12 +25,14 @@ const counterItems = [
   },
 ];
 
-export default function About({}: Props) {
+
+
+export default function About() {
   return (
     <>
       <Card>
         <div className="pt-12 px-10 pb-10">
-          {/* top info */}
+          {/* top info start */}
           <div className="flex gap-10 justify-between mb-12">
             {/* text */}
             <div className="max-w-[400px] flex-grow">
@@ -67,7 +68,9 @@ export default function About({}: Props) {
               Available For Hire
             </div>
           </div>
-          {/* counter area */}
+          {/* top info end */}
+
+          {/* counter area start */}
           <div className="flex justify-between gap-[30px] mb-[50px] ">
             {/* counter */}
             <div className="flex gap-[40px] max-w-[461px] flex-grow ">
@@ -85,7 +88,6 @@ export default function About({}: Props) {
               })}
             </div>
             {/* circle */}
-
             <div className="mt-[-70px] mr-[18px] flex-shrink-0 relative w-[131px] h-[138px]">
               <div className="absolute inset-0 flex items-center justify-center">
                 {/* text image */}
@@ -102,15 +104,24 @@ export default function About({}: Props) {
                 {/* arrow image */}
                 <div className="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center">
                   <div className="w-[70px] h-[70px] bg-[#4770ff] rounded-full flex items-center justify-center">
-                    <Image
-                      src={arrowDown}
-                      alt="arrowDown"
-                    />
+                    <Image src={arrowDown} alt="arrowDown" />
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          {/* counter area end */}
+
+          {/* working with area start */}
+
+          <div className="workingWithArea">
+            <h2 className="text-3xl font-medium text-[#1a1f2c] dark:text-[#f0f2f5] leading-[1.2em] mb-8 ">
+              Working With 50+ Brands ✨ Worldwide
+            </h2>
+            {/* working area main */}
+            <WorkingArea />
+          </div>
+          {/* working with area end */}
         </div>
       </Card>
     </>
