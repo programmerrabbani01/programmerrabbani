@@ -4,6 +4,8 @@ import { Bricolage_Grotesque } from "next/font/google";
 import ResponsiveNav from "@/components/NavBar/ResponsiveNav.tsx";
 import DarkLight from "@/components/DarkLight/DarkLight.tsx";
 import Footer from "@/components/Footer/Footer.tsx";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const bricolage = Bricolage_Grotesque({
   weight: ["200", "300", "400", "500", "600", "700", "800"],

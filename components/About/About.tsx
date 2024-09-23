@@ -1,11 +1,14 @@
 import React from "react";
 import Card from "../Card/Card.tsx";
-import { FaCircle } from "react-icons/fa";
+import { FaCircle, FaStar } from "react-icons/fa";
 import Image from "next/image";
 import arrowDown from "@/public/images/arrowDown.svg";
 import circleText from "@/public/images/circle-text.png";
 import circleTextLight from "@/public/images/circle-text-light.png";
 import WorkingArea from "../WorkingArea/WorkingArea.tsx";
+import SliderComponent from "../SliderComponent/SliderComponent.tsx";
+import Link from "next/link";
+import Testimonial from "../Testimonial/Testimonial.tsx";
 
 const counterItems = [
   {
@@ -24,8 +27,6 @@ const counterItems = [
     title: "Happy Client",
   },
 ];
-
-
 
 export default function About() {
   return (
@@ -122,6 +123,18 @@ export default function About() {
             <WorkingArea />
           </div>
           {/* working with area end */}
+
+          {/*  Trusted Clients Start */}
+          <div className="mt-[50px]">
+            <h2 className="text-[30px] font-medium leading-[1.2em] mb-8 ">
+              Trusted By 1200+ Clients
+            </h2>
+            {/* slider */}
+            <SliderComponent>
+              <Testimonial />
+            </SliderComponent>
+          </div>
+          {/*  Trusted Clients End */}
         </div>
       </Card>
     </>
