@@ -6,9 +6,9 @@ import arrowDown from "@/public/images/arrowDown.svg";
 import circleText from "@/public/images/circle-text.png";
 import circleTextLight from "@/public/images/circle-text-light.png";
 import WorkingArea from "../WorkingArea/WorkingArea.tsx";
-import SliderComponent from "../SliderComponent/SliderComponent.tsx";
 import Link from "next/link";
 import Testimonial from "../Testimonial/Testimonial.tsx";
+import SliderComponent from "../SliderComponent/SliderComponent.tsx";
 
 const counterItems = [
   {
@@ -135,6 +135,9 @@ export default function About() {
             </SliderComponent>
           </div>
           {/*  Trusted Clients End */}
+
+          {/* Awards and Recognitions Start */}
+          {/* Awards and Recognitions End */}
         </div>
       </Card>
     </>
