@@ -11,24 +11,7 @@ import Testimonial from "./Testimonial.tsx";
 import AwardItems from "./AwardItems.tsx";
 import Publications from "./Publications.tsx";
 import Link from "next/link";
-
-const counterItems = [
-  {
-    id: 1,
-    number: "40+",
-    title: "Year of Experience",
-  },
-  {
-    id: 2,
-    number: "86+",
-    title: "Project Completed",
-  },
-  {
-    id: 3,
-    number: "72+",
-    title: "Happy Client",
-  },
-];
+import Counter from "./Counter.tsx";
 
 export default function About() {
   return (
@@ -36,17 +19,17 @@ export default function About() {
       <Card>
         <div className="pt-12 px-10 pb-10">
           {/* top info start */}
-          <div className="flex gap-10 justify-between mb-12">
+          <div className="flex xl:flex-row flex-col gap-6 xl:gap-10 justify-between mb-10 xl:mb-12">
             {/* text */}
-            <div className="max-w-[400px] flex-grow">
-              <h1 className="text-[38px] text-[#1a1f2c] dark:text-[#f0f2f5] font-semibold mb-6 leading-[1.2em] ">
+            <div className="xl:max-w-[400px] w-full flex-grow order-2 xl:order-none">
+              <h1 className="text-[30px] xl:text-[40px] text-[#1a1f2c] dark:text-[#f0f2f5] font-semibold mb-6 leading-[1.2em] ">
                 Hi, This Is
-                <span className="text-[#4770ff] text-[34px] ml-1">
+                <span className="text-[#4770ff] text-[30px] xl:text-[34px] ml-1">
                   Programmer Rabbani
                 </span>{" "}
                 👋
               </h1>
-              <p className="xl:text-base text-sm font-normal xl:leading-[1.333em] leading-[1.5em] text-[#576076] dark:text-[rgba(240,242,245,.7)] text-justify ">
+              <p className="xl:text-base text-lg font-normal xl:leading-[1.333em] leading-[1.5em] text-[#576076] dark:text-[rgba(240,242,245,.7)] text-justify ">
                 I transform your ideas into dynamic, custom web solutions that
                 not only address your needs but also inspire and engage your
                 audience. With a deep understanding of modern web technologies,
@@ -63,7 +46,7 @@ export default function About() {
               </p>
             </div>
             {/* available Button */}
-            <div className="text-lg font-medium text-[#4770ff] bg-[#f0f2f5] dark:bg-[#0e1018] py-2 px-4 w-fit h-full leading-[1.5em] rounded-lg flex items-center gap-2">
+            <div className="text-base xl:text-lg font-medium text-[#4770ff] bg-[#f0f2f5] dark:bg-[#0e1018] py-2 px-4 w-fit h-full leading-[1.5em] rounded-lg flex items-center gap-2 order-1 xl:order-none">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
                 <FaCircle className="relative inline-flex h-2 w-2" />
@@ -74,24 +57,11 @@ export default function About() {
           {/* top info end */}
 
           {/* counter area start */}
-          <div className="flex justify-between gap-[30px] mb-[50px] ">
+          <div className="flex justify-between gap-[30px] mb-10 xl:mb-[50px]  ">
             {/* counter */}
-            <div className="flex gap-[40px] max-w-[461px] flex-grow ">
-              {counterItems.map((items) => {
-                return (
-                  <div className="counter_items" key={items.id}>
-                    <h3 className="text-[40px] font-semibold text-[#1a1f2c] dark:text-[#f0f2f5] leading-[.9em] ">
-                      {items.number}
-                    </h3>
-                    <p className="text-base font-normal text-[#576076] leading-[1.5em] mt-2 ">
-                      {items.title}
-                    </p>
-                  </div>
-                );
-              })}
-            </div>
+            <Counter />
             {/* circle */}
-            <div className="mt-[-70px] mr-[18px] flex-shrink-0 relative w-[131px] h-[138px]">
+            <div className="mt-[-70px] mr-[18px] flex-shrink-0 relative w-[131px] h-[138px] hidden xl:block">
               <div className="absolute inset-0 flex items-center justify-center">
                 {/* text image */}
                 <Image
