@@ -1,16 +1,16 @@
 import React from "react";
 import Card from "../Card/Card.tsx";
-import { FaCircle, FaStar } from "react-icons/fa";
+import { FaCircle } from "react-icons/fa";
 import Image from "next/image";
 import arrowDown from "@/public/images/arrowDown.svg";
 import circleText from "@/public/images/circle-text.png";
 import circleTextLight from "@/public/images/circle-text-light.png";
-import WorkingArea from "../WorkingArea/WorkingArea.tsx";
-import Link from "next/link";
-import Testimonial from "../Testimonial/Testimonial.tsx";
 import SliderComponent from "../SliderComponent/SliderComponent.tsx";
-import adobe from "@/public/images/experience/adobe.png";
-import { IconAward } from "@tabler/icons-react";
+import WorkingArea from "./WorkingArea.tsx";
+import Testimonial from "./Testimonial.tsx";
+import AwardItems from "./AwardItems.tsx";
+import Publications from "./Publications.tsx";
+import Link from "next/link";
 
 const counterItems = [
   {
@@ -144,41 +144,50 @@ export default function About() {
               Awards and Recognitions
             </h2>
             {/* Awards and Recognitions Items */}
-            <Link href="" className="block w-full group">
-              <div className="bg-[#f0f2f5] dark:bg-[#0e1018] rounded-lg border border-transparent p-6 flex gap-[20px] justify-between items-center  transition-all duration-300 group-hover:bg-transparent group-hover:border-[#dbdfe5] group-hover:dark:border-[rgba(13,110,253,1)] ">
-                {/* Award name */}
-                <div className="flex items-center gap-6 max-w-[300px] w-full ">
-                  {/* icon */}
-                  <div className="w-10 h-10 bg-white dark:bg-black rounded-lg flex items-center justify-center group-hover:bg-[#f0f2f5] group-hover:dark:bg-[#0e1018] transition-all duration-300 ">
-                    <Image src={adobe} alt="adobe" width={24} height={24} />
-                  </div>
-                  {/* text */}
-                  <div className="text">
-                    <div className="text-lg font-medium leading-[1.2em]">
-                      Adobe Design Contest
-                    </div>
-                    <div className="text-base font-normal leading-[1.6em] text-[#616670]">
-                      2022 - 2023
-                    </div>
-                  </div>
-                </div>
-                {/* winner tag */}
-                <div className="w-[140px]">
-                  <h4 className="text-base font-medium text-[#1a1f2c] dark:text-[#f0f2f5] flex gap-[6px] items-center">
-                    <IconAward stroke={2} className="w-5 h-5" />
-                    Runner Up
-                  </h4>
-                </div>
-                {/* project button */}
-                <div className="projectButton">
-                  <span className="bg-white dark:bg-black text-[#1a1f2c] dark:text-[rgba(240,242,245,.7)] text-sm font-normal leading-[.9rem] py-2 px-3 border-0 rounded-[4px] transition-all duration-300 group-hover:bg-[#f0f2f5] group-hover:text-[rgba(13,110,253,1)] group-hover:dark:bg-[#0E1018]">
-                    View Project ↗
-                  </span>
-                </div>
-              </div>
-            </Link>
+            <AwardItems />
           </div>
           {/* Awards and Recognitions End */}
+
+          {/* Article and Publications Start */}
+          <div className="mt-[50px]">
+            <h2 className="text-3xl font-medium text-[#1a1f2c] dark:text-[#f0f2f5] leading-[1.2em] mb-8 ">
+              Article and Publications
+            </h2>
+            {/* slider */}
+            <SliderComponent>
+              <Publications />
+            </SliderComponent>
+          </div>
+          {/* Article and Publications End */}
+
+          {/* work-together-slider start */}
+          <div className="bg-[#f0f2f5] dark:bg-[#0e1018] rounded-lg overflow-hidden p-6 mt-[50px] ">
+            <div className="flex items-center gap-6">
+              {/* slider item */}
+              <div className="inline-block auto_scroll_list text_slider whitespace-nowrap">
+                {/* Duplicate links for sliding effect */}
+                {Array(2)
+                  .fill(null)
+                  .map((_, index) => (
+                    <div key={index} className="inline-block">
+                      <Link
+                        href=""
+                        className="inline-block text-[40px] font-medium text-[#576076] leading-[.9em] mx-[15px] relative before:absolute before:w-[10px] before:h-[10px] before:bg-[#576076] before:rounded-full before:top-1/2 before:left-[-32px] before:transform before:-translate-y-1/2 hover:text-[#1a1f2c] dark:hover:text-white transition-all duration-300 mr-10"
+                      >
+                        Let's 👋 Work Together
+                      </Link>
+                      <Link
+                        href=""
+                        className="inline-block text-[40px] font-medium text-[#576076] leading-[.9em] mx-[15px] relative before:absolute before:w-[10px] before:h-[10px] before:bg-[#576076] before:rounded-full before:top-1/2 before:left-[-32px] before:transform before:-translate-y-1/2 hover:text-[#1a1f2c] dark:hover:text-white transition-all duration-300 mr-10 "
+                      >
+                        Let's 👋 Work Together
+                      </Link>
+                    </div>
+                  ))}
+              </div>
+            </div>
+          </div>
+          {/* work-together-slider end */}
         </div>
       </Card>
     </>
