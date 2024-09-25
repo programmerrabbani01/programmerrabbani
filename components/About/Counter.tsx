@@ -8,7 +8,7 @@ type Props = {};
 export default function Counter({}: Props) {
   return (
     <>
-      <div className="flex gap-[40px] max-w-[461px] flex-grow ">
+      <div className="flex flex-wrap gap-[40px] max-w-[461px] flex-grow ">
         {/* experience */}
         <div className="counter_items">
           <h3 className="text-[30px] xl:text-[40px] font-semibold text-[#1a1f2c] dark:text-[#f0f2f5] leading-[1.2em] xl:leading-[.9em] ">

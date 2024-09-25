@@ -9,6 +9,9 @@ const config: Config = {
   darkMode: "class",
   theme: {
     extend: {
+      fontFamily: {
+        bricolageGrotesque: ["var(--font-bricolageGrotesque)", "sans-serif"],
+      },
       dropShadow: {
         custom: "0 12px 12px rgba(26, 31, 44, 0.25)",
       },

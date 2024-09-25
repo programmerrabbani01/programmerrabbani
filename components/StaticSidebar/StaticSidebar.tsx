@@ -85,12 +85,7 @@ export default function StaticSidebar({}: Props) {
               <span className="font-semibold dark:text-white text-[#1a1f2c]">
                 Full Stack Developer &nbsp;
               </span>
-              🖥️ &amp; &nbsp;
-              {/* <span className="font-semibold dark:text-white text-[#1a1f2c]">
-                Product Designer &nbsp;
-              </span>
-              having&nbsp; */}
-              Specializing in &nbsp;
+              🖥️ &amp; &nbsp; Specializing in &nbsp;
               <span className="font-semibold dark:text-white text-[#1a1f2c]">
                 MongoDB, Express, React, Node.js, Next.js, Redux Toolkit &nbsp;
               </span>

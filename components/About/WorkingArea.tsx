@@ -75,15 +75,19 @@ const workItems = [
 export default function WorkingArea({}: Props) {
   return (
     <>
-      <div className="flex gap-5 flex-wrap ">
+      <div className="flex gap-2 xl:gap-5 flex-wrap ">
         {/* items */}
         {workItems.map((wItems) => {
           return (
             <div
               key={wItems.id}
-              className="rounded-2xl bg-[#f0f2f5] dark:bg-[#0e1018] w-20 h-20 flex items-center justify-center "
+              className="rounded-lg xl:rounded-2xl bg-[#f0f2f5] dark:bg-[#0e1018] w-[60px] h-[60px] xl:w-20 xl:h-20 flex items-center justify-center "
             >
-              <Image src={wItems.src} alt={wItems.alt} width={48} height={48} />
+              <Image
+                src={wItems.src}
+                alt={wItems.alt}
+                className="w-8 h-8 xl:w-12 xl:h-12 object-contain"
+              />
             </div>
           );
         })}

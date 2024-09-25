@@ -58,9 +58,9 @@ export default function AwardItems({}: Props) {
             className="block w-full group mb-[18px] last:mb-0"
             key={items.id}
           >
-            <div className="bg-[#f0f2f5] dark:bg-[#0e1018] rounded-lg border border-transparent p-6 flex gap-[20px] justify-between items-center  transition-all duration-300 group-hover:bg-transparent group-hover:border-[#dbdfe5] group-hover:dark:border-[rgba(13,110,253,1)]">
+            <div className="bg-[#f0f2f5] dark:bg-[#0e1018] rounded-lg border border-transparent p-6 flex flex-wrap gap-[20px] justify-between items-center  transition-all duration-300 group-hover:bg-transparent group-hover:border-[#dbdfe5] group-hover:dark:border-[rgba(13,110,253,1)]">
               {/* Award name */}
-              <div className="flex items-center gap-6 max-w-[300px] w-full ">
+              <div className="flex flex-wrap items-center gap-6 max-w-[300px] w-full ">
                 {/* icon */}
                 <div className="w-10 h-10 bg-white dark:bg-black rounded-lg flex items-center justify-center group-hover:bg-[#f0f2f5] group-hover:dark:bg-[#0e1018] transition-all duration-300 ">
                   <Image

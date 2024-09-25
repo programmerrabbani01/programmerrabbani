@@ -17,7 +17,7 @@ export default function About() {
   return (
     <>
       <Card>
-        <div className="pt-12 px-10 pb-10">
+        <div className="p-6 xl:pt-12 xl:px-10 xl:pb-10">
           {/* top info start */}
           <div className="flex xl:flex-row flex-col gap-6 xl:gap-10 justify-between mb-10 xl:mb-12">
             {/* text */}
@@ -88,7 +88,7 @@ export default function About() {
           {/* working with area start */}
 
           <div className="workingWithArea">
-            <h2 className="text-3xl font-medium text-[#1a1f2c] dark:text-[#f0f2f5] leading-[1.2em] mb-8 ">
+            <h2 className="text-2xl xl:text-3xl font-medium text-[#1a1f2c] dark:text-[#f0f2f5] leading-[1.2em] mb-8 ">
               Working With 50+ Brands ✨ Worldwide
             </h2>
             {/* working area main */}
@@ -98,7 +98,7 @@ export default function About() {
 
           {/*  Trusted Clients Start */}
           <div className="mt-[50px]">
-            <h2 className="text-[30px] font-medium leading-[1.2em] mb-8 ">
+            <h2 className="text-2xl xl:text-[30px] font-medium leading-[1.3em] xl:leading-[1.2em] mb-8 ">
               Trusted By 1200+ Clients
             </h2>
             {/* slider */}
@@ -110,7 +110,7 @@ export default function About() {
 
           {/* Awards and Recognitions Start */}
           <div className="awardsRecognitions mt-[50px]">
-            <h2 className="text-3xl font-medium text-[#1a1f2c] dark:text-[#f0f2f5] leading-[1.2em] mb-8 ">
+            <h2 className="text-2xl xl:text-3xl font-medium text-[#1a1f2c] dark:text-[#f0f2f5] leading-[1.3em] xl:leading-[1.2em] mb-8 ">
               Awards and Recognitions
             </h2>
             {/* Awards and Recognitions Items */}
@@ -120,7 +120,7 @@ export default function About() {
 
           {/* Article and Publications Start */}
           <div className="mt-[50px]">
-            <h2 className="text-3xl font-medium text-[#1a1f2c] dark:text-[#f0f2f5] leading-[1.2em] mb-8 ">
+            <h2 className="text-2xl xl:text-3xl font-medium text-[#1a1f2c] dark:text-[#f0f2f5] leading-[1.3em] xl:leading-[1.2em] mb-8 ">
               Article and Publications
             </h2>
             {/* slider */}
@@ -142,13 +142,13 @@ export default function About() {
                     <div key={index} className="inline-block">
                       <Link
                         href=""
-                        className="inline-block text-[40px] font-medium text-[#576076] leading-[.9em] mx-[15px] relative before:absolute before:w-[10px] before:h-[10px] before:bg-[#576076] before:rounded-full before:top-1/2 before:left-[-32px] before:transform before:-translate-y-1/2 hover:text-[#1a1f2c] dark:hover:text-white transition-all duration-300 mr-10"
+                        className="inline-block text-[30px] md:text-[40px] lg:text-[40px] xl:text-[40px] font-medium text-[#576076] leading-[.9em] mx-[15px] relative before:absolute before:w-[10px] before:h-[10px] before:bg-[#576076] before:rounded-full before:top-1/2 before:left-[-32px] before:transform before:-translate-y-1/2 hover:text-[#1a1f2c] dark:hover:text-white transition-all duration-300 mr-10"
                       >
                         Let's 👋 Work Together
                       </Link>
                       <Link
                         href=""
-                        className="inline-block text-[40px] font-medium text-[#576076] leading-[.9em] mx-[15px] relative before:absolute before:w-[10px] before:h-[10px] before:bg-[#576076] before:rounded-full before:top-1/2 before:left-[-32px] before:transform before:-translate-y-1/2 hover:text-[#1a1f2c] dark:hover:text-white transition-all duration-300 mr-10 "
+                        className="inline-block text-[30px] md:text-[40px] lg:text-[40px] xl:text-[40px]  font-medium text-[#576076] leading-[.9em] mx-[15px] relative before:absolute before:w-[10px] before:h-[10px] before:bg-[#576076] before:rounded-full before:top-1/2 before:left-[-32px] before:transform before:-translate-y-1/2 hover:text-[#1a1f2c] dark:hover:text-white transition-all duration-300 mr-10 "
                       >
                         Let's 👋 Work Together
                       </Link>
