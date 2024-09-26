@@ -5,62 +5,17 @@ import React, { useEffect, useState } from "react";
 import blackLogo from "@/public/images/blacklogo.png";
 import whiteLogo from "@/public/images/whitelogo.png";
 import Image from "next/image";
-import {
-  IconBrandAppleArcade,
-  IconBrandSkype,
-  IconDeviceMobileVibration,
-  IconMenu2,
-  IconMessage,
-  IconPencilHeart,
-  IconSmartHome,
-  IconUserCircle,
-} from "@tabler/icons-react";
 import { usePathname } from "next/navigation";
 import DarkModeSwitch from "../DarkLightSwitch/DarkLightSwitch.tsx";
 import { useTheme } from "next-themes";
+import { navLinks } from "@/data/Data.tsx";
+import { IconBrandSkype, IconMenu2 } from "@tabler/icons-react";
 
 type Props = {
   openNav: () => void;
 };
 
-const navLinks = [
-  {
-    id: 1,
-    label: "Home",
-    url: "/",
-    icon: <IconSmartHome stroke={2} className="mr-[4px] icon" />,
-  },
-  {
-    id: 2,
-    label: "About",
-    url: "/about",
-    icon: <IconUserCircle stroke={2} className="mr-[4px] icon" />,
-  },
-  {
-    id: 3,
-    label: "Services",
-    url: "/services",
-    icon: <IconDeviceMobileVibration stroke={2} className="mr-[4px] icon" />,
-  },
-  {
-    id: 4,
-    label: "Portfolio",
-    url: "/portfolio",
-    icon: <IconBrandAppleArcade stroke={2} className="mr-[4px] icon" />,
-  },
-  {
-    id: 5,
-    label: "Blog",
-    url: "/blog",
-    icon: <IconPencilHeart stroke={2} className="mr-[4px] icon" />,
-  },
-  {
-    id: 6,
-    label: "Contacts",
-    url: "/contact",
-    icon: <IconMessage stroke={2} className="mr-[4px] icon" />,
-  },
-];
+
 
 export default function NavBar({ openNav }: Props) {
   const pathname = usePathname();

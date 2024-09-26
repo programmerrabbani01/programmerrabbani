@@ -17,6 +17,7 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import { useTheme } from "next-themes";
+import { navLinks } from "@/data/Data.tsx";
 
 // defiend props
 type Props = {
@@ -24,44 +25,7 @@ type Props = {
   closeNav: () => void;
 };
 
-const navLinks = [
-  {
-    id: 1,
-    label: "Home",
-    url: "/",
-    icon: <IconSmartHome stroke={2} className="mr-[4px] " />,
-  },
-  {
-    id: 2,
-    label: "About",
-    url: "/about",
-    icon: <IconUserCircle stroke={2} className="mr-[4px] " />,
-  },
-  {
-    id: 3,
-    label: "Services",
-    url: "/services",
-    icon: <IconDeviceMobileVibration stroke={2} className="mr-[4px] " />,
-  },
-  {
-    id: 4,
-    label: "Portfolio",
-    url: "/portfolio",
-    icon: <IconBrandAppleArcade stroke={2} className="mr-[4px] " />,
-  },
-  {
-    id: 5,
-    label: "Blog",
-    url: "/blog",
-    icon: <IconPencilHeart stroke={2} className="mr-[4px] " />,
-  },
-  {
-    id: 6,
-    label: "Contacts",
-    url: "/contact",
-    icon: <IconMessage stroke={2} className="mr-[4px] " />,
-  },
-];
+
 export default function MobileNav({ showNav, closeNav }: Props) {
   const pathname = usePathname();
   const navOpen = showNav ? "translate-x-0" : "translate-x-[-100%]";
