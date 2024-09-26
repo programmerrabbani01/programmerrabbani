@@ -4,70 +4,10 @@ import React, { useState } from "react";
 import Card from "@/components/Card/Card.tsx";
 import ScrollCard from "@/components/ScrollCard/ScrollCard.tsx";
 import Image from "next/image";
-import figma from "@/public/images/expert/figma.png";
-import notion from "@/public/images/expert/notion.png";
-import miro from "@/public/images/expert/mico.png";
-import framer from "@/public/images/expert/framer.png";
-import webflow from "@/public/images/expert/webflow.png";
-import zeplin from "@/public/images/expert/zeplin.png";
 import Link from "next/link";
 import { IconArrowRightSquare, IconPlus, IconX } from "@tabler/icons-react";
-import project1 from "@/public/images/projects/project-1.png";
-import project2 from "@/public/images/projects/project-2.png";
-
-const expert = [
-  {
-    id: 1,
-    title: "Figma",
-    src: figma,
-    alt: "figma",
-  },
-  {
-    id: 2,
-    title: "Notion",
-    src: notion,
-    alt: "notion",
-  },
-  {
-    id: 3,
-    title: "Miro",
-    src: miro,
-    alt: "Miro",
-  },
-  {
-    id: 4,
-    title: "Framer",
-    src: framer,
-    alt: "Framer",
-  },
-  {
-    id: 5,
-    title: "Webflow",
-    src: webflow,
-    alt: "Webflow",
-  },
-  {
-    id: 6,
-    title: "Zeplin",
-    src: zeplin,
-    alt: "Zeplin",
-  },
-];
-
-const projects = [
-  {
-    id: 1,
-    title: "Product Design",
-    src: project1,
-    alt: "project1",
-  },
-  {
-    id: 2,
-    title: "Product Design",
-    src: project2,
-    alt: "project2",
-  },
-];
+import { homeProjects } from "@/data/HomeProjects.tsx";
+import { expert } from "@/data/Expert.tsx";
 
 type StaticImageData = {
   src: string;
@@ -94,7 +34,6 @@ export default function Home() {
   return (
     <>
       <div className="flex items-start xl:flex-row flex-col xl:space-x-3">
-        {/* 1st side */}
         <div className="xl:w-1/2 w-full">
           {/* card 1 */}
           <Card>
@@ -109,7 +48,6 @@ export default function Home() {
           {/* card 2 */}
           <Card>
             <div className="mt-6">
-              {/* card body  */}
               <div className="overflow-hidden p-6">
                 <h3 className="text-2xl font-semibold leading-[1.333em] mb-2 ">
                   My Expert Area
@@ -158,7 +96,7 @@ export default function Home() {
                 </Link>
               </h3>
               {/* projects */}
-              {projects.map((project) => {
+              {homeProjects.map((project) => {
                 return (
                   <div className="mt-6" key={project.id}>
                     <div className="w-full">

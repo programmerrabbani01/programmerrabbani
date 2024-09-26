@@ -7,11 +7,11 @@ import circleText from "@/public/images/circle-text.png";
 import circleTextLight from "@/public/images/circle-text-light.png";
 import SliderComponent from "../SliderComponent/SliderComponent.tsx";
 import WorkingArea from "./WorkingArea.tsx";
-import Testimonial from "./Testimonial.tsx";
 import AwardItems from "./AwardItems.tsx";
 import Publications from "./Publications.tsx";
 import Link from "next/link";
 import Counter from "./Counter.tsx";
+import Testimonial from "../Testimonial/Testimonial.tsx";
 
 export default function About() {
   return (

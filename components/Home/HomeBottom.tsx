@@ -3,39 +3,11 @@ import Card from "../Card/Card.tsx";
 import { IconArrowRightSquare, IconBrandSkype } from "@tabler/icons-react";
 import Link from "next/link";
 import Image from "next/image";
-import frontEnd from "@/public/images/services/frontend.png";
-import backEnd from "@/public/images/services/backend.png";
-import nodejs from "@/public/images/services/nodejs.png";
-import mongodb from "@/public/images/services/mongodb.png";
+import { HomeServices } from "@/data/HomeService.tsx";
 
 type Props = {};
 
-const services = [
-  {
-    id: 1,
-    src: frontEnd,
-    alt: "frontend",
-    title: "Front-End",
-  },
-  {
-    id: 2,
-    src: backEnd,
-    alt: "backend",
-    title: "Back-End",
-  },
-  {
-    id: 3,
-    src: nodejs,
-    alt: "nodejs",
-    title: "Node JS",
-  },
-  {
-    id: 4,
-    src: mongodb,
-    alt: "mongodb",
-    title: "MongoDB",
-  },
-];
+
 
 export default function HomeBottom({}: Props) {
   return (
@@ -56,7 +28,7 @@ export default function HomeBottom({}: Props) {
               {/* items */}
 
               <div className="flex flex-wrap">
-                {services.map((service) => {
+                {HomeServices.map((service) => {
                   return (
                     <div
                       className="xl:w-1/4 lg:w-1/4 md:w-1/4 sm:w-2/4 w-2/4 mt-6 px-3 flex service_items "
