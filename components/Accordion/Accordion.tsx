@@ -30,7 +30,7 @@ export default function Accordion({}: Props) {
           >
             <h4 className="accordionHeader">
               <button
-                className={`text-lg leading-[1.5em] py-5 px-6 font-medium bg-[#f0f2f5] dark:bg-[#0e1018] text-[#1a1f2c] dark:text-[rgba(240,242,245,.7)] rounded-lg flex items-center justify-between transition-colors duration-300 w-full text-left ${
+                className={`text-lg leading-[1.5em] py-5 px-6 font-medium rounded-lg flex items-center justify-between transition-colors duration-300 w-full text-left ${
                   isOpen
                     ? "text-[#4770ff] dark:text-[#4770ff] bg-white dark:bg-black"
                     : "text-[#1a1f2c] dark:text-[rgba(240,242,245,.7)] bg-[#f0f2f5] dark:bg-[#0e1018]"
