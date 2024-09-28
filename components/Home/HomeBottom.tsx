@@ -1,9 +1,5 @@
 import React from "react";
 import Card from "../Card/Card.tsx";
-import { IconArrowRightSquare, IconBrandSkype } from "@tabler/icons-react";
-import Link from "next/link";
-import Image from "next/image";
-import { HomeServices } from "@/data/HomeService.tsx";
 import Counter from "./Counter.tsx";
 
 type Props = {};
@@ -12,7 +8,7 @@ export default function HomeBottom({}: Props) {
   return (
     <>
       {/* slider */}
-      <div className=" w-full mt-6">
+      <div className=" w-full mt-6 hidden">
         <Card>
           <div className="p-6">
             {/* scroll */}

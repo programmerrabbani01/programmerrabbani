@@ -40,25 +40,7 @@
   }
 
   /* up slider */
-  .auto_scroll_list {
-    display: flex;
-    flex-direction: column;
-    animation: scroll 10s linear infinite;
-    will-change: transform;
-  }
-
-  .auto_scroll_list:hover {
-    animation-play-state: paused;
-  }
-
-  @keyframes scroll {
-    0% {
-      transform: translateY(0);
-    }
-    100% {
-      transform: translateY(-50%);
-    }
-  }
+ 
 
   /* up slider */
 
@@ -125,4 +107,3 @@
     padding: 14px 0 24px;
   }
 }
-

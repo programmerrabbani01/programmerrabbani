@@ -2,30 +2,25 @@
 
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import blackLogo from "@/public/images/blacklogo.png";
-import whiteLogo from "@/public/images/whitelogo.png";
+
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import DarkModeSwitch from "../DarkLightSwitch/DarkLightSwitch.tsx";
-import { useTheme } from "next-themes";
+
 import { navLinks } from "@/data/Data.tsx";
 import { IconBrandSkype, IconMenu2 } from "@tabler/icons-react";
+import Logo from "../Logo/Logo.tsx";
 
 type Props = {
   openNav: () => void;
 };
 
-
-
 export default function NavBar({ openNav }: Props) {
   const pathname = usePathname();
-  const { theme } = useTheme();
-  const [mounted, setMounted] = useState(false);
+
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
-    setMounted(true);
-
     // Debounce function to limit scroll event calls
     const debounce = (func: () => void, wait: number) => {
       let timeout: NodeJS.Timeout;
@@ -48,15 +43,6 @@ export default function NavBar({ openNav }: Props) {
     };
   }, []);
 
-  if (!mounted) return null;
-
-  const currentTheme =
-    theme === "system"
-      ? window.matchMedia("(prefers-color-scheme: dark)").matches
-        ? "dark"
-        : "light"
-      : theme;
-
   const isScrolled = scrollY > 50;
 
   return (
@@ -72,15 +58,7 @@ export default function NavBar({ openNav }: Props) {
             className={`menu_container_dark bg-white w-full flex xl:items-center xl:gap-[15px] items-center justify-between dark:bg-black dark:text-white rounded-2xl transition-all duration-300`}
           >
             {/* logo */}
-            <div className="logo xl:w-32">
-              <Link href="/">
-                <Image
-                  src={currentTheme === "dark" ? whiteLogo : blackLogo}
-                  alt="logo"
-                  className="xl:w-[130px] w-40 object-cover overflow-hidden"
-                />
-              </Link>
-            </div>
+            <Logo />
 
             {/* navbar links */}
             <div className="hidden xl:flex xl:flex-grow items-center gap-[11px] nav_gap">
@@ -92,13 +70,9 @@ export default function NavBar({ openNav }: Props) {
                     key={nav.id}
                     className={`group flex items-center gap-[.25rem] xl:text-[16px] xl:font-medium text-[#576076] leading-[120%] rounded-lg py-[10px] px-[12px] transition-all duration-300 ${
                       isActive
-                        ? currentTheme === "dark"
-                          ? "my_active_dark"
-                          : "my_active"
-                        : currentTheme === "dark"
-                        ? "my_link_hover_dark"
-                        : "my_link_hover"
-                    }`}
+                        ? " my_active_dark my_active"
+                        : "my_link_hover_dark my_link_hover"
+                    } `}
                   >
                     {nav.icon}
                     <p className="nav_font">{nav.label}</p>

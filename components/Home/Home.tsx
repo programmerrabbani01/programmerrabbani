@@ -1,44 +1,18 @@
-"use client";
-
-import React, { useState } from "react";
+import React from "react";
 import Card from "@/components/Card/Card.tsx";
 import ScrollCard from "@/components/ScrollCard/ScrollCard.tsx";
 import Image from "next/image";
 import Link from "next/link";
 import { IconArrowRightSquare, IconPlus, IconX } from "@tabler/icons-react";
-import { homeProjects } from "@/data/HomeProjects.tsx";
 import { expert } from "@/data/Expert.tsx";
 import { HomeServices } from "@/data/HomeService.tsx";
 
-type StaticImageData = {
-  src: string;
-  height: number;
-  width: number;
-  placeholder?: string;
-};
-
-// Define the Project type
-type Project = {
-  id: number;
-  title: string;
-  src: StaticImageData; // Assuming you're using Next.js Image component
-  alt: string;
-};
-
 export default function Home() {
-  const [selectedImage, setSelectedImage] = useState<StaticImageData | null>(
-    null
-  );
-
-  // Function to close the modal
-  const closeModal = () => setSelectedImage(null);
   return (
     <>
       <div className="flex items-start justify-between flex-col md:flex-row lg:flex-row xl:flex-row md:space-x-5">
         <div className="xl:w-1/2 w-full">
-          {/* card 1 */}
           <Card>
-            {/* card body  */}
             <div className="overflow-hidden p-6">
               <h3 className="text-2xl font-semibold leading-[1.333em] mb-2 ">
                 Work Experience
@@ -48,16 +22,14 @@ export default function Home() {
           </Card>
         </div>
         <div className="xl:w-1/2 w-full">
-          {/* card 2 */}
           <Card>
             <div className="mt-6 md:mt-0 lg:mt-0 xl:mt-0">
               <div className="overflow-hidden p-6">
                 <h3 className="text-2xl font-semibold leading-[1.333em] mb-2 ">
-                  My Expert Area
+                  My Skills Area
                 </h3>
                 <div className="mt-6">
                   <div className="flex flex-wrap items-center">
-                    {/*  */}
                     {expert.map((experts) => {
                       return (
                         <div className="w-1/3 text-center" key={experts.id}>
@@ -76,8 +48,6 @@ export default function Home() {
                         </div>
                       );
                     })}
-
-                    {/*  */}
                   </div>
                 </div>
               </div>
