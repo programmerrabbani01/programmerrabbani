@@ -20,6 +20,9 @@
     background-color: #f0f2f5 !important;
     color: #000 !important;
   }
+  .paraStaticPage {
+    word-spacing: -1px;
+  }
 
   .my_link_hover {
     @apply hover:bg-[#F0F2F5]  hover:text-black;
@@ -122,3 +125,4 @@
     padding: 14px 0 24px;
   }
 }
+

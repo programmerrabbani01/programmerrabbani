@@ -42,7 +42,7 @@ const experience = [
 
 export default function ScrollCard({}: Props) {
   return (
-    <div className="h-[220px] overflow-hidden flex flex-col gap-4">
+    <div className="h-[232px] overflow-hidden flex flex-col gap-4">
       {/* Duplicating the list */}
       <ul className="auto_scroll_list">
         {experience.map((exp) => (

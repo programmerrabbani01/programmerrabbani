@@ -80,16 +80,15 @@ export default function StaticSidebar({}: Props) {
             <h3 className="text-2xl mb-2 font-semibold leading-[1.333em]">
               Programmer Rabbani 👋
             </h3>
-            <p className="mt-2 text-[#576076] dark:text-[rgba(240,242,245,.7)] text-base leading-[1.5em] font-medium">
-              A Passionate &nbsp;
-              <span className="font-semibold dark:text-white text-[#1a1f2c]">
-                Full Stack Developer &nbsp;
-              </span>
-              🖥️ &amp; &nbsp; Specializing in &nbsp;
-              <span className="font-semibold dark:text-white text-[#1a1f2c]">
-                MongoDB, Express, React, Node.js, Next.js, Redux Toolkit &nbsp;
-              </span>
-              and more. I am dedicated to delivering web projects.
+            <p className="mt-2 text-[#576076] dark:text-[rgba(240,242,245,.7)] text-base leading-[1.5em] font-medium text-justify paraStaticPage">
+              I build dynamic, custom web solutions that inspire your audience.
+              With expertise in &nbsp;
+              <b className="text-black dark:text-white">
+                JavaScript, Node.js, React.js, MongoDB, Express.js, REST APIs,
+                Next.js, and Redux Toolkit,&nbsp;
+              </b>
+              I deliver intuitive and efficient web projects tailored to your
+              vision.
             </p>
             {/* button */}
             <div className="mt-6 flex items-center flex-wrap xl:flex-nowrap xl:space-x-2 lg:space-x-2 md:space-x-2 sm:space-x-2 gap-2">
@@ -99,7 +98,7 @@ export default function StaticSidebar({}: Props) {
                 className="py-4 px-6 xl:px-[13px] text-base xl:text-[14px] bg-[#4770ff] rounded-lg font-medium leading-[1.5em] text-white hover:bg-[#2563eb] transition-all duration-300 flex items-center call_btn"
               >
                 <IconBrandSkype stroke={2} className="mr-2" />
-                Book A Call
+                Make A Call
               </Link>
               <button
                 onClick={copyEmailToClipboard}

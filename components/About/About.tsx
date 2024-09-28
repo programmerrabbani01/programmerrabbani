@@ -33,12 +33,11 @@ export default function About() {
                 I transform your ideas into dynamic, custom web solutions that
                 not only address your needs but also inspire and engage your
                 audience. With a deep understanding of modern web technologies,
-                including{" "}
+                including
                 <b className="text-black dark:text-white">
-                  {" "}
                   JavaScript, Node.js, React.js, MongoDB, Express.js, REST APIs,
                   Next.js, Redux Toolkit,
-                </b>{" "}
+                </b>
                 I am committed to delivering standout web projects. Whether it's
                 building from the ground up or refining existing platforms, my
                 goal is to craft experiences that are intuitive, efficient, and

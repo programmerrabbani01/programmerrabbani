@@ -8,6 +8,7 @@ import Link from "next/link";
 import { IconArrowRightSquare, IconPlus, IconX } from "@tabler/icons-react";
 import { homeProjects } from "@/data/HomeProjects.tsx";
 import { expert } from "@/data/Expert.tsx";
+import { HomeServices } from "@/data/HomeService.tsx";
 
 type StaticImageData = {
   src: string;
@@ -33,7 +34,7 @@ export default function Home() {
   const closeModal = () => setSelectedImage(null);
   return (
     <>
-      <div className="flex items-start xl:flex-row flex-col xl:space-x-3">
+      <div className="flex items-start justify-between flex-col md:flex-row lg:flex-row xl:flex-row md:space-x-5">
         <div className="xl:w-1/2 w-full">
           {/* card 1 */}
           <Card>
@@ -45,9 +46,11 @@ export default function Home() {
               <ScrollCard />
             </div>
           </Card>
+        </div>
+        <div className="xl:w-1/2 w-full">
           {/* card 2 */}
           <Card>
-            <div className="mt-6">
+            <div className="mt-6 md:mt-0 lg:mt-0 xl:mt-0">
               <div className="overflow-hidden p-6">
                 <h3 className="text-2xl font-semibold leading-[1.333em] mb-2 ">
                   My Expert Area
@@ -81,76 +84,51 @@ export default function Home() {
             </div>
           </Card>
         </div>
-        {/* second site */}
-        <div className="xl:w-1/2 w-full xl:mt-0 mt-6">
-          <div className="border-none card_shadow bg-white dark:bg-black rounded-2xl h-full min-h-screen">
-            <div className="p-6">
-              {/* title */}
-              <h3 className="flex xl:flex-row lg:flex-row md:flex-row sm:flex-row flex-col items-start xl:items-center lg:items-center md:items-center sm:items-center gap-[5px] xl:gap-[15px] lg:gap-[15px] md:gap-[15px] sm:gap-[15px] justify-between text-2xl font-semibold leading-[1.333em] mb-2">
-                Recent Projects
-                <Link
-                  href=""
-                  className="text-base font-normal text-[#4770ff] leading-[1.5em] flex items-center border-b border-[#dbdfe5] dark:border-[#576076] hover:border-[#4770ff] dark:hover:border-[#4770ff] transition-all duration-300"
-                >
-                  All Projects <IconArrowRightSquare stroke={2} />
-                </Link>
-              </h3>
-              {/* projects */}
-              {homeProjects.map((project) => {
-                return (
-                  <div className="mt-6" key={project.id}>
-                    <div className="w-full">
-                      <div className="bg-[#f0f2f5] dark:bg-[#0e1018] pt-6 px-6 rounded-lg overflow-hidden relative group">
-                        <Image
-                          src={project.src}
-                          alt={project.alt}
-                          className="w-full rounded-lg rounded-b-none"
-                        />
-                        <button
-                          onClick={() => setSelectedImage(project.src)}
-                          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 z-[9] w-10 h-10 bg-white rounded-full leading-[38px] text-center filter drop-shadow-custom mt-[-10px] transition-all duration-200 opacity-0 group-hover:opacity-100 flex items-center justify-center "
-                        >
-                          <IconPlus
-                            stroke={2}
-                            className="w-[22px] h-[22px] text-[#4770ff]"
-                          />
-                        </button>
+      </div>
+      {/*  */}
+      <div className="w-full mt-6">
+        <Card>
+          <div className="p-6">
+            <h3 className="flex xl:flex-row lg:flex-row md:flex-row sm:flex-row flex-col items-start xl:items-center lg:items-center md:items-center sm:items-center gap-[5px] xl:gap-[15px] lg:gap-[15px] md:gap-[15px] sm:gap-[15px]  justify-between text-2xl font-semibold leading-[1.333em] mb-[22px]">
+              Services I Offered
+              <Link
+                href=""
+                className="text-base font-normal text-[#4770ff] leading-[1.5em] flex items-center border-b border-[#dbdfe5] dark:border-[#576076] hover:border-[#4770ff] dark:hover:border-[#4770ff] transition-all duration-300"
+              >
+                See All Services <IconArrowRightSquare stroke={2} />
+              </Link>
+            </h3>
+            {/* items */}
 
-                        <div className="absolute bottom-0 left-0 project_info w-full">
-                          <span className="text-xs font-medium text-[#4770ff] bg-white rounded-[4px] py-1 px-2 m-4 leading-[1.33em] inline-block ">
-                            {project.title}
-                          </span>
-                        </div>
+            <div className="flex flex-row justify-center flex-wrap service_items">
+              {HomeServices.map((service) => {
+                return (
+                  <div
+                    className="xl:w-1/4 lg:w-1/4 md:w-1/4 sm:w-2/4  mt-6 px-3 flex  "
+                    key={service.id}
+                  >
+                    <div
+                      className="p-4 px-4 pb-4 bg-[#f0f2f5] dark:bg-[#0e1018]
+                  rounded-2xl text-center"
+                    >
+                      <div className="py-6 px-[14px] bg-[#fff] dark:bg-[#000] rounded-lg ">
+                        <Image
+                          src={service.src}
+                          alt={service.alt}
+                          className="mx-auto object-cover"
+                        />
+                      </div>
+                      <div className="text-base font-medium text-[#1a1f2c] dark:text-[rgba(240,242,245,.7)] leading-[1.5em] mt-4 ">
+                        {service.title}
                       </div>
                     </div>
-                    <div className=""></div>
                   </div>
                 );
               })}
             </div>
           </div>
-        </div>
+        </Card>
       </div>
-
-      {/* Image Modal */}
-
-      {selectedImage && (
-        <div
-          className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50"
-          onClick={closeModal}
-        >
-          <div
-            className="relative"
-            onClick={(e) => e.stopPropagation()} // Prevents closing when clicking on the image
-          >
-            <Image
-              src={selectedImage}
-              alt="Selected Project"
-              className="max-w-[567px] max-h-[392px]"
-            />
-          </div>
-        </div>
-      )}
     </>
   );
 }

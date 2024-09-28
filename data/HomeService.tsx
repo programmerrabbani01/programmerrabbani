@@ -1,6 +1,6 @@
 import frontEnd from "@/public/images/services/frontend.png";
 import backEnd from "@/public/images/services/backend.png";
-import nodejs from "@/public/images/services/nodejs.png";
+import fullStack from "@/public/images/services/fullstack.webp";
 import mongodb from "@/public/images/services/mongodb.png";
 
 export const HomeServices = [
@@ -8,19 +8,19 @@ export const HomeServices = [
     id: 1,
     src: frontEnd,
     alt: "frontend",
-    title: "Front-End",
+    title: "Front-End Development",
   },
   {
     id: 2,
     src: backEnd,
     alt: "backend",
-    title: "Back-End",
+    title: "Back-End Development",
   },
   {
     id: 3,
-    src: nodejs,
-    alt: "nodejs",
-    title: "Node JS",
+    src: fullStack,
+    alt: "fullStack",
+    title: "Full-Stack Development",
   },
   {
     id: 4,
