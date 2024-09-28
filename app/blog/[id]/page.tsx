@@ -1,10 +1,10 @@
-import Blog from "@/components/Blog/Blog.tsx";
+import SingleBlog from "@/components/Blog/SingleBlog.tsx";
 import StaticSidebar from "@/components/StaticSidebar/StaticSidebar.tsx";
 import React from "react";
 
 type Props = {};
 
-export default function BlogPage({}: Props) {
+export default function page({}: Props) {
   return (
     <>
       <div className="my_container">
@@ -13,7 +13,7 @@ export default function BlogPage({}: Props) {
             <StaticSidebar />
           </div>
           <div className="xl:w-2/3 w-full mt-6">
-            <Blog />
+            <SingleBlog />
           </div>
         </div>
       </div>

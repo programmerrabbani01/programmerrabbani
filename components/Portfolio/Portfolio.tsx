@@ -6,14 +6,12 @@ import Image from "next/image";
 import {
   IconArrowNarrowLeft,
   IconArrowNarrowRight,
-  IconDots,
   IconPlus,
 } from "@tabler/icons-react";
 import project1 from "@/public/images/projects/project-1.png";
 import project2 from "@/public/images/projects/project-2.png";
 import project3 from "@/public/images/projects/project-3.png";
 import Link from "next/link";
-import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 type StaticImageData = {
   src: string;
