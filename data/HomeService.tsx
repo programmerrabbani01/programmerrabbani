@@ -1,7 +1,7 @@
 import frontEnd from "@/public/images/services/frontend.png";
 import backEnd from "@/public/images/services/backend.png";
-import fullStack from "@/public/images/services/fullstack.webp";
-import mongodb from "@/public/images/services/mongodb.png";
+import fullStack from "@/public/images/services/16990186.png";
+import nextJS from "@/public/images/services/nextjs-product-logo.png";
 
 export const HomeServices = [
   {
@@ -24,8 +24,8 @@ export const HomeServices = [
   },
   {
     id: 4,
-    src: mongodb,
-    alt: "mongodb",
-    title: "MongoDB",
+    src: nextJS,
+    alt: "nextJS",
+    title: "Next.JS",
   },
 ];
