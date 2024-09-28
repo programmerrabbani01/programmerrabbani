@@ -10,7 +10,7 @@ import WorkingArea from "./WorkingArea.tsx";
 import AwardItems from "./AwardItems.tsx";
 import Publications from "./Publications.tsx";
 import Link from "next/link";
-import Counter from "./Counter.tsx";
+import Counter from "../Home/Counter.tsx";
 import Testimonial from "../Testimonial/Testimonial.tsx";
 
 export default function About() {
@@ -55,34 +55,7 @@ export default function About() {
           </div>
           {/* top info end */}
 
-          {/* counter area start */}
-          <div className="flex justify-between gap-[30px] mb-10 xl:mb-[50px]  ">
-            {/* counter */}
-            <Counter />
-            {/* circle */}
-            <div className="mt-[-70px] mr-[18px] flex-shrink-0 relative w-[131px] h-[138px] hidden xl:block">
-              <div className="absolute inset-0 flex items-center justify-center">
-                {/* text image */}
-                <Image
-                  src={circleText}
-                  alt="circleText"
-                  className="dark:hidden block animate-spin-slow w-[100px] h-[100px]"
-                />
-                <Image
-                  src={circleTextLight}
-                  alt="circleTextLight"
-                  className="hidden dark:block animate-spin-slow w-[100px] h-[100px]"
-                />
-                {/* arrow image */}
-                <div className="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center">
-                  <div className="w-[70px] h-[70px] bg-[#4770ff] rounded-full flex items-center justify-center">
-                    <Image src={arrowDown} alt="arrowDown" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* counter area end */}
+          
 
           {/* working with area start */}
 

@@ -65,7 +65,7 @@
   /* text Slider */
   .text_slider {
     display: flex;
-    animation: textSlider 6000ms linear infinite;
+    animation: textSlider 20000ms linear infinite;
   }
 
   @keyframes textSlider {
