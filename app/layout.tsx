@@ -7,6 +7,10 @@ import DarkLight from "@/components/DarkLight/DarkLight.tsx";
 import Footer from "@/components/Footer/Footer.tsx";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 // Define Helvetica font family
 const BricolageGrotesque = localFont({

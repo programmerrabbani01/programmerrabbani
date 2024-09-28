@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "../Card/Card.tsx";
 import Counter from "./Counter.tsx";
+import Coverflow from "../Coverflow/Coverflow.tsx";
 
 type Props = {};
 
@@ -35,6 +36,19 @@ export default function HomeBottom({}: Props) {
       {/* counter */}
       <Counter />
       {/* counter */}
+
+      {/* projects */}
+      <div className="mt-6">
+        <Card>
+          <div className="p-5">
+            <h2 className="text-2xl sm:text-3xl mb-7 text-center font-semibold ">
+              Works & Projects
+            </h2>
+            <Coverflow />
+          </div>
+        </Card>
+      </div>
+      {/* projects */}
     </>
   );
 }
