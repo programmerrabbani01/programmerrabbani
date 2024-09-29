@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "../Card/Card.tsx";
-import { FaCircle } from "react-icons/fa";
+import { FaBook, FaCircle } from "react-icons/fa";
 import Image from "next/image";
 import arrowDown from "@/public/images/arrowDown.svg";
 import circleText from "@/public/images/circle-text.png";
@@ -12,6 +12,9 @@ import Publications from "./Publications.tsx";
 import Link from "next/link";
 import Counter from "../Home/Counter.tsx";
 import Testimonial from "../Testimonial/Testimonial.tsx";
+import { BsPersonWorkspace } from "react-icons/bs";
+import Coverflow from "../Coverflow/Coverflow.tsx";
+import Skills from "../Skills/Skills.tsx";
 
 export default function About() {
   return (
@@ -19,43 +22,323 @@ export default function About() {
       <Card>
         <div className="p-6 xl:pt-12 xl:px-10 xl:pb-10">
           {/* top info start */}
-          <div className="flex xl:flex-row flex-col gap-6 xl:gap-10 justify-between mb-10 xl:mb-12">
-            {/* text */}
-            <div className="xl:max-w-[400px] w-full flex-grow order-2 xl:order-none">
-              <h1 className="text-[30px] xl:text-[40px] text-[#1a1f2c] dark:text-[#f0f2f5] font-semibold mb-6 leading-[1.2em] ">
-                Hi, This Is
-                <span className="text-[#4770ff] text-[30px] xl:text-[34px] ml-1">
-                  Programmer Rabbani
-                </span>{" "}
-                👋
+
+          <div className="p-6 pt-2 text-justify container mx-auto max-w-5xl text-gray-100 dark:text-success">
+            {/* top */}
+            <div className="flex md:flex-row lg:flex-row xl:flex-row flex-col gap-4 flex-grow justify-between">
+              <h1 className="text-[30px] xl:text-[40px] text-[#1a1f2c] dark:text-[#f0f2f5] font-semibold mb-6 leading-[1.2em] order-2 md:order-none lg:order-none xl:order-none">
+                About Me
               </h1>
-              <p className="xl:text-base text-lg font-normal xl:leading-[1.333em] leading-[1.5em] text-[#576076] dark:text-[rgba(240,242,245,.7)] text-justify ">
-                I transform your ideas into dynamic, custom web solutions that
-                not only address your needs but also inspire and engage your
-                audience. With a deep understanding of modern web technologies,
-                including
-                <b className="text-black dark:text-white">
-                  JavaScript, Node.js, React.js, MongoDB, Express.js, REST APIs,
-                  Next.js, Redux Toolkit,
-                </b>
-                I am committed to delivering standout web projects. Whether it's
-                building from the ground up or refining existing platforms, my
-                goal is to craft experiences that are intuitive, efficient, and
-                tailored to your vision.
-              </p>
+              {/* available Button */}
+              <div className="text-base xl:text-lg font-medium text-[#4770ff] bg-[#f0f2f5] dark:bg-[#0e1018] py-2 px-4 w-fit h-full leading-[1.5em] rounded-lg flex items-center gap-2 order-1 md: lg:order-none xl:order-none">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+                  <FaCircle className="relative inline-flex h-2 w-2" />
+                </span>
+                Available For Hire
+              </div>
             </div>
-            {/* available Button */}
-            <div className="text-base xl:text-lg font-medium text-[#4770ff] bg-[#f0f2f5] dark:bg-[#0e1018] py-2 px-4 w-fit h-full leading-[1.5em] rounded-lg flex items-center gap-2 order-1 xl:order-none">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
-                <FaCircle className="relative inline-flex h-2 w-2" />
+            {/* top */}
+            <div className="xl:text-[15px] text-lg font-semibold xl:leading-[1.333em] leading-[1.5em] text-black dark:text-[rgba(240,242,245,.7)] text-justify mb-4">
+              👨‍💻 MERN Stack Developer | Full Stack Engineer | Problem Solver |
+              Tech Enthusiast
+            </div>
+            <p className="xl:text-base text-lg font-normal xl:leading-[1.333em] leading-[1.5em] text-black dark:text-[rgba(240,242,245,.7)] text-justify">
+              👋
+              <span className="font-semibold">
+                Greetings! {"I'm"} G M GOLAM RABBANI, aka Rabbani
               </span>
-              Available For Hire
+              , a passionate and results-driven
+              <span className="text-darkyellow dark:text-primary font-semibold">
+                Full-Stack MERN Developer
+              </span>{" "}
+              specializing in robust web apps. with expertise in creating
+              feature-rich, scalable web applications. I specialize in building
+              dynamic and intuitive user interfaces using
+              <span className="font-semibold"> React</span> and
+              <span className="font-semibold">Next.js</span>, backed by robust
+              server-side logic powered by
+              <span className="font-semibold">Node.js</span> and
+              <span className="font-semibold">Express.js</span>, Prisma and
+              managing data with <span className="font-semibold">MongoDB</span>,
+              and <span className="font-semibold">MySQL</span>.
+            </p>
+
+            <p className="text-base text-black mb-6 mt-2">
+              "I specialize in optimizing code and design to create seamless
+              user experiences. I'm always seeking challenging projects where I
+              can apply my expertise, especially with cutting-edge technology.
+              With extensive experience across the full development stack, I
+              ensure smooth integration between front-end and back-end systems.
+              Whether crafting interactive UIs or engineering high-performance
+              APIs, I build full-stack applications that efficiently manage data
+              flow and user interactions. This results in modern, feature-rich
+              web experiences that are both high-performing and user-centric.
+              Let's connect and innovate together!"
+            </p>
+
+            <h2 className="text-xl sm:text-2xl font-bold mb-4 text-yellow-500 dark:text-blue-500">
+              🔧 Technical Expertise:
+            </h2>
+            <ul className=" list-none mb-6">
+              <li className="text-base text-black mb-2">
+                🚀 <span className="font-semibold">Frontend Expertise: </span>I
+                excel at transforming designs into responsive, dynamic user
+                interfaces using,
+                <span className="font-semibold">React</span> and
+                <span className="font-semibold">Next.js</span>, My focus is on
+                delivering engaging, visually striking experiences that are
+                intuitive and user-friendly.
+              </li>
+              <li className="text-base text-black mb-2">
+                💻 <span className="font-semibold">Backend Development:</span> I
+                specialize in building scalable, secure RESTful APIs using,
+                <span className="font-semibold">Node.js</span>,
+                <span className="font-semibold">Express.js</span>, and
+                <span className="font-semibold">Prisma</span> My expertise
+                ensures efficient data handling and robust server-side logic,
+                providing seamless integration between the front-end and
+                back-end.
+              </li>
+              <li className="text-base text-black">
+                📊 <span className="font-semibold">Database Management:</span>
+                Proficient in <span className="font-semibold">MongoDB</span>,
+                and <span className="font-semibold">MySQL</span>, I design
+                optimized database architectures for fast, reliable data storage
+                and retrieval, ensuring performance remains robust even under
+                heavy load.
+              </li>
+            </ul>
+
+            <h2 className="text-xl sm:text-2xl font-bold mb-4 text-yellow-500 dark:text-blue-500">
+              Technical Skills
+            </h2>
+            <ul className=" list-none mb-6">
+              <li className="text-base text-black mb-2">
+                ✔️ <span className="font-semibold">Frontend Development: </span>
+                React.js, Next.js, TypeScript, Redux Toolkit & Toolkit Query,
+                Tailwind CSS, Shadcn ui, Bootstrap, API integration
+              </li>
+              <li className="text-base text-black mb-2">
+                ✔️ <span className="font-semibold">Backend Development:</span>{" "}
+                Node.js, Express.js, Prisma, MySQL, MongoDB, REST API
+              </li>
+              <li className="text-base text-black mb-2">
+                ✔️{" "}
+                <span className="font-semibold">Project Management Tools:</span>{" "}
+                Firebase, Heroku, Netlify, Vercel, Postman, Trello
+              </li>
+              <li className="text-base text-black mb-2">
+                ✔️ <span className="font-semibold">Version Control:</span> Git,
+                GitHub
+              </li>
+              <li className="text-base text-black mb-2">
+                ✔️ <span className="font-semibold">Design:</span> Responsive Web
+                Design, UI
+              </li>
+              <li className="text-base text-black">
+                ✔️ <span className="font-semibold">Problem Solving:</span>{" "}
+                Debugging, troubleshooting, performance optimization
+              </li>
+            </ul>
+
+            <h2 className="text-xl sm:text-2xl font-bold mb-4 text-yellow-500 dark:text-blue-500">
+              What Sets Me Apart
+            </h2>
+            <p className="text-lg text-black mb-6">
+              {"I’m"} not just a developer. {"I’m"} a problem solver. I excel at
+              tackling challenges head-on and discovering innovative solutions
+              that enhance both functionality and performance. My commitment to
+              continuous learning keeps me current with the latest trends in web
+              development, empowering me to integrate cutting-edge technologies
+              into my projects.
+            </p>
+
+            <h2 className="text-xl sm:text-2xl font-bold mb-4 text-yellow-500 dark:text-blue-500">
+              ✉️ {"Let’s"} Work Together
+            </h2>
+            <p className="text-base text-black">
+              If you're interested in discussing collaboration opportunities,
+              web development projects, or simply want to connect, feel free to
+              reach out. {"I’m"} always excited to engage with like-minded
+              professionals and explore new avenues together!
+            </p>
+
+            <p className="text-base text-black mt-6">
+              📧 <span className="font-semibold">Email: </span>
+              programmerrabbani@gmail.com
+              <br />
+              🌐
+              <Link
+                href=""
+                className="text-darkyellow dark:text-primary underline"
+              >
+                Linkedin
+              </Link>
+            </p>
+          </div>
+          <div>
+            <h2 className="text-2xl md:text-3xl text-black dark:dark-text-color font-semibold ">
+              My Skills
+            </h2>
+            <Skills />
+          </div>
+          {/* Education & Experience */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 sm:gap-4 mb-5 ">
+            <div>
+              <h2 className="text-2xl md:text-3xl mb-7 text-color dark:dark-text-color font-semibold ">
+                My Education
+              </h2>
+              <div className="flex gap-7 items-center pl-3">
+                <div>
+                  <FaBook className="text-gray-400 dark:text-success text-4xl" />
+                </div>
+                <div>
+                  <p className="text-base dark:text-darkLight text-gray-400">
+                    2013 - Present
+                  </p>
+                  <p className="text-lg sm:text-2xl capitalize mb-2 mt-2">
+                    Secondaary school certificate S.S.C
+                  </p>
+                  <p className="text-base capitalize dark:text-darkLight text-gray-400">
+                    Murapara model pilot hight school, narayanganj.
+                  </p>
+                </div>
+              </div>
+              <hr className=" text-success my-5" />
+              <div className="flex gap-7 items-center pl-3">
+                <div>
+                  <FaBook className="text-gray-400 dark:text-success text-4xl" />
+                </div>
+                <div>
+                  <p className="sm:text-base text-xs dark:text-darkLight text-gray-400">
+                    2015 - 2019
+                  </p>
+                  <p className="text-lg sm:text-2xl capitalize mb-2 mt-2">
+                    diploma in computer engineering
+                  </p>
+                  <p className="sm:text-base text-xs capitalize dark:text-darkLight text-gray-400">
+                    PPMI, narayanganj.
+                  </p>
+                </div>
+              </div>
+              <hr className=" text-success my-5" />
+              <div className="flex gap-7 items-center pl-3">
+                <div>
+                  <FaBook className="text-gray-400 dark:text-success text-4xl" />
+                </div>
+                <div>
+                  <p className="sm:text-base text-xs dark:text-darkLight text-gray-400">
+                    2018 - 2019
+                  </p>
+                  <p className="text-lg sm:text-2xl capitalize mb-2 mt-2">
+                    front-end web developer course
+                  </p>
+                  <p className="sm:text-base text-xs capitalize dark:text-darkLight text-gray-400">
+                    SoftTech-IT, Dhaka.
+                  </p>
+                </div>
+              </div>
+              <hr className=" text-success my-5" />
+              <div className="flex gap-7 items-center pl-3">
+                <div>
+                  <FaBook className="text-gray-400 dark:text-success text-4xl" />
+                </div>
+                <div>
+                  <p className="sm:text-base text-xs dark:text-darkLight text-gray-400">
+                    2019 - 2020
+                  </p>
+                  <p className="text-lg sm:text-2xl capitalize mb-2 mt-2">
+                    Shopify E-commerce Platform
+                  </p>
+                  <p className="sm:text-base text-xs capitalize dark:text-darkLight text-gray-400">
+                    Shopify Partner
+                  </p>
+                </div>
+              </div>
+              <hr className=" text-success my-5" />
+              <div className="flex gap-7 items-center pl-3">
+                <div>
+                  <FaBook className="text-gray-400 dark:text-success text-4xl" />
+                </div>
+                <div>
+                  <p className="sm:text-base text-xs dark:text-darkLight text-gray-400">
+                    2020 - 2021
+                  </p>
+                  <p className="text-lg sm:text-2xl capitalize mb-2 mt-2">
+                    Complete Web Development course
+                  </p>
+                  <p className="sm:text-base text-xs capitalize dark:text-darkLight text-gray-400">
+                    Programming Hero, Dhaka.
+                  </p>
+                </div>
+              </div>
+              <hr className=" text-success my-5" />
+              <div className="flex gap-7 items-center pl-3">
+                <div>
+                  <FaBook className="text-gray-400 dark:text-success text-4xl" />
+                </div>
+                <div>
+                  <p className="sm:text-base text-xs dark:text-darkLight text-gray-400">
+                    2022 - 2023
+                  </p>
+                  <p className="text-lg sm:text-2xl capitalize mb-2 mt-2">
+                    MERN full stack web app development course
+                  </p>
+                  <p className="sm:text-base text-xs capitalize dark:text-darkLight text-gray-400">
+                    sorobindu, Dhaka.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h2 className="text-2xl md:text-3xl mb-7 text-color dark:dark-text-color font-semibold ">
+                My Experience
+              </h2>
+              <div className="flex gap-7 items-center pl-3">
+                <div>
+                  <BsPersonWorkspace className="text-gray-400 dark:text-success text-4xl" />
+                </div>
+                <div>
+                  <p className="sm:text-base text-xs dark:text-darkLight text-gray-400">
+                    2020 - 2021
+                  </p>
+                  <p className="text-lg sm:text-2xl capitalize mb-2 mt-2">
+                    front-end web developer
+                  </p>
+                  <p className="sm:text-base text-xs capitalize dark:text-darkLight text-gray-400">
+                    BitwiseCode Technologies, Dhaka.
+                  </p>
+                </div>
+              </div>
+              <hr className=" text-success my-5" />
+              <div className="flex gap-7 items-center pl-3">
+                <div>
+                  <BsPersonWorkspace className="text-gray-400 dark:text-success text-4xl" />
+                </div>
+                <div>
+                  <p className="sm:text-base text-xs dark:text-darkLight text-gray-400">
+                    2021 - 2022
+                  </p>
+                  <p className="text-lg sm:text-2xl capitalize mb-2 mt-2">
+                    front-end Design and shopify developer
+                  </p>
+                  <p className="sm:text-base text-xs capitalize dark:text-darkLight text-gray-400">
+                    scraft.studio, indian. (Remote)
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-          {/* top info end */}
+          {/* Project */}
+          <div>
+            <h2 className="text-2xl md:text-3xl mb-7 text-center text-color dark:dark-text-color font-semibold ">
+              Works & Projects
+            </h2>
+            <Coverflow />
+          </div>
 
-          
+          {/* top info end */}
 
           {/* working with area start */}
 
@@ -81,7 +364,7 @@ export default function About() {
           {/*  Trusted Clients End */}
 
           {/* Awards and Recognitions Start */}
-          <div className="awardsRecognitions mt-[50px]">
+          <div className="awardsRecognitions mt-[50px] hidden">
             <h2 className="text-2xl xl:text-3xl font-medium text-[#1a1f2c] dark:text-[#f0f2f5] leading-[1.3em] xl:leading-[1.2em] mb-8 ">
               Awards and Recognitions
             </h2>
@@ -91,7 +374,7 @@ export default function About() {
           {/* Awards and Recognitions End */}
 
           {/* Article and Publications Start */}
-          <div className="mt-[50px]">
+          <div className="mt-[50px] hidden">
             <h2 className="text-2xl xl:text-3xl font-medium text-[#1a1f2c] dark:text-[#f0f2f5] leading-[1.3em] xl:leading-[1.2em] mb-8 ">
               Article and Publications
             </h2>
@@ -101,7 +384,6 @@ export default function About() {
             </SliderComponent>
           </div>
           {/* Article and Publications End */}
-
         </div>
       </Card>
     </>
