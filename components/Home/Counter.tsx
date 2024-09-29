@@ -11,40 +11,7 @@ export default function Counter({}: Props) {
   return (
     <>
       <Card>
-        {/* <div className="mt-6 p-6 xl:pt-12 xl:px-10 xl:pb-10">
-          <div className="flex flex-wrap gap-[40px] max-w-[461px] flex-grow ">
-            
-            <div className="counter_items">
-              <h3 className="text-[30px] xl:text-[40px] font-semibold text-[#1a1f2c] dark:text-[#f0f2f5] leading-[1.2em] xl:leading-[.9em] ">
-                <CountUp start={0} end={2} />+
-              </h3>
-              <p className="text-base font-normal text-[#576076] leading-[1.5em] mt-2 ">
-                Year of Experience
-              </p>
-            </div>
-
-           
-            <div className="counter_items">
-              <h3 className="text-[30px] xl:text-[40px] font-semibold text-[#1a1f2c] dark:text-[#f0f2f5] leading-[1.2em] xl:leading-[.9em] ">
-                <CountUp start={0} end={7} />+
-              </h3>
-              <p className="text-base font-normal text-[#576076] leading-[1.5em] mt-2 ">
-                Project Completed
-              </p>
-            </div>
-            
-            <div className="counter_items">
-              <h3 className="text-[30px] xl:text-[40px] font-semibold text-[#1a1f2c] dark:text-[#f0f2f5] leading-[1.2em] xl:leading-[.9em] ">
-                <CountUp start={0} end={5} />+
-              </h3>
-              <p className="text-base font-normal text-[#576076] leading-[1.5em] mt-2 ">
-                Happy Client
-              </p>
-            </div>
-          </div>
-        </div> */}
-
-        <div className="hidden sm:flex justify-between gap-3 items-center mt-6 p-6 ">
+        <div className="hidden md:flex justify-between gap-3 items-center mt-6 p-6 ">
           <div className="flex justify-center items-center w-full gap-4 bg-[#F0F2F5] dark:bg-[#0E1018] px-4 rounded-md py-2">
             <h3 className="font-bold text-[#1a1f2c] dark:text-[rgba(240,242,245,.7)] text-6xl ">
               <CountUp start={0} end={3} />
@@ -75,7 +42,7 @@ export default function Counter({}: Props) {
         </div>
 
         {/* marquee slide */}
-        <div className="flex sm:hidden justify-between gap-3 items-center mt-6 p-6">
+        <div className="flex md:hidden justify-between gap-3 items-center mt-6 p-6">
           <Marquee direction="right">
             <div className="flex items-center gap-4 mr-3  bg-[#F0F2F5] dark:bg-[#0E1018] w-fit px-4 rounded-md py-2">
               <h3 className="font-bold text-[#1a1f2c] dark:text-[rgba(240,242,245,.7)] text-5xl sm:text-6xl ">

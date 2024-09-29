@@ -59,7 +59,7 @@ export default function About() {
 
           {/* working with area start */}
 
-          <div className="workingWithArea">
+          <div className="workingWithArea hidden">
             <h2 className="text-2xl xl:text-3xl font-medium text-[#1a1f2c] dark:text-[#f0f2f5] leading-[1.2em] mb-8 ">
               Working With 50+ Brands ✨ Worldwide
             </h2>
@@ -69,7 +69,7 @@ export default function About() {
           {/* working with area end */}
 
           {/*  Trusted Clients Start */}
-          <div className="mt-[50px]">
+          <div className="mt-[50px] hidden">
             <h2 className="text-2xl xl:text-[30px] font-medium leading-[1.3em] xl:leading-[1.2em] mb-8 ">
               Trusted By 1200+ Clients
             </h2>
@@ -102,34 +102,6 @@ export default function About() {
           </div>
           {/* Article and Publications End */}
 
-          {/* work-together-slider start */}
-          <div className="bg-[#f0f2f5] dark:bg-[#0e1018] rounded-lg overflow-hidden p-6 mt-[50px] ">
-            <div className="flex items-center gap-6">
-              {/* slider item */}
-              <div className="inline-block auto_scroll_list text_slider whitespace-nowrap">
-                {/* Duplicate links for sliding effect */}
-                {Array(2)
-                  .fill(null)
-                  .map((_, index) => (
-                    <div key={index} className="inline-block">
-                      <Link
-                        href=""
-                        className="inline-block text-[30px] md:text-[40px] lg:text-[40px] xl:text-[40px] font-medium text-[#576076] leading-[.9em] mx-[15px] relative before:absolute before:w-[10px] before:h-[10px] before:bg-[#576076] before:rounded-full before:top-1/2 before:left-[-32px] before:transform before:-translate-y-1/2 hover:text-[#1a1f2c] dark:hover:text-white transition-all duration-300 mr-10"
-                      >
-                        Let's 👋 Work Together
-                      </Link>
-                      <Link
-                        href=""
-                        className="inline-block text-[30px] md:text-[40px] lg:text-[40px] xl:text-[40px]  font-medium text-[#576076] leading-[.9em] mx-[15px] relative before:absolute before:w-[10px] before:h-[10px] before:bg-[#576076] before:rounded-full before:top-1/2 before:left-[-32px] before:transform before:-translate-y-1/2 hover:text-[#1a1f2c] dark:hover:text-white transition-all duration-300 mr-10 "
-                      >
-                        Let's 👋 Work Together
-                      </Link>
-                    </div>
-                  ))}
-              </div>
-            </div>
-          </div>
-          {/* work-together-slider end */}
         </div>
       </Card>
     </>
