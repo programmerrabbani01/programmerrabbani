@@ -8,7 +8,6 @@ import Publications from "./Publications.tsx";
 import Link from "next/link";
 import Testimonial from "../Testimonial/Testimonial.tsx";
 
-
 export default function About() {
   return (
     <>
@@ -16,10 +15,10 @@ export default function About() {
         <div className="p-6 xl:pt-12 xl:px-10 xl:pb-10">
           {/* top info start */}
 
-          <div className="p-6 pt-2 text-justify container mx-auto max-w-5xl text-gray-100 dark:text-success">
+          <div className="p-6 pt-2 text-justify container mx-auto max-w-5xl text-black dark:text-[rgba(240,242,245,.7)]">
             {/* top */}
             <div className="flex md:flex-row lg:flex-row xl:flex-row flex-col gap-4 flex-grow justify-between">
-              <h1 className="text-[30px] xl:text-[40px] text-[#1a1f2c] dark:text-[#f0f2f5] font-semibold mb-6 leading-[1.2em] order-2 md:order-none lg:order-none xl:order-none">
+              <h1 className="text-[30px] xl:text-[40px] text-[#1a1f2c] dark:text-blue-500 font-semibold mb-6 leading-[1.2em] order-2 md:order-none lg:order-none xl:order-none">
                 About Me
               </h1>
               {/* available Button */}
@@ -38,26 +37,43 @@ export default function About() {
             </div>
             <p className="xl:text-base text-lg font-normal xl:leading-[1.333em] leading-[1.5em] text-black dark:text-[rgba(240,242,245,.7)] text-justify">
               👋
-              <span className="font-semibold">
+              <span className="font-semibold text-dark dark:text-white">
                 Greetings! {"I'm"} G M GOLAM RABBANI, aka Rabbani
               </span>
-              , a passionate and results-driven
-              <span className="text-darkyellow dark:text-primary font-semibold">
+              , a passionate and results-driven &nbsp;
+              <span className="text-dark dark:text-white font-semibold">
                 Full-Stack MERN Developer
-              </span>{" "}
+              </span>
               specializing in robust web apps. with expertise in creating
               feature-rich, scalable web applications. I specialize in building
               dynamic and intuitive user interfaces using
-              <span className="font-semibold"> React</span> and
-              <span className="font-semibold">Next.js</span>, backed by robust
-              server-side logic powered by
-              <span className="font-semibold">Node.js</span> and
-              <span className="font-semibold">Express.js</span>, Prisma and
-              managing data with <span className="font-semibold">MongoDB</span>,
-              and <span className="font-semibold">MySQL</span>.
+              <span className="font-semibold text-dark dark:text-white">
+                React
+              </span>
+              and
+              <span className="font-semibold text-dark dark:text-white">
+                Next.js
+              </span>
+              , backed by robust server-side logic powered by
+              <span className="font-semibold text-dark dark:text-white">
+                Node.js
+              </span>
+              and
+              <span className="font-semibold text-dark dark:text-white">
+                Express.js
+              </span>
+              , Prisma and managing data with
+              <span className="font-semibold text-dark dark:text-white">
+                MongoDB
+              </span>
+              , and
+              <span className="font-semibold text-dark dark:text-white">
+                MySQL
+              </span>
+              .
             </p>
 
-            <p className="text-base text-black mb-6 mt-2">
+            <p className="text-base text-black dark:text-[rgba(240,242,245,.7)] mb-6 mt-2">
               "I specialize in optimizing code and design to create seamless
               user experiences. I'm always seeking challenging projects where I
               can apply my expertise, especially with cutting-edge technology.
@@ -70,75 +86,121 @@ export default function About() {
               Let's connect and innovate together!"
             </p>
 
-            <h2 className="text-xl sm:text-2xl font-bold mb-4 text-yellow-500 dark:text-blue-500">
-              🔧 Technical Expertise:
+            <h2 className="text-xl sm:text-2xl font-bold mb-4 text-black dark:text-blue-500">
+              Technical Expertise:
             </h2>
             <ul className=" list-none mb-6">
-              <li className="text-base text-black mb-2">
-                🚀 <span className="font-semibold">Frontend Expertise: </span>I
-                excel at transforming designs into responsive, dynamic user
-                interfaces using,
-                <span className="font-semibold">React</span> and
-                <span className="font-semibold">Next.js</span>, My focus is on
-                delivering engaging, visually striking experiences that are
-                intuitive and user-friendly.
+              <li className="text-base text-black dark:text-[rgba(240,242,245,.7)] mb-2">
+                🚀{" "}
+                <span className="font-semibold text-black dark:text-white">
+                  Frontend Expertise:{" "}
+                </span>
+                I excel at transforming designs into responsive, dynamic user
+                interfaces using &nbsp;
+                <span className="font-semibold text-black dark:text-white">
+                  React
+                </span>{" "}
+                and &nbsp;
+                <span className="font-semibold text-black dark:text-white">
+                  Next.js
+                </span>
+                , My focus is on delivering engaging, visually striking
+                experiences that are intuitive and user-friendly.
               </li>
-              <li className="text-base text-black mb-2">
-                💻 <span className="font-semibold">Backend Development:</span> I
-                specialize in building scalable, secure RESTful APIs using,
-                <span className="font-semibold">Node.js</span>,
-                <span className="font-semibold">Express.js</span>, and
-                <span className="font-semibold">Prisma</span> My expertise
-                ensures efficient data handling and robust server-side logic,
-                providing seamless integration between the front-end and
-                back-end.
+              <li className="text-base text-black dark:text-[rgba(240,242,245,.7)] mb-2">
+                💻{" "}
+                <span className="font-semibold text-black dark:text-[rgba(240,242,245,.7)]">
+                  Backend Development:
+                </span>{" "}
+                I specialize in building scalable, secure RESTful APIs using
+                &nbsp;
+                <span className="font-semibold text-black dark:text-white">
+                  Node.js
+                </span>
+                ,&nbsp;
+                <span className="font-semibold text-black dark:text-white">
+                  Express.js
+                </span>
+                , and &nbsp;
+                <span className="font-semibold text-black dark:text-white">
+                  Prisma
+                </span>{" "}
+                My expertise ensures efficient data handling and robust
+                server-side logic, providing seamless integration between the
+                front-end and back-end.
               </li>
-              <li className="text-base text-black">
-                📊 <span className="font-semibold">Database Management:</span>
-                Proficient in <span className="font-semibold">MongoDB</span>,
-                and <span className="font-semibold">MySQL</span>, I design
-                optimized database architectures for fast, reliable data storage
-                and retrieval, ensuring performance remains robust even under
-                heavy load.
+              <li className="text-base text-black dark:text-[rgba(240,242,245,.7)]">
+                📊{" "}
+                <span className="font-semibold text-black dark:text-[rgba(240,242,245,.7)]">
+                  Database Management:{" "}
+                </span>
+                Proficient in{" "}
+                <span className="font-semibold text-black dark:text-white">
+                  MongoDB
+                </span>
+                , and{" "}
+                <span className="font-semibold text-black dark:text-white">
+                  MySQL
+                </span>
+                , I design optimized database architectures for fast, reliable
+                data storage and retrieval, ensuring performance remains robust
+                even under heavy load.
               </li>
             </ul>
 
-            <h2 className="text-xl sm:text-2xl font-bold mb-4 text-yellow-500 dark:text-blue-500">
+            <h2 className="text-xl sm:text-2xl font-bold mb-4 text-black dark:text-blue-500">
               Technical Skills
             </h2>
             <ul className=" list-none mb-6">
-              <li className="text-base text-black mb-2">
-                ✔️ <span className="font-semibold">Frontend Development: </span>
+              <li className="text-base text-black dark:text-[rgba(240,242,245,.7)] mb-2">
+                ✔️{" "}
+                <span className="font-semibold text-black dark:text-white">
+                  Frontend Development:{" "}
+                </span>
                 React.js, Next.js, TypeScript, Redux Toolkit & Toolkit Query,
                 Tailwind CSS, Shadcn ui, Bootstrap, API integration
               </li>
-              <li className="text-base text-black mb-2">
-                ✔️ <span className="font-semibold">Backend Development:</span>{" "}
+              <li className="text-base text-black dark:text-[rgba(240,242,245,.7)] mb-2">
+                ✔️{" "}
+                <span className="font-semibold text-black dark:text-white">
+                  Backend Development:
+                </span>{" "}
                 Node.js, Express.js, Prisma, MySQL, MongoDB, REST API
               </li>
-              <li className="text-base text-black mb-2">
+              <li className="text-base text-black dark:text-[rgba(240,242,245,.7)] mb-2">
                 ✔️{" "}
-                <span className="font-semibold">Project Management Tools:</span>{" "}
+                <span className="font-semibold text-black dark:text-white">
+                  Project Management Tools:
+                </span>{" "}
                 Firebase, Heroku, Netlify, Vercel, Postman, Trello
               </li>
-              <li className="text-base text-black mb-2">
-                ✔️ <span className="font-semibold">Version Control:</span> Git,
-                GitHub
+              <li className="text-base text-black dark:text-[rgba(240,242,245,.7)] mb-2">
+                ✔️{" "}
+                <span className="font-semibold text-black dark:text-white">
+                  Version Control:
+                </span>{" "}
+                Git, GitHub
               </li>
-              <li className="text-base text-black mb-2">
-                ✔️ <span className="font-semibold">Design:</span> Responsive Web
-                Design, UI
+              <li className="text-base text-black dark:text-[rgba(240,242,245,.7)] mb-2">
+                ✔️
+                <span className="font-semibold text-black dark:text-white">
+                  Design:
+                </span>{" "}
+                Responsive Web Design, UI
               </li>
-              <li className="text-base text-black">
-                ✔️ <span className="font-semibold">Problem Solving:</span>{" "}
+              <li className="text-base text-black dark:text-[rgba(240,242,245,.7)]">
+                ✔️
+                <span className="font-semibold text-black dark:text-white">
+                  Problem Solving:
+                </span>{" "}
                 Debugging, troubleshooting, performance optimization
               </li>
             </ul>
 
-            <h2 className="text-xl sm:text-2xl font-bold mb-4 text-yellow-500 dark:text-blue-500">
+            <h2 className="text-xl sm:text-2xl font-bold mb-4 text-black dark:text-blue-500">
               What Sets Me Apart
             </h2>
-            <p className="text-lg text-black mb-6">
+            <p className="text-lg text-black dark:text-[rgba(240,242,245,.7)] mb-6">
               {"I’m"} not just a developer. {"I’m"} a problem solver. I excel at
               tackling challenges head-on and discovering innovative solutions
               that enhance both functionality and performance. My commitment to
@@ -147,32 +209,32 @@ export default function About() {
               into my projects.
             </p>
 
-            <h2 className="text-xl sm:text-2xl font-bold mb-4 text-yellow-500 dark:text-blue-500">
+            <h2 className="text-xl sm:text-2xl font-bold mb-4 text-black dark:text-blue-500">
               ✉️ {"Let’s"} Work Together
             </h2>
-            <p className="text-base text-black">
+            <p className="text-base text-black dark:text-[rgba(240,242,245,.7)]">
               If you're interested in discussing collaboration opportunities,
               web development projects, or simply want to connect, feel free to
               reach out. {"I’m"} always excited to engage with like-minded
               professionals and explore new avenues together!
             </p>
 
-            <p className="text-base text-black mt-6">
-              📧 <span className="font-semibold">Email: </span>
+            <p className="text-base text-black dark:text-[rgba(240,242,245,.7)] mt-6">
+              📧{" "}
+              <span className="font-semibold text-black dark:text-white">
+                Email:{" "}
+              </span>
               programmerrabbani@gmail.com
               <br />
               🌐
               <Link
                 href=""
-                className="text-darkyellow dark:text-primary underline"
+                className="text-blue-500 hover:underline transition-all duration-300 ml-1"
               >
                 Linkedin
               </Link>
             </p>
           </div>
-          
-        
-          
 
           {/* top info end */}
 

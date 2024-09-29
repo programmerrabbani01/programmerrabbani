@@ -77,7 +77,7 @@ export default function StaticSidebar({}: Props) {
           </div>
           {/* text */}
           <div className="mt-6">
-            <h3 className="text-2xl mb-2 font-semibold leading-[1.333em]">
+            <h3 className="text-2xl mb-2 dark:text-blue-500 font-semibold leading-[1.333em]">
               Programmer Rabbani 👋
             </h3>
             <p className="mt-2 text-[#576076] dark:text-[rgba(240,242,245,.7)] text-base leading-[1.5em] font-medium text-justify paraStaticPage">

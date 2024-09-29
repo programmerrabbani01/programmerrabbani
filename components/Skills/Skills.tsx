@@ -9,7 +9,7 @@ function Skills() {
           {Skill.map((skill) => (
             <div
               key={skill.id}
-              className="bg-success mr-2 ml-2 dark:bg-gray-100  dark:text-success dark:hover:bg-gray-200 dark:hover:text-success hover:bg-black transition-all py-3 px-6 text-7xl rounded-xl"
+              className="bg-[#F0F2F5] mr-2 ml-2 dark:bg-[#0E1018]   dark:hover:text-blue-500 transition-all py-3 px-6 text-7xl rounded-xl"
             >
               <div className="w-[70px]">{skill.icon}</div>
               <p className="text-xs text-center mt-2">{skill.label}</p>
