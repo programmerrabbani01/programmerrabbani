@@ -6,6 +6,7 @@ import React, { useEffect, useState } from "react";
 import Card from "../Card/Card.tsx";
 import { blogItems } from "@/data/Blog.tsx";
 import { IconArrowNarrowLeft, IconArrowNarrowRight } from "@tabler/icons-react";
+import ComingSoon from "../ComingSoon/ComingSoon.tsx";
 
 export default function Blog() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -41,7 +42,7 @@ export default function Blog() {
       <Card>
         <div className="p-6 xl:pt-12 xl:px-10 xl:pb-10">
           {/* top info */}
-          <div className="block mb-12">
+          {/* <div className="block mb-12">
             <div className="w-full">
               <h1 className="text-3xl xl:text-[38px] font-semibold text-[#1a1f2c] dark:text-[#f0f2f5] mb-6 leading-[1.2em] xl:leading-[.9em] ">
                 My Recent Article and Publications
@@ -56,18 +57,21 @@ export default function Blog() {
                 efficient user experiences.
               </p>
             </div>
-          </div>
+          </div> */}
           {/* top info */}
 
+          {/* coming soon */}
+          <ComingSoon />
+          {/* coming soon */}
+
           {/* article publications */}
-          <div className="articlePublications grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 xl:gap-5">
+          {/* <div className="articlePublications grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 xl:gap-5">
             {currentBlogItems.map((blog) => {
               return (
                 <div className="w-full xl:w-[340px] outline-none" key={blog.id}>
                   <div className="w-full inline-block">
                     <div className="mx-3 mt-6 xl:mt-2">
-                      {/* image */}
-                      <div className="rounded-lg overflow-hidden relative mb-6 aspect-[6/4] ">
+                      <div className="rounded-lg overflow-hidden relative mb-6 aspect-[6/4] blogImage ">
                         <Link
                           href={blog.url}
                           className="w-full h-full block transition-all duration-300"
@@ -85,7 +89,7 @@ export default function Blog() {
                           {blog.srcText}
                         </Link>
                       </div>
-                      {/* text */}
+
                       <div className="text">
                         <Link
                           href={blog.url}
@@ -107,11 +111,11 @@ export default function Blog() {
                 </div>
               );
             })}
-          </div>
+          </div> */}
           {/* article publications */}
 
           {/* pagination */}
-          <div className="mt-10 flex justify-center">
+          {/* <div className="mt-10 flex justify-center">
             <ul className="flex items-center gap-2 list-none pl-0">
               <li className="prev">
                 <button
@@ -152,7 +156,7 @@ export default function Blog() {
                 </button>
               </li>
             </ul>
-          </div>
+          </div> */}
           {/* pagination */}
         </div>
       </Card>

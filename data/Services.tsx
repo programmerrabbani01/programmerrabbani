@@ -11,6 +11,7 @@ import {
 } from "react-icons/fa6";
 import { FiPackage } from "react-icons/fi";
 import { RiNextjsFill } from "react-icons/ri";
+import { TbBrandRedux } from "react-icons/tb";
 
 export const services = [
   {
@@ -80,5 +81,11 @@ export const services = [
     icon: <FiPackage />,
     description:
       "I develop and publish custom NPM packages, enabling you to reuse code across multiple projects and share functionalities with the community.",
+  },
+  {
+    name: "Redux Integration",
+    icon: <TbBrandRedux />,
+    description:
+      "I efficiently manage application state with Redux, ensuring seamless data flow and easier debugging for large-scale applications.",
   },
 ];

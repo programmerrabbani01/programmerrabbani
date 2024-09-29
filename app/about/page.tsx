@@ -28,7 +28,7 @@ import React from "react";
 
 type Props = {};
 
-export default function aboutPage({}: Props) {
+export default function AboutPage({}: Props) {
   return (
     <>
       <div className="my_container">

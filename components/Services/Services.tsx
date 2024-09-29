@@ -78,14 +78,14 @@ export default function Services({}: Props) {
 
             {/*  */}
           </div>
-          <div className="mt-[56px] mb-[50px] mx-0 rounded-lg aspect-[16/9] overflow-hidden">
+          <div className="mt-[56px] mb-[50px] mx-0 rounded-lg aspect-[16/9] overflow-hidden hidden">
             <Image src={blog} alt="blog" />
           </div>
           {/* service Card */}
 
           {/* working with area start */}
 
-          <div className="workingWithArea">
+          <div className="workingWithArea hidden">
             <h2 className="text-2xl xl:text-3xl font-medium text-[#1a1f2c] dark:text-[#f0f2f5] leading-[1.2em] mb-8 ">
               Working With 50+ Brands ✨ Worldwide
             </h2>
@@ -95,7 +95,7 @@ export default function Services({}: Props) {
           {/* working with area end */}
 
           {/*  Trusted Clients Start */}
-          <div className="mt-[50px]">
+          <div className="mt-[50px] hidden">
             <h2 className="text-2xl xl:text-[30px] font-medium leading-[1.3em] xl:leading-[1.2em] mb-8 ">
               Trusted By 1200+ Clients
             </h2>
@@ -147,7 +147,7 @@ export default function Services({}: Props) {
           {/*  Trusted Clients End */}
 
           {/* Awards and Recognitions Start */}
-          <div className="awardsRecognitions mt-[50px]">
+          <div className="awardsRecognitions mt-[50px] hidden">
             <h2 className="text-2xl xl:text-3xl font-medium text-[#1a1f2c] dark:text-[#f0f2f5] leading-[1.3em] xl:leading-[1.2em] mb-8 ">
               Awards and Recognitions
             </h2>
@@ -157,7 +157,7 @@ export default function Services({}: Props) {
           {/* Awards and Recognitions End */}
 
           {/* Accordion Start */}
-          <div className="mt-[50px]">
+          <div className="mt-[50px] hidden">
             <h2 className="text-3xl font-medium leading-[1.2em] text-[#1a1f2c] dark:text-[#f0f2f5] mb-8 ">
               Frequently Asked Questions
             </h2>
@@ -169,7 +169,7 @@ export default function Services({}: Props) {
           {/* Accordion End */}
 
           {/* work-together-slider start */}
-          <div className="bg-[#f0f2f5] dark:bg-[#0e1018] rounded-lg overflow-hidden p-6 mt-[50px] ">
+          <div className="bg-[#f0f2f5] dark:bg-[#0e1018] rounded-lg overflow-hidden p-6 mt-[50px] hidden">
             <div className="flex items-center gap-6">
               {/* slider item */}
               <div className="inline-block auto_scroll_list text_slider whitespace-nowrap">
