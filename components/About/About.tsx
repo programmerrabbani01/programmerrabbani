@@ -1,20 +1,13 @@
 import React from "react";
 import Card from "../Card/Card.tsx";
-import { FaBook, FaCircle } from "react-icons/fa";
-import Image from "next/image";
-import arrowDown from "@/public/images/arrowDown.svg";
-import circleText from "@/public/images/circle-text.png";
-import circleTextLight from "@/public/images/circle-text-light.png";
+import { FaCircle } from "react-icons/fa";
 import SliderComponent from "../SliderComponent/SliderComponent.tsx";
 import WorkingArea from "./WorkingArea.tsx";
 import AwardItems from "./AwardItems.tsx";
 import Publications from "./Publications.tsx";
 import Link from "next/link";
-import Counter from "../Home/Counter.tsx";
 import Testimonial from "../Testimonial/Testimonial.tsx";
-import { BsPersonWorkspace } from "react-icons/bs";
-import Coverflow from "../Coverflow/Coverflow.tsx";
-import Skills from "../Skills/Skills.tsx";
+
 
 export default function About() {
   return (
@@ -177,166 +170,9 @@ export default function About() {
               </Link>
             </p>
           </div>
-          <div>
-            <h2 className="text-2xl md:text-3xl text-black dark:dark-text-color font-semibold ">
-              My Skills
-            </h2>
-            <Skills />
-          </div>
-          {/* Education & Experience */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 sm:gap-4 mb-5 ">
-            <div>
-              <h2 className="text-2xl md:text-3xl mb-7 text-color dark:dark-text-color font-semibold ">
-                My Education
-              </h2>
-              <div className="flex gap-7 items-center pl-3">
-                <div>
-                  <FaBook className="text-gray-400 dark:text-success text-4xl" />
-                </div>
-                <div>
-                  <p className="text-base dark:text-darkLight text-gray-400">
-                    2013 - Present
-                  </p>
-                  <p className="text-lg sm:text-2xl capitalize mb-2 mt-2">
-                    Secondaary school certificate S.S.C
-                  </p>
-                  <p className="text-base capitalize dark:text-darkLight text-gray-400">
-                    Murapara model pilot hight school, narayanganj.
-                  </p>
-                </div>
-              </div>
-              <hr className=" text-success my-5" />
-              <div className="flex gap-7 items-center pl-3">
-                <div>
-                  <FaBook className="text-gray-400 dark:text-success text-4xl" />
-                </div>
-                <div>
-                  <p className="sm:text-base text-xs dark:text-darkLight text-gray-400">
-                    2015 - 2019
-                  </p>
-                  <p className="text-lg sm:text-2xl capitalize mb-2 mt-2">
-                    diploma in computer engineering
-                  </p>
-                  <p className="sm:text-base text-xs capitalize dark:text-darkLight text-gray-400">
-                    PPMI, narayanganj.
-                  </p>
-                </div>
-              </div>
-              <hr className=" text-success my-5" />
-              <div className="flex gap-7 items-center pl-3">
-                <div>
-                  <FaBook className="text-gray-400 dark:text-success text-4xl" />
-                </div>
-                <div>
-                  <p className="sm:text-base text-xs dark:text-darkLight text-gray-400">
-                    2018 - 2019
-                  </p>
-                  <p className="text-lg sm:text-2xl capitalize mb-2 mt-2">
-                    front-end web developer course
-                  </p>
-                  <p className="sm:text-base text-xs capitalize dark:text-darkLight text-gray-400">
-                    SoftTech-IT, Dhaka.
-                  </p>
-                </div>
-              </div>
-              <hr className=" text-success my-5" />
-              <div className="flex gap-7 items-center pl-3">
-                <div>
-                  <FaBook className="text-gray-400 dark:text-success text-4xl" />
-                </div>
-                <div>
-                  <p className="sm:text-base text-xs dark:text-darkLight text-gray-400">
-                    2019 - 2020
-                  </p>
-                  <p className="text-lg sm:text-2xl capitalize mb-2 mt-2">
-                    Shopify E-commerce Platform
-                  </p>
-                  <p className="sm:text-base text-xs capitalize dark:text-darkLight text-gray-400">
-                    Shopify Partner
-                  </p>
-                </div>
-              </div>
-              <hr className=" text-success my-5" />
-              <div className="flex gap-7 items-center pl-3">
-                <div>
-                  <FaBook className="text-gray-400 dark:text-success text-4xl" />
-                </div>
-                <div>
-                  <p className="sm:text-base text-xs dark:text-darkLight text-gray-400">
-                    2020 - 2021
-                  </p>
-                  <p className="text-lg sm:text-2xl capitalize mb-2 mt-2">
-                    Complete Web Development course
-                  </p>
-                  <p className="sm:text-base text-xs capitalize dark:text-darkLight text-gray-400">
-                    Programming Hero, Dhaka.
-                  </p>
-                </div>
-              </div>
-              <hr className=" text-success my-5" />
-              <div className="flex gap-7 items-center pl-3">
-                <div>
-                  <FaBook className="text-gray-400 dark:text-success text-4xl" />
-                </div>
-                <div>
-                  <p className="sm:text-base text-xs dark:text-darkLight text-gray-400">
-                    2022 - 2023
-                  </p>
-                  <p className="text-lg sm:text-2xl capitalize mb-2 mt-2">
-                    MERN full stack web app development course
-                  </p>
-                  <p className="sm:text-base text-xs capitalize dark:text-darkLight text-gray-400">
-                    sorobindu, Dhaka.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <h2 className="text-2xl md:text-3xl mb-7 text-color dark:dark-text-color font-semibold ">
-                My Experience
-              </h2>
-              <div className="flex gap-7 items-center pl-3">
-                <div>
-                  <BsPersonWorkspace className="text-gray-400 dark:text-success text-4xl" />
-                </div>
-                <div>
-                  <p className="sm:text-base text-xs dark:text-darkLight text-gray-400">
-                    2020 - 2021
-                  </p>
-                  <p className="text-lg sm:text-2xl capitalize mb-2 mt-2">
-                    front-end web developer
-                  </p>
-                  <p className="sm:text-base text-xs capitalize dark:text-darkLight text-gray-400">
-                    BitwiseCode Technologies, Dhaka.
-                  </p>
-                </div>
-              </div>
-              <hr className=" text-success my-5" />
-              <div className="flex gap-7 items-center pl-3">
-                <div>
-                  <BsPersonWorkspace className="text-gray-400 dark:text-success text-4xl" />
-                </div>
-                <div>
-                  <p className="sm:text-base text-xs dark:text-darkLight text-gray-400">
-                    2021 - 2022
-                  </p>
-                  <p className="text-lg sm:text-2xl capitalize mb-2 mt-2">
-                    front-end Design and shopify developer
-                  </p>
-                  <p className="sm:text-base text-xs capitalize dark:text-darkLight text-gray-400">
-                    scraft.studio, indian. (Remote)
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* Project */}
-          <div>
-            <h2 className="text-2xl md:text-3xl mb-7 text-center text-color dark:dark-text-color font-semibold ">
-              Works & Projects
-            </h2>
-            <Coverflow />
-          </div>
+          
+        
+          
 
           {/* top info end */}
 

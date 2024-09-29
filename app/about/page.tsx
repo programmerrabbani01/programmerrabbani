@@ -22,6 +22,7 @@
 // }
 
 import About from "@/components/About/About.tsx";
+import AboutBottom from "@/components/About/AboutBottom.tsx";
 import StaticSidebar from "@/components/StaticSidebar/StaticSidebar.tsx";
 import React from "react";
 
@@ -41,6 +42,7 @@ export default function aboutPage({}: Props) {
             <About />
           </div>
         </div>
+        <AboutBottom/>
       </div>
     </>
   );
