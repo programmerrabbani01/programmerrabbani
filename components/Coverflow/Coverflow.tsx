@@ -47,6 +47,9 @@ export default function Coverflow() {
             slidesPerView: 1, // 1 slide on small screens
           },
           480: {
+            slidesPerView: 1, // 1 slide on small screens
+          },
+          991: {
             slidesPerView: 2, // 2 slides on medium screens
           },
           1024: {

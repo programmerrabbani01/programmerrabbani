@@ -40,7 +40,7 @@ export default function HomeBottom({}: Props) {
       {/* projects */}
       <div className="mt-6">
         <Card>
-          <div className="p-5">
+          <div className="p-6">
             <h2 className="text-2xl sm:text-3xl mb-7 text-center font-semibold ">
               Works & Projects
             </h2>
@@ -49,6 +49,14 @@ export default function HomeBottom({}: Props) {
         </Card>
       </div>
       {/* projects */}
+
+      {/* Blog */}
+      <div className="mt-6">
+        <Card>
+          <div className="p-6">Hello</div>
+        </Card>
+      </div>
+      {/* Blog */}
     </>
   );
 }
