@@ -8,10 +8,8 @@ import {
   IconArrowNarrowRight,
   IconPlus,
 } from "@tabler/icons-react";
-import project1 from "@/public/images/projects/project-1.png";
-import project2 from "@/public/images/projects/project-2.png";
-import project3 from "@/public/images/projects/project-3.png";
 import Link from "next/link";
+import { projects } from "@/data/Portfolio.tsx";
 
 type StaticImageData = {
   src: string;
@@ -21,44 +19,7 @@ type StaticImageData = {
 };
 
 // Dummy project data
-const projects = [
-  {
-    id: 1,
-    name: "FlowSaaS - SaaS Application Tools",
-    category: "SaaS App | UI UX Design",
-    imgSrc: project1,
-  },
-  {
-    id: 2,
-    name: "AIMug - AI Writing Application Tools",
-    category: "Product Design | Application",
-    imgSrc: project2,
-  },
-  {
-    id: 3,
-    name: "FlowArch - Architecture Service Website",
-    category: "UI UX Design | Development",
-    imgSrc: project3,
-  },
-  {
-    id: 4,
-    name: "FlowSaaS - SaaS Application Tools",
-    category: "SaaS App | UI UX Design",
-    imgSrc: project1,
-  },
-  {
-    id: 5,
-    name: "AIMug - AI Writing Application Tools",
-    category: "Product Design | Application",
-    imgSrc: project2,
-  },
-  {
-    id: 6,
-    name: "FlowArch - Architecture Service Website",
-    category: "UI UX Design | Development",
-    imgSrc: project3,
-  },
-];
+
 
 export default function Portfolio() {
   const [selectedImage, setSelectedImage] = useState<StaticImageData | null>(

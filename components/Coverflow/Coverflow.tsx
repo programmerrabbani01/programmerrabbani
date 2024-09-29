@@ -4,10 +4,23 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Autoplay } from "swiper/modules";
 import { useEffect, useState } from "react";
 import ProjectCard from "../ProjectCard/ProjectCard";
+import { homeProjects } from "@/data/HomeProjects.tsx";
+import { StaticImageData } from "next/image";
 
 // Example projects data
 
-function Coverflow() {
+type Project = {
+  id: number;
+  src: StaticImageData | string;
+  alt: string;
+  title: string;
+  description: string;
+  technologies: string[];
+  projectLink: string;
+  githubLink: string;
+};
+
+export default function Coverflow() {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -15,7 +28,6 @@ function Coverflow() {
   }, []);
 
   if (!mounted) return null;
-
   return (
     <div>
       <Swiper
@@ -51,30 +63,12 @@ function Coverflow() {
         modules={[EffectCoverflow, Autoplay]}
         className="mySwiper"
       >
-        <SwiperSlide>
-          <ProjectCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProjectCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProjectCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProjectCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProjectCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProjectCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ProjectCard />
-        </SwiperSlide>
+        {homeProjects.map((project) => (
+          <SwiperSlide key={project.id}>
+            <ProjectCard project={project} />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );
 }
-
-export default Coverflow;
