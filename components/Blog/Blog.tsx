@@ -7,11 +7,7 @@ import Card from "../Card/Card.tsx";
 import { blogItems } from "@/data/Blog.tsx";
 import { IconArrowNarrowLeft, IconArrowNarrowRight } from "@tabler/icons-react";
 
-
-
 export default function Blog() {
-  
-
   const [currentPage, setCurrentPage] = useState(1);
   const blogItemsPerPage = 6;
 
