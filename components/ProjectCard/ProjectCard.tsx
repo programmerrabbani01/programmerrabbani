@@ -28,7 +28,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         <Link target="_blank" href="#">
           <div className="max-h-[250px] overflow-hidden">
             <Image
-              className="w-full transform hover:translate-y-[-800px] rounded-tl-lg transition-transform duration-[2000ms] rounded-tr-lg "
+              className="w-full transform hover:translate-y-[-355px] rounded-tl-lg transition-transform duration-[2000ms] rounded-tr-lg "
               src={project.src}
               alt={project.alt}
             />
