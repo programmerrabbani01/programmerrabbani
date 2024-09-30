@@ -127,11 +127,6 @@ export const Skill = [
   },
   {
     id: 13,
-    icon: <FaShopify />,
-    label: "Shopify Liquid",
-  },
-  {
-    id: 14,
     icon: <FaGithub />,
     label: "Github",
   },

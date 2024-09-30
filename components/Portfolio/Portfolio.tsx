@@ -20,7 +20,6 @@ type StaticImageData = {
 
 // Dummy project data
 
-
 export default function Portfolio() {
   const [selectedImage, setSelectedImage] = useState<StaticImageData | null>(
     null
@@ -83,12 +82,15 @@ export default function Portfolio() {
             {currentProjects.map((project) => (
               <div className="w-full " key={project.id}>
                 <div className="p-[14px] md:p-6 lg:p-6 xl:p-6 bg-[#f0f2f5] dark:bg-[#0e1018] rounded-2xl overflow-hidden relative group mt-6 px-3">
-                  <Image
-                    src={project.imgSrc}
-                    alt={project.name}
-                    className="w-full rounded-lg rounded-b-none"
-                  />
-                  <button
+                  <div className="max-h-[300px] overflow-hidden">
+                    <Image
+                      src={project.imgSrc}
+                      alt={project.name}
+                      className="w-full rounded-lg rounded-b-none transform hover:translate-y-[-800px] rounded-tl-lg transition-transform duration-[2000ms] rounded-tr-lg"
+                    />
+                  </div>
+
+                  {/* <button
                     onClick={() => setSelectedImage(project.imgSrc)}
                     className="absolute top-1/2 left-1/2 transform -translate-x-1/2 z-[9] w-10 h-10 bg-white rounded-full leading-[38px] text-center filter drop-shadow-custom mt-[-10px] transition-all duration-200 opacity-0 group-hover:opacity-100 flex items-center justify-center"
                   >
@@ -96,7 +98,7 @@ export default function Portfolio() {
                       stroke={2}
                       className="w-[22px] h-[22px] text-[#4770ff]"
                     />
-                  </button>
+                  </button> */}
                 </div>
                 <div className="project_text p-6 flex gap-[30px] justify-between">
                   <div className="projectInfo">
@@ -169,8 +171,6 @@ export default function Portfolio() {
             </ul>
           </div>
           {/* pagination */}
-
-         
         </div>
 
         {/* Image Modal */}

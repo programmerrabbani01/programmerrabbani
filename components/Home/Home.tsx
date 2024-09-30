@@ -10,12 +10,12 @@ import { HomeServices } from "@/data/HomeService.tsx";
 export default function Home() {
   return (
     <>
-      <div className="flex items-start justify-between flex-col md:flex-row lg:flex-row xl:flex-row md:space-x-5">
+      <div className="flex items-start justify-between flex-col lg:flex-row xl:flex-row lg:space-x-5">
         <div className="xl:w-1/2 w-full">
           <Card>
             <div className="overflow-hidden p-6">
               <h3 className="text-2xl dark:text-blue-500 font-semibold leading-[1.333em] mb-2 ">
-                Work Experience
+              My Education
               </h3>
               <ScrollCard />
             </div>
@@ -23,7 +23,7 @@ export default function Home() {
         </div>
         <div className="xl:w-1/2 w-full">
           <Card>
-            <div className="mt-6 md:mt-0 lg:mt-0 xl:mt-0">
+            <div className="mt-6 lg:mt-0 xl:mt-0">
               <div className="overflow-hidden p-6">
                 <h3 className="text-2xl dark:text-blue-500 font-semibold leading-[1.333em] mb-2 ">
                   My Skills Area

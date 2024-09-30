@@ -1,4 +1,4 @@
-import project1 from "@/public/images/projects/project-1.png";
+import project1 from "@/public/images/download.png";
 import project2 from "@/public/images/projects/project-2.png";
 import project3 from "@/public/images/projects/project-3.png";
 import { StaticImageData } from "next/image";

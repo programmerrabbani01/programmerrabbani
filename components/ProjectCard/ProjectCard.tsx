@@ -26,11 +26,13 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       <div className="relative overflow-hidden group rounded-tl-lg rounded-tr-lg">
         {/* Project Image */}
         <Link target="_blank" href="#">
-          <Image
-            className="rounded-tl-lg transition-all duration-700 rounded-tr-lg w-full"
-            src={project.src}
-            alt={project.alt}
-          />
+          <div className="max-h-[250px] overflow-hidden">
+            <Image
+              className="w-full transform hover:translate-y-[-800px] rounded-tl-lg transition-transform duration-[2000ms] rounded-tr-lg "
+              src={project.src}
+              alt={project.alt}
+            />
+          </div>
         </Link>
 
         {/* Visit Site Link */}
