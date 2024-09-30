@@ -59,8 +59,6 @@
   }
   /* text Slider */
 
-
-
   html.light {
     --cursor-color: #4770ff;
   }
@@ -69,7 +67,9 @@
     --cursor-color: #fff;
   }
 
- 
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 /* responsive */

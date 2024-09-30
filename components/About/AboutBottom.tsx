@@ -11,18 +11,20 @@ export default function AboutBottom({}: Props) {
   return (
     <>
       {/* skills */}
-      <Card>
-        <div className="mt-6">
-          <div className="p-6">
-            <div>
-              <h2 className="text-2xl md:text-3xl text-black dark:text-blue-500 font-semibold ">
-                My Skills
-              </h2>
-              <Skills />
+      <div id="skills">
+        <Card>
+          <div className="mt-6">
+            <div className="p-6">
+              <div>
+                <h2 className="text-2xl md:text-3xl text-black dark:text-blue-500 font-semibold ">
+                  My Skills
+                </h2>
+                <Skills />
+              </div>
             </div>
           </div>
-        </div>
-      </Card>
+        </Card>
+      </div>
       {/* skills */}
 
       {/* my education */}

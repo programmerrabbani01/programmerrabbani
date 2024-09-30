@@ -63,16 +63,16 @@ export default function HomeBottom({}: Props) {
       <div className="mt-6">
         <Card>
           <div className="p-6">
-            <div className="flex justify-between items-center mb-7">
+            <div className="flex justify-between sm:items-center flex-col sm:flex-row mb-7">
               <h2 className="text-2xl sm:text-3xl  text-black dark:text-[#4770ff] font-semibold ">
                 Article and Publications
               </h2>
               <Link
-                href=""
+                href="/blog"
                 className="text-base font-semibold hover:underline underline-offset-8 transition-all duration-300 text-[#4770ff] group"
               >
                 View more
-                <span className="block h-[2px] max-w-0 group-hover:max-w-full bg-[#4770ff] transition-all duration-300"></span>
+                <span className="block h-[2px]  max-w-0 xl:group-hover:max-w-full bg-[#4770ff] transition-all duration-300"></span>
               </Link>
             </div>
             {/*  */}

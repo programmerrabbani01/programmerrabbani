@@ -42,7 +42,7 @@ export default function AboutPage({}: Props) {
             <About />
           </div>
         </div>
-        <AboutBottom/>
+        <AboutBottom />
       </div>
     </>
   );

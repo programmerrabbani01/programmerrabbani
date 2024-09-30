@@ -10,12 +10,12 @@ import { HomeServices } from "@/data/HomeService.tsx";
 export default function Home() {
   return (
     <>
-      <div className="flex items-start justify-between flex-col lg:flex-row xl:flex-row lg:space-x-5">
-        <div className="xl:w-1/2 w-full">
+      <div className="flex items-start justify-between flex-col lg:flex-row xl:flex-row xl:space-x-5">
+        <div className="xl:w-1/2 xl:block hidden">
           <Card>
             <div className="overflow-hidden p-6">
               <h3 className="text-2xl dark:text-blue-500 font-semibold leading-[1.333em] mb-2 ">
-              My Education
+                My Education
               </h3>
               <ScrollCard />
             </div>
@@ -25,9 +25,19 @@ export default function Home() {
           <Card>
             <div className="mt-6 lg:mt-0 xl:mt-0">
               <div className="overflow-hidden p-6">
-                <h3 className="text-2xl dark:text-blue-500 font-semibold leading-[1.333em] mb-2 ">
-                  My Skills Area
-                </h3>
+                <div className="flex justify-between sm:items-center flex-col sm:flex-row ">
+                  <h3 className="text-2xl dark:text-blue-500 font-semibold leading-[1.333em] mb-2 ">
+                    My Skills Area
+                  </h3>
+                  <Link
+                    href="/about#skills"
+                    className="text-base font-semibold hover:underline underline-offset-8 transition-all duration-300 text-[#4770ff] group"
+                  >
+                    View more
+                    <span className="block h-[2px] max-w-0 xl:group-hover:max-w-full bg-[#4770ff] transition-all duration-300"></span>
+                  </Link>
+                </div>
+
                 <div className="mt-6">
                   <div className="flex flex-wrap items-center">
                     {expert.map((experts) => {
@@ -62,7 +72,7 @@ export default function Home() {
             <h3 className="flex xl:flex-row dark:text-blue-500 lg:flex-row md:flex-row sm:flex-row flex-col items-start xl:items-center lg:items-center md:items-center sm:items-center gap-[5px] xl:gap-[15px] lg:gap-[15px] md:gap-[15px] sm:gap-[15px]  justify-between text-2xl font-semibold leading-[1.333em] mb-[22px]">
               Services I Offered
               <Link
-                href=""
+                href="/services"
                 className="text-base font-normal text-[#4770ff] leading-[1.5em] flex items-center border-b border-[#dbdfe5] dark:border-[#576076] hover:border-[#4770ff] dark:hover:border-[#4770ff] transition-all duration-300"
               >
                 See All Services <IconArrowRightSquare stroke={2} />
