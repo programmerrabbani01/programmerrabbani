@@ -40,7 +40,6 @@
   }
 
   /* up slider */
- 
 
   /* up slider */
 
@@ -60,10 +59,7 @@
   }
   /* text Slider */
 
-  /* .slick-slider.slick-initialized {
-    margin: 0;
-    padding: 0;
-  } */
+
 
   html.light {
     --cursor-color: #4770ff;
@@ -72,6 +68,8 @@
   html.dark {
     --cursor-color: #fff;
   }
+
+ 
 }
 
 /* responsive */

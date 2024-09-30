@@ -11,53 +11,40 @@ type Props = {};
 const experience = [
   {
     id: 1,
-    title: "Adobe",
-    subTitle: "Senior UI UX Designer",
-    date: "2021-2024",
-    src: adobe,
-    alt: "adobe",
+    title: "S.S.C",
+    subTitle: "GOVT. Jubilee High School",
+    date: "2010-2012",
   },
   {
     id: 2,
-    title: "Google Inc.",
-    subTitle: "Senior Product Designer",
-    date: "2019-2021",
-    src: google,
-    alt: "google",
+    title: "BBA Honours",
+    subTitle: "Patuakhali GOVT. College",
+    date: "2016-2020",
   },
   {
     id: 3,
-    title: "Meta Inc.",
-    subTitle: "Product Designer",
-    date: "2018-2019",
-    src: meta,
-    alt: "meta",
+    title: "Web Development",
+    subTitle: "Sorobindu, Dhaka.",
+    date: "2020-2021",
   },
   {
     id: 4,
-    title: "Adobe",
-    subTitle: "Senior UI UX Designer",
-    date: "2017-2018",
-    src: adobe,
-    alt: "adobe",
+    title: "front-end web developer",
+    subTitle: "Sorobindu, Dhaka.",
+    date: "2021-2022",
   },
   {
     id: 5,
-    title: "Adobe",
-    subTitle: "Senior UI UX Designer",
-    date: "2021-2024",
-    src: adobe,
-    alt: "adobe",
+    title: "MERN full stack",
+    subTitle: "Sorobindu, Dhaka.",
+    date: "2022-2023",
   },
   {
     id: 6,
-    title: "Google Inc.",
-    subTitle: "Senior Product Designer",
-    date: "2019-2021",
-    src: google,
-    alt: "google",
+    title: "Web Development",
+    subTitle: "Sorobindu, Dhaka.",
+    date: "2020-2021",
   },
-  
 ];
 
 export default function ScrollCard({}: Props) {
@@ -68,14 +55,11 @@ export default function ScrollCard({}: Props) {
           {experience.map((exp) => (
             <li className="flex gap-[5px] my-2" key={exp.id}>
               <div className="mr-[30px]">
-                <p className="text-sm font-medium text-[#576076]">{exp.date}</p>
+                <p className="text-sm font-medium text-[#576076] dark:text-blue-500">{exp.date}</p>
               </div>
               <div className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-lg bg-[#f0f2f5] dark:bg-[#0e1018] flex justify-center items-center">
-                  <Image src={exp.src} alt={exp.alt} width={20} height={20} />
-                </div>
                 <div>
-                  <h4 className="text-base font-semibold text-[#1a1f2c] leading-[1.5em] dark:text-[rgba(240,242,245,.7)]">
+                  <h4 className="text-base font-semibold text-[#1a1f2c] leading-[1.5em] dark:text-blue-500">
                     {exp.title}
                   </h4>
                   <h6 className="text-[#576076] text-sm font-normal leading-[1.42em]">

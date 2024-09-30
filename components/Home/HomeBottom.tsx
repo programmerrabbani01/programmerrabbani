@@ -50,7 +50,7 @@ export default function HomeBottom({}: Props) {
       <div className="mt-6">
         <Card>
           <div className="p-6">
-            <h2 className="text-2xl sm:text-3xl mb-7 text-center font-semibold ">
+            <h2 className="text-2xl sm:text-3xl mb-7 dark:text-[#4770ff] text-center font-semibold ">
               Works & Projects
             </h2>
             <Coverflow />
@@ -64,7 +64,7 @@ export default function HomeBottom({}: Props) {
         <Card>
           <div className="p-6">
             <div className="flex justify-between items-center mb-7">
-              <h2 className="text-2xl sm:text-3xl  text-black dark:text-white font-semibold ">
+              <h2 className="text-2xl sm:text-3xl  text-black dark:text-[#4770ff] font-semibold ">
                 Article and Publications
               </h2>
               <Link

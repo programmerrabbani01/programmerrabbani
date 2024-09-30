@@ -68,7 +68,7 @@ export default function NavBar({ openNav }: Props) {
                   <Link
                     href={nav.url}
                     key={nav.id}
-                    className={`group flex items-center gap-[.25rem] xl:text-[16px] xl:font-medium text-[#576076] leading-[120%] rounded-lg py-[10px] px-[12px] transition-all duration-300 ${
+                    className={`group flex items-center gap-[.25rem] xl:text-[16px] xl:font-medium text-[#576076]  leading-[120%] rounded-lg py-[10px] px-[12px] transition-all duration-300 ${
                       isActive
                         ? " my_active_dark my_active"
                         : "my_link_hover_dark my_link_hover"

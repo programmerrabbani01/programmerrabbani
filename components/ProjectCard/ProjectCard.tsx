@@ -54,7 +54,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 
         {/* Project Description */}
         <div className="bg-[#F0F2F5] dark:bg-[#0E1018] rounded-tl-none rounded-tr-none rounded-bl-lg rounded-br-lg pb-4 px-4">
-          <h2 className="text-center pt-2 pb-1 text-[18px] text-black dark:text-white">
+          <h2 className="text-center pt-2 pb-1 text-[18px] text-black dark:text-[#4770ff]">
             {project.title}
           </h2>
           <div className="text-[#576076] dark:text-[rgba(240,242,245,.7)] line-clamp-2">

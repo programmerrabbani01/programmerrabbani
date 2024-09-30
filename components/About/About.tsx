@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "../Card/Card.tsx";
-import { FaCircle } from "react-icons/fa";
+import { FaCheck, FaCircle } from "react-icons/fa";
 import SliderComponent from "../SliderComponent/SliderComponent.tsx";
 import WorkingArea from "./WorkingArea.tsx";
 import AwardItems from "./AwardItems.tsx";
@@ -91,9 +91,9 @@ export default function About() {
             </h2>
             <ul className=" list-none mb-6">
               <li className="text-base text-black dark:text-[rgba(240,242,245,.7)] mb-2">
-                🚀{" "}
+                🚀
                 <span className="font-semibold text-black dark:text-white">
-                  Frontend Expertise:{" "}
+                  Frontend Expertise:
                 </span>
                 I excel at transforming designs into responsive, dynamic user
                 interfaces using &nbsp;
@@ -152,46 +152,46 @@ export default function About() {
               Technical Skills
             </h2>
             <ul className=" list-none mb-6">
-              <li className="text-base text-black dark:text-[rgba(240,242,245,.7)] mb-2">
-                ✔️{" "}
-                <span className="font-semibold text-black dark:text-white">
-                  Frontend Development:{" "}
+              <li className="text-base items-center text-black dark:text-[rgba(240,242,245,.7)] mb-2">
+              
+                <span className="flex items-center gap-1 font-semibold text-black dark:text-white">
+                <FaCheck />Frontend Development:
                 </span>
                 React.js, Next.js, TypeScript, Redux Toolkit & Toolkit Query,
                 Tailwind CSS, Shadcn ui, Bootstrap, API integration
               </li>
               <li className="text-base text-black dark:text-[rgba(240,242,245,.7)] mb-2">
-                ✔️{" "}
-                <span className="font-semibold text-black dark:text-white">
-                  Backend Development:
+                
+                <span className="font-semibold flex items-center gap-1 text-black dark:text-white">
+                <FaCheck />Backend Development:
                 </span>{" "}
                 Node.js, Express.js, Prisma, MySQL, MongoDB, REST API
               </li>
               <li className="text-base text-black dark:text-[rgba(240,242,245,.7)] mb-2">
-                ✔️{" "}
-                <span className="font-semibold text-black dark:text-white">
-                  Project Management Tools:
+               
+                <span className="font-semibold flex items-center gap-1 text-black dark:text-white">
+                <FaCheck />Project Management Tools:
                 </span>{" "}
                 Firebase, Heroku, Netlify, Vercel, Postman, Trello
               </li>
               <li className="text-base text-black dark:text-[rgba(240,242,245,.7)] mb-2">
-                ✔️{" "}
-                <span className="font-semibold text-black dark:text-white">
-                  Version Control:
+              
+                <span className="font-semibold flex items-center gap-1 text-black dark:text-white">
+                <FaCheck />Version Control:
                 </span>{" "}
                 Git, GitHub
               </li>
               <li className="text-base text-black dark:text-[rgba(240,242,245,.7)] mb-2">
-                ✔️
-                <span className="font-semibold text-black dark:text-white">
-                  Design:
+                
+                <span className="font-semibold flex items-center gap-1 text-black dark:text-white">
+                <FaCheck />Design:
                 </span>{" "}
                 Responsive Web Design, UI
               </li>
               <li className="text-base text-black dark:text-[rgba(240,242,245,.7)]">
-                ✔️
-                <span className="font-semibold text-black dark:text-white">
-                  Problem Solving:
+                
+                <span className="font-semibold flex items-center gap-1 text-black dark:text-white">
+                <FaCheck />Problem Solving:
                 </span>{" "}
                 Debugging, troubleshooting, performance optimization
               </li>

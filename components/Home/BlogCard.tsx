@@ -37,7 +37,7 @@ export default function BlogCard({ item }: BlogCardProps) {
           <GoArrowUpRight className="text-xl text-blue-700 dark:text-white" />
         </Link>
         <div className="bg-[#F0F2F5] dark:bg-[#0E1018] rounded-tl-none rounded-tr-none rounded-bl-lg rounded-br-lg pb-4 px-4">
-          <h2 className="text-center pt-2 pb-1 text-[18px]">{item.title}</h2>
+          <h2 className="text-center pt-2 pb-1 dark:text-[#4770ff] text-[18px]">{item.title}</h2>
           <div className="text-[#576076] dark:text-[rgba(240,242,245,.7)] hidden line-clamp-2 ">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni,
             natus. Doloremque consequatur sint a eaque quibusdam expedita vero

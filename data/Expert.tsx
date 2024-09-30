@@ -1,45 +1,46 @@
-import figma from "@/public/images/expert/figma.png";
-import notion from "@/public/images/expert/notion.png";
-import miro from "@/public/images/expert/mico.png";
-import framer from "@/public/images/expert/framer.png";
-import webflow from "@/public/images/expert/webflow.png";
-import zeplin from "@/public/images/expert/zeplin.png";
+
+import react from "@/public/images/expert/react-logo.png";
+import nextJS from "@/public/images/expert/next-js.png";
+import redux from "@/public/images/expert/redux.png";
+import tailwind from "@/public/images/expert/tailwind.png";
+import mongoDB from "@/public/images/expert/mongodb.png";
+import prisma from "@/public/images/expert/prisma.png";
 
 export const expert = [
   {
     id: 1,
-    title: "Figma",
-    src: figma,
-    alt: "figma",
+    title: "React",
+    src: react,
+    alt: "react",
   },
   {
     id: 2,
-    title: "Notion",
-    src: notion,
-    alt: "notion",
+    title: "Next.JS",
+    src: nextJS,
+    alt: "nextJS",
   },
   {
     id: 3,
-    title: "Miro",
-    src: miro,
-    alt: "Miro",
+    title: "Redux",
+    src: redux,
+    alt: "redux",
   },
   {
     id: 4,
-    title: "Framer",
-    src: framer,
-    alt: "Framer",
+    title: "TailwindCss",
+    src: tailwind,
+    alt: "tailwind",
   },
   {
     id: 5,
-    title: "Webflow",
-    src: webflow,
-    alt: "Webflow",
+    title: "MongoDB",
+    src: mongoDB,
+    alt: "mongoDB",
   },
   {
     id: 6,
-    title: "Zeplin",
-    src: zeplin,
-    alt: "Zeplin",
+    title: "Prisma",
+    src: prisma,
+    alt: "prisma",
   },
 ];

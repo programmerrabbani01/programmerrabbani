@@ -14,7 +14,7 @@ export default function Home() {
         <div className="xl:w-1/2 w-full">
           <Card>
             <div className="overflow-hidden p-6">
-              <h3 className="text-2xl font-semibold leading-[1.333em] mb-2 ">
+              <h3 className="text-2xl dark:text-blue-500 font-semibold leading-[1.333em] mb-2 ">
                 Work Experience
               </h3>
               <ScrollCard />
@@ -25,7 +25,7 @@ export default function Home() {
           <Card>
             <div className="mt-6 md:mt-0 lg:mt-0 xl:mt-0">
               <div className="overflow-hidden p-6">
-                <h3 className="text-2xl font-semibold leading-[1.333em] mb-2 ">
+                <h3 className="text-2xl dark:text-blue-500 font-semibold leading-[1.333em] mb-2 ">
                   My Skills Area
                 </h3>
                 <div className="mt-6">
@@ -41,7 +41,7 @@ export default function Home() {
                                 className="w-8 h-8 mx-auto object-contain"
                               />
                             </div>
-                            <div className="text-base font-medium mt-2 leading-[1.5em] text-[#1a1f2c] dark:text-[rgba(240,242,245,.7)]">
+                            <div className="text-base font-medium mt-2 leading-[1.5em] text-[#1a1f2c] dark:text-blue-500">
                               {experts.title}
                             </div>
                           </div>
@@ -59,7 +59,7 @@ export default function Home() {
       <div className="w-full mt-6">
         <Card>
           <div className="p-6">
-            <h3 className="flex xl:flex-row lg:flex-row md:flex-row sm:flex-row flex-col items-start xl:items-center lg:items-center md:items-center sm:items-center gap-[5px] xl:gap-[15px] lg:gap-[15px] md:gap-[15px] sm:gap-[15px]  justify-between text-2xl font-semibold leading-[1.333em] mb-[22px]">
+            <h3 className="flex xl:flex-row dark:text-blue-500 lg:flex-row md:flex-row sm:flex-row flex-col items-start xl:items-center lg:items-center md:items-center sm:items-center gap-[5px] xl:gap-[15px] lg:gap-[15px] md:gap-[15px] sm:gap-[15px]  justify-between text-2xl font-semibold leading-[1.333em] mb-[22px]">
               Services I Offered
               <Link
                 href=""
@@ -88,7 +88,7 @@ export default function Home() {
                           className="mx-auto object-cover"
                         />
                       </div>
-                      <div className="text-base font-medium text-[#1a1f2c] dark:text-[rgba(240,242,245,.7)] leading-[1.5em] mt-4 ">
+                      <div className="text-base font-medium text-[#1a1f2c] dark:text-blue-500 leading-[1.5em] mt-4 ">
                         {service.title}
                       </div>
                     </div>
