@@ -129,7 +129,7 @@ export default function SingleBlog({}: Props) {
                   <li className="inline-block mr-1 mb-[5px] md:mb-0 lg:mb-0 xl:mb-0">
                     <Link
                       href="#"
-                      className="bg-white dark:bg-[#0e1018] border border-[#dbdfe5] dark:border-[#0e1018] text-[#1a1f2c] dark:text-[rgba(240,242,245,.7)] text-xs font-normal leading-[.9rem] py-1 px-2 rounded-[4px] inline-block hover:bg-[#4770ff] hover:text-white hover:border-[#4770ff] dark:hover:bg-[#4770ff] dark:hover:text-white dark:hover:border-[#4770ff] transition-all duration-300 "
+                      className="bg-white dark:bg-[#0e1018] border border-[#dbdfe5] dark:border-[#1a1f2c] dark:border-[#0e1018] text-[#1a1f2c] dark:text-[rgba(240,242,245,.7)] text-xs font-normal leading-[.9rem] py-1 px-2 rounded-[4px] inline-block hover:bg-[#4770ff] hover:text-white hover:border-[#4770ff] dark:hover:bg-[#4770ff] dark:hover:text-white dark:hover:border-[#4770ff] transition-all duration-300 "
                     >
                       Development
                     </Link>
@@ -217,7 +217,7 @@ export default function SingleBlog({}: Props) {
                           Name
                         </label>
                         <input
-                          className="rounded-lg py-4 px-6 border border-[#dbdfe5] text-xs sm:text-base md:text-base lg:text-base xl:text-base font-normal text-[#576076] focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 ease-in-out "
+                          className="rounded-lg py-4 px-6 border border-[#dbdfe5] dark:border-[#1a1f2c] text-xs sm:text-base md:text-base lg:text-base xl:text-base font-normal text-[#576076] focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 ease-in-out "
                           placeholder="Enter your name"
                           type="text"
                         ></input>
@@ -229,7 +229,7 @@ export default function SingleBlog({}: Props) {
                           Email
                         </label>
                         <input
-                          className="rounded-lg py-4 px-6 border border-[#dbdfe5] text-xs sm:text-base md:text-base lg:text-base xl:text-base font-normal text-[#576076] focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 ease-in-out "
+                          className="rounded-lg py-4 px-6 border border-[#dbdfe5] dark:border-[#1a1f2c] text-xs sm:text-base md:text-base lg:text-base xl:text-base font-normal text-[#576076] focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 ease-in-out "
                           placeholder="Enter your email"
                           type="email"
                         ></input>
@@ -241,7 +241,7 @@ export default function SingleBlog({}: Props) {
                           Comment
                         </label>
                         <textarea
-                          className="rounded-lg py-4 px-6 border border-[#dbdfe5] text-xs sm:text-base md:text-base lg:text-base xl:text-base font-normal text-[#576076] focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 ease-in-out"
+                          className="rounded-lg py-4 px-6 border border-[#dbdfe5] dark:border-[#1a1f2c] text-xs sm:text-base md:text-base lg:text-base xl:text-base font-normal text-[#576076] focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 ease-in-out"
                           rows={4}
                           placeholder="Type details about your inquiry"
                         ></textarea>
