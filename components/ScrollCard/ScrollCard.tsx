@@ -55,14 +55,14 @@ export default function ScrollCard({}: Props) {
           {experience.map((exp) => (
             <li className="flex gap-[5px] my-2" key={exp.id}>
               <div className="mr-[30px]">
-                <p className="text-sm font-medium text-[#576076] dark:text-blue-500">{exp.date}</p>
+                <p className="text-sm font-medium text-myGray dark:text-white">{exp.date}</p>
               </div>
               <div className="flex items-center gap-3">
                 <div>
-                  <h4 className="text-base font-semibold text-[#1a1f2c] leading-[1.5em] dark:text-blue-500">
+                  <h4 className="text-base font-semibold text-myBgDarkTwo leading-[1.5em] dark:text-white">
                     {exp.title}
                   </h4>
-                  <h6 className="text-[#576076] text-sm font-normal leading-[1.42em]">
+                  <h6 className="text-myGray text-sm font-normal leading-[1.42em]">
                     {exp.subTitle}
                   </h6>
                 </div>

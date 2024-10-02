@@ -9,6 +9,17 @@ const config: Config = {
   darkMode: "class",
   theme: {
     extend: {
+      colors: {
+        myPrimary: "#4770ff",
+        myGray: "#576076",
+        myBgLight:"#f0f2f5",
+        myBgDark:"#0e1018",
+        myBgDarkTwo:"#1a1f2c",
+        myHoverPrimary:"#2563eb",
+        myBorder:"#dbdfe5",
+        myRgbaLight:"rgba(240,242,245,.7)",
+        myDarkText:"#64748b"
+      },
       fontFamily: {
         bricolageGrotesque: ["var(--font-bricolageGrotesque)", "sans-serif"],
       },

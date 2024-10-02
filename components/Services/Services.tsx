@@ -33,15 +33,11 @@ export default function Services({}: Props) {
                 </span>{" "}
               </h1>
               <p className="mt-2 text-[#576076] dark:text-[rgba(240,242,245,.7)] text-base leading-[1.5em]  font-medium md:text-justify lg:text-justify xl:text-justify ">
-                I transform your ideas into custom web solutions that engage
-                your audience. My services include &nbsp;
+                 &nbsp;
                 <span className="font-semibold dark:text-white text-[#1a1f2c]">
-                  Full Stack Web Development, Front-End and Back-End
-                  Development, Responsive Design, React & Next.js Development,
-                  API Integration,Version Control with Git,Clean Code,
-                  Debugging, and NPM Package &nbsp;
+                  
                 </span>
-                Creation.
+                
               </p>
             </div>
             {/* available Button */}

@@ -30,17 +30,17 @@ export default function BlogCard({ item }: BlogCardProps) {
           alt={item.alt}
         />
         <Link
-          className="flex md:-mr-28 md:group-hover:mr-0 duration-700  absolute top-2 right-2 md:text-base text-xs  gap-1 dark:bg-[#0E1018] bg-[#F0F2F5] px-2 py-1 rounded-tr-2xl transition-all hover:scale-110 text-success rounded-bl-2xl items-center dark:text-white"
+          className="flex md:-mr-28 md:group-hover:mr-0 duration-700  absolute top-2 right-2 md:text-base text-xs  gap-1 dark:bg-myGray bg-myBgLight px-2 py-1 rounded-tr-2xl transition-all hover:scale-110 text-success rounded-bl-2xl items-center dark:text-white"
           href={"/"}
         >
           Visit Site
-          <GoArrowUpRight className="text-xl text-blue-700 dark:text-white" />
+          <GoArrowUpRight className="text-xl text-black dark:text-white" />
         </Link>
-        <div className="bg-[#F0F2F5] dark:bg-[#0E1018] rounded-tl-none rounded-tr-none rounded-bl-lg rounded-br-lg pb-4 px-4">
-          <h2 className="text-center pt-2 pb-1 dark:text-[#4770ff] text-[18px]">
+        <div className="bg-myBgLight dark:bg-myBgDark rounded-tl-none rounded-tr-none rounded-bl-lg rounded-br-lg pb-4 px-4">
+          <h2 className="text-center pt-2 pb-1 dark:text-white text-[18px]">
             {item.title}
           </h2>
-          <div className="text-[#576076] dark:text-[rgba(240,242,245,.7)] hidden line-clamp-2 ">
+          <div className="text-myGray dark:text-myRgbaLight hidden line-clamp-2 ">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni,
             natus. Doloremque consequatur sint a eaque quibusdam expedita vero
             nemo harum sit iste fuga quae

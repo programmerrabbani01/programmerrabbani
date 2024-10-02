@@ -68,7 +68,7 @@ export default function StaticSidebar({}: Props) {
       <div className=" bg-white dark:bg-black card_shadow h-full border-none rounded-2xl">
         <div className="p-6">
           {/* image */}
-          <div className="bg-[#f0f2f5] dark:bg-[#0e1018] rounded-lg overflow-hidden text-center">
+          <div className="bg-myBgLight dark:bg-myBgDark rounded-lg overflow-hidden text-center">
             <Image
               src={profile}
               alt="profile"
@@ -77,32 +77,31 @@ export default function StaticSidebar({}: Props) {
           </div>
           {/* text */}
           <div className="mt-6">
-            <h3 className="text-2xl mb-2 dark:text-blue-500 font-semibold leading-[1.333em]">
+            <h3 className="text-2xl mb-2 dark:text-myPrimary font-semibold leading-[1.333em]">
               Programmer Rabbani 👋
             </h3>
-            <p className="mt-2 text-[#576076] dark:text-[rgba(240,242,245,.7)] text-base leading-[1.5em] font-medium text-justify paraStaticPage">
-              I build dynamic, custom web solutions that inspire your audience.
-              With expertise in &nbsp;
-              <b className="text-black dark:text-white">
-                JavaScript, Node.js, React.js, MongoDB, Express.js, REST APIs,
-                Next.js, and Redux Toolkit,&nbsp;
+            <p className="mt-2 text-myGray dark:text-white text-base leading-[1.5em] font-medium text-justify ">
+              I transform ideas into custom web solutions that engage your
+              audience. Services include &nbsp;
+              <b className="text-black dark:text-myPrimary ">
+                full stack development, responsive design, React/Next.js, API
+                integration, Git, clean code, debugging, and NPM package &nbsp;
               </b>
-              I deliver intuitive and efficient web projects tailored to your
-              vision.
+              Creation.
             </p>
             {/* button */}
             <div className="mt-6 flex items-center flex-wrap xl:flex-nowrap xl:space-x-2 lg:space-x-2 md:space-x-2 sm:space-x-2 gap-2">
               <Link
                 href="https://join.skype.com/invite/tgCbJLbOkYD8"
                 target="_blank"
-                className="py-4 px-6 xl:px-[13px] text-base xl:text-[14px] bg-[#4770ff] rounded-lg font-medium leading-[1.5em] text-white hover:bg-[#2563eb] transition-all duration-300 flex items-center call_btn"
+                className="py-4 px-6 xl:px-[13px] text-base xl:text-[14px] bg-myPrimary rounded-lg font-medium leading-[1.5em] text-white hover:bg-myHoverPrimary transition-all duration-300 flex items-center call_btn"
               >
                 <IconBrandSkype stroke={2} className="mr-2" />
                 Make A Call
               </Link>
               <button
                 onClick={copyEmailToClipboard}
-                className="py-4 px-6 xl:px-[13px] text-base xl:text-[14px] rounded-lg font-medium leading-[1.5em] bg-transparent hover:bg-[#f0f2f5] dark:hover:bg-[#1a1f2c] dark:hover:text-white transition-all duration-300 border border-[#dbdfe5] dark:border-[#1a1f2c] text-[#1a1f2c] dark:text-[rgba(240,242,245,.7)] flex items-center email_btn"
+                className="py-4 px-6 xl:px-[13px] text-base xl:text-[14px] rounded-lg font-medium leading-[1.5em] bg-transparent hover:bg-myBgLight dark:hover:bg-myBgDarkTwo dark:hover:text-white transition-all duration-300 border border-myBorder dark:border-myBgDarkTwo text-myBgDarkTwo dark:text-myRgbaLight flex items-center email_btn"
               >
                 <IconCopy stroke={2} className="mr-2" />
                 Copy Email
@@ -115,12 +114,12 @@ export default function StaticSidebar({}: Props) {
                   return (
                     <li
                       key={social.id}
-                      className="inline-block mr-[6px] rounded-lg border border-[#dbdfe5] dark:border-none dark:bg-[#0e1018]"
+                      className="inline-block mr-[6px] rounded-lg border border-myBorder dark:border-none dark:bg-myGray"
                     >
                       <Link
                         target="_blank"
                         href={social.url}
-                        className="text-xl text-center flex items-center justify-center leading-10 w-10 h-10 dark:text-[#64748b] dark:hover:text-[#4770ff]"
+                        className="text-xl text-center flex items-center justify-center leading-10 w-10 h-10  dark:hover:text-myPrimary"
                       >
                         {social.icon}
                       </Link>

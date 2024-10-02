@@ -37,7 +37,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 
         {/* Visit Site Link */}
         <Link
-          className="flex md:-mr-28 md:group-hover:mr-0 duration-700 absolute top-2 right-2 md:text-base text-xs gap-1 dark:bg-[#0E1018] bg-[#F0F2F5] px-2 py-1 rounded-tr-2xl transition-all hover:scale-110 text-success rounded-bl-2xl items-center dark:text-white"
+          className="flex md:-mr-28 md:group-hover:mr-0 duration-700 absolute top-2 right-2 md:text-base text-xs gap-1 dark:bg-myGray bg-myBgLight px-2 py-1 rounded-tr-2xl transition-all hover:scale-110 text-success rounded-bl-2xl items-center dark:text-white"
           href={project.projectLink}
           target="_blank"
         >
@@ -47,7 +47,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 
         {/* Github Link */}
         <Link
-          className="flex md:-mt-28 md:group-hover:mt-0 duration-700 absolute top-2 left-2 text-base gap-1 bg-[#F0F2F5] dark:bg-[#0E1018] px-2 py-1 rounded-tr-2xl transition-all hover:scale-110 text-success rounded-bl-2xl items-center dark:text-white"
+          className="flex md:-mt-28 md:group-hover:mt-0 duration-700 absolute top-2 left-2 text-base gap-1 bg-myBgLight dark:bg-myGray px-2 py-1 rounded-tr-2xl transition-all hover:scale-110 text-success rounded-bl-2xl items-center dark:text-white"
           href={project.githubLink}
           target="_blank"
         >
@@ -55,11 +55,11 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         </Link>
 
         {/* Project Description */}
-        <div className="bg-[#F0F2F5] dark:bg-[#0E1018] rounded-tl-none rounded-tr-none rounded-bl-lg rounded-br-lg pb-4 px-4">
-          <h2 className="text-center pt-2 pb-1 text-[18px] text-black dark:text-[#4770ff]">
+        <div className="bg-myBgLight dark:bg-myBgDark rounded-tl-none rounded-tr-none rounded-bl-lg rounded-br-lg pb-4 px-4">
+          <h2 className="text-center pt-2 pb-1 text-[18px] text-black dark:text-white">
             {project.title}
           </h2>
-          <div className="text-[#576076] dark:text-[rgba(240,242,245,.7)] line-clamp-2">
+          <div className="text-myGray dark:text-myRgbaLight line-clamp-2">
             {project.description}
           </div>
 
@@ -68,7 +68,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             {project.technologies.map((tech: string, index: number) => (
               <button
                 key={index}
-                className="rounded-md text-xs capitalize py-0.5 dark:bg-[#F0F2F5] bg-[#0E1018] dark:text-black text-white px-[8px] font-semibold"
+                className="rounded-md text-xs capitalize py-0.5 dark:bg-myBgLight bg-myBgDark dark:text-black text-white px-[8px] font-semibold"
               >
                 {tech}
               </button>

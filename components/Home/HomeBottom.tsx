@@ -50,7 +50,7 @@ export default function HomeBottom({}: Props) {
       <div className="mt-6">
         <Card>
           <div className="p-6">
-            <h2 className="text-2xl sm:text-3xl mb-7 dark:text-[#4770ff] text-center font-semibold ">
+            <h2 className="text-2xl sm:text-3xl mb-7 dark:text-white text-center font-semibold ">
               Works & Projects
             </h2>
             <Coverflow />
@@ -64,15 +64,15 @@ export default function HomeBottom({}: Props) {
         <Card>
           <div className="p-6">
             <div className="flex justify-between sm:items-center flex-col sm:flex-row mb-7">
-              <h2 className="text-2xl sm:text-3xl  text-black dark:text-[#4770ff] font-semibold ">
+              <h2 className="text-2xl sm:text-3xl  text-black dark:text-white font-semibold ">
                 Article and Publications
               </h2>
               <Link
                 href="/blog"
-                className="text-base font-semibold hover:underline underline-offset-8 transition-all duration-300 text-[#4770ff] group"
+                className="text-base font-semibold hover:underline underline-offset-8 transition-all duration-300 text-myPrimary group"
               >
                 View more
-                <span className="block h-[2px]  max-w-0 xl:group-hover:max-w-full bg-[#4770ff] transition-all duration-300"></span>
+                <span className="block h-[2px]  max-w-0 xl:group-hover:max-w-full bg-myptext-myPrimary transition-all duration-300"></span>
               </Link>
             </div>
             {/*  */}

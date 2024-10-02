@@ -14,7 +14,7 @@ export default function Home() {
         <div className="xl:w-1/2 xl:block hidden">
           <Card>
             <div className="overflow-hidden p-6">
-              <h3 className="text-2xl dark:text-blue-500 font-semibold leading-[1.333em] mb-2 ">
+              <h3 className="text-2xl dark:text-white font-semibold leading-[1.333em] mb-[15px] ">
                 My Education
               </h3>
               <ScrollCard />
@@ -26,15 +26,15 @@ export default function Home() {
             <div className="mt-6 lg:mt-0 xl:mt-0">
               <div className="overflow-hidden p-6">
                 <div className="flex justify-between sm:items-center flex-col sm:flex-row ">
-                  <h3 className="text-2xl dark:text-blue-500 font-semibold leading-[1.333em] mb-2 ">
+                  <h3 className="text-2xl dark:text-white font-semibold leading-[1.333em] mb-2 ">
                     My Skills Area
                   </h3>
                   <Link
                     href="/about#skills"
-                    className="text-base font-semibold hover:underline underline-offset-8 transition-all duration-300 text-[#4770ff] group"
+                    className="text-base font-semibold hover:underline underline-offset-8 transition-all duration-300 text-myPrimary group"
                   >
                     View more
-                    <span className="block h-[2px] max-w-0 xl:group-hover:max-w-full bg-[#4770ff] transition-all duration-300"></span>
+                    <span className="block h-[2px] max-w-0 xl:group-hover:max-w-full bg-myPrimary transition-all duration-300"></span>
                   </Link>
                 </div>
 
@@ -44,14 +44,14 @@ export default function Home() {
                       return (
                         <div className="w-1/3 text-center" key={experts.id}>
                           <div className="px-[10px] mt-4">
-                            <div className="bg-[#f0f2f5] dark:bg-[#0e1018] rounded-lg py-[14px] px-[10px]">
+                            <div className="bg-myBgLight dark:bg-myBgDark rounded-lg py-[14px] px-[10px]">
                               <Image
                                 src={experts.src}
                                 alt={experts.alt}
                                 className="w-8 h-8 mx-auto object-contain"
                               />
                             </div>
-                            <div className="text-base font-medium mt-2 leading-[1.5em] text-[#1a1f2c] dark:text-blue-500">
+                            <div className="text-base font-medium mt-2 leading-[1.5em] text-myBgDarkTwo dark:text-white">
                               {experts.title}
                             </div>
                           </div>
@@ -69,11 +69,11 @@ export default function Home() {
       <div className="w-full mt-6">
         <Card>
           <div className="p-6">
-            <h3 className="flex xl:flex-row dark:text-blue-500 lg:flex-row md:flex-row sm:flex-row flex-col items-start xl:items-center lg:items-center md:items-center sm:items-center gap-[5px] xl:gap-[15px] lg:gap-[15px] md:gap-[15px] sm:gap-[15px]  justify-between text-2xl font-semibold leading-[1.333em] mb-[22px]">
-              Services I Offered
+            <h3 className="flex xl:flex-row dark:text-white lg:flex-row md:flex-row sm:flex-row flex-col items-start xl:items-center lg:items-center md:items-center sm:items-center gap-[5px] xl:gap-[15px] lg:gap-[15px] md:gap-[15px] sm:gap-[15px]  justify-between text-2xl font-semibold leading-[1.333em] mb-[15px]">
+              My Services
               <Link
                 href="/services"
-                className="text-base font-normal text-[#4770ff] leading-[1.5em] flex items-center border-b border-[#dbdfe5] dark:border-[#576076] hover:border-[#4770ff] dark:hover:border-[#4770ff] transition-all duration-300"
+                className="text-base font-normal text-myPrimary leading-[1.5em] flex items-center border-b border-myBorder dark:border-myGray hover:border-myPrimary dark:hover:border-myPrimary transition-all duration-300"
               >
                 See All Services <IconArrowRightSquare stroke={2} />
               </Link>
@@ -88,7 +88,7 @@ export default function Home() {
                     key={service.id}
                   >
                     <div
-                      className="p-4 px-4 pb-4 bg-[#f0f2f5] dark:bg-[#0e1018]
+                      className="p-4 px-4 pb-4 bg-myBgLight dark:bg-myBgDark
                   rounded-2xl text-center"
                     >
                       <div className="py-6 px-[14px] bg-[#fff] dark:bg-[#000] rounded-lg ">
@@ -98,7 +98,7 @@ export default function Home() {
                           className="mx-auto object-cover"
                         />
                       </div>
-                      <div className="text-base font-medium text-[#1a1f2c] dark:text-blue-500 leading-[1.5em] mt-4 ">
+                      <div className="text-base font-medium text-[#1a1f2c] dark:text-white leading-[1.5em] mt-4 ">
                         {service.title}
                       </div>
                     </div>

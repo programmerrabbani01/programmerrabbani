@@ -12,30 +12,30 @@ export default function Counter({}: Props) {
     <>
       <Card>
         <div className="hidden md:flex justify-between gap-3 items-center mt-6 p-6 ">
-          <div className="flex justify-center items-center w-full gap-4 bg-[#F0F2F5] dark:bg-[#0E1018] px-4 rounded-md py-2">
-            <h3 className="font-bold text-[#1a1f2c] dark:text-[#4770ff] text-6xl ">
+          <div className="flex justify-center items-center w-full gap-4 bg-myBgLight dark:bg-myBgDark px-4 rounded-md py-2">
+            <h3 className="font-bold text-myBgDarkTwo dark:text-white text-6xl ">
               <CountUp start={0} end={3} />
             </h3>
-            <p className="text-lg dark:text-[#4770ff] text-[#1a1f2c] ">
+            <p className="text-lg dark:text-myGray text-myBgDarkTwo ">
               Years of Experience
             </p>
           </div>
 
-          <div className="flex w-full justify-center items-center gap-4 dark:bg-[#0E1018] bg-[#F0F2F5]  px-4 rounded-md py-2">
-            <h3 className="font-bold text-[#1a1f2c] dark:text-[#4770ff] text-6xl flex ">
+          <div className="flex w-full justify-center items-center gap-4 dark:bg-myBgDark bg-myBgLight  px-4 rounded-md py-2">
+            <h3 className="font-bold text-myBgDarkTwo dark:text-white text-6xl flex ">
               <CountUp start={0} end={125} /> <span className="text-lg">+</span>
             </h3>
-            <p className="text-lg dark:text-[#4770ff] text-[#1a1f2c] ">
+            <p className="text-lg dark:text-myGray text-myBgDarkTwo ">
               Project Completed
             </p>
           </div>
 
-          <div className="flex items-center justify-center gap-4 dark:bg-[#0E1018] bg-[#F0F2F5] w-full px-4 rounded-md py-2">
-            <h3 className="font-bold text-[#1a1f2c] dark:text-[#4770ff] text-6xl flex ">
+          <div className="flex items-center justify-center gap-4 dark:bg-myBgDark bg-myBgLight w-full px-4 rounded-md py-2">
+            <h3 className="font-bold text-myBgDarkTwo dark:text-white text-6xl flex ">
               <CountUp start={0} end={85} />
               <span className="text-lg">+</span>
             </h3>
-            <p className="text-lg text-[#1a1f2c] dark:text-[#4770ff] ">
+            <p className="text-lg text-myBgDarkTwo dark:text-myGray ">
               Happy Clients
             </p>
           </div>
@@ -44,30 +44,30 @@ export default function Counter({}: Props) {
         {/* marquee slide */}
         <div className="flex md:hidden justify-between gap-3 items-center mt-6 p-6">
           <Marquee direction="right">
-            <div className="flex items-center gap-4 mr-3  bg-[#F0F2F5] dark:bg-[#0E1018] w-fit px-4 rounded-md py-2">
-              <h3 className="font-bold text-[#1a1f2c] dark:text-[#4770ff] text-5xl sm:text-6xl ">
+            <div className="flex items-center gap-4 mr-3  bg-myBgLight dark:bg-myBgDark w-fit px-4 rounded-md py-2">
+              <h3 className="font-bold text-myBgDarkTwo dark:text-white text-5xl sm:text-6xl ">
                 <CountUp start={0} end={3} />
               </h3>
-              <p className="text-lg text-[#1a1f2c] dark:text-[#4770ff] ">
+              <p className="text-lg text-myBgDarkTwo dark:text-myGray ">
                 Years of Experience
               </p>
             </div>
-            
-            <div className="flex items-center gap-4 mr-3  bg-[#F0F2F5] dark:bg-[#0E1018] w-fit px-4 rounded-md py-2">
-              <h3 className="font-bold text-[#1a1f2c] dark:text-[#4770ff] flex text-5xl sm:text-6xl ">
+
+            <div className="flex items-center gap-4 mr-3  bg-myBgLight dark:bg-myBgDark w-fit px-4 rounded-md py-2">
+              <h3 className="font-bold text-myBgDarkTwo dark:text-white flex text-5xl sm:text-6xl ">
                 <CountUp start={0} end={125} />
                 <span className="text-lg">+</span>
               </h3>
-              <p className="text-lg text-[#1a1f2c] dark:text-[#4770ff] ">
+              <p className="text-lg text-myBgDarkTwo dark:text-myGray ">
                 Project Completed
               </p>
             </div>
-            <div className="flex items-center gap-4 mr-3  bg-[#F0F2F5] dark:bg-[#0E1018] w-fit px-4 rounded-md py-2">
-              <h3 className="font-bold text-[#1a1f2c] dark:text-[#4770ff] flex text-5xl sm:text-6xl ">
+            <div className="flex items-center gap-4 mr-3  bg-myBgLight dark:bg-myBgDark w-fit px-4 rounded-md py-2">
+              <h3 className="font-bold text-myBgDarkTwo dark:text-white flex text-5xl sm:text-6xl ">
                 <CountUp start={0} end={85} />
                 <span className="text-lg">+</span>
               </h3>
-              <p className="text-lg text-[#1a1f2c] dark:text-[#4770ff] ">
+              <p className="text-lg text-myBgDarkTwo dark:text-myGray ">
                 Happy Clients
               </p>
             </div>
