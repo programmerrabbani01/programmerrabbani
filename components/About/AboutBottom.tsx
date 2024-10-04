@@ -18,7 +18,7 @@ export default function AboutBottom({}: Props) {
           <div className="mt-6">
             <div className="p-6">
               <div>
-                <h2 className="text-2xl md:text-3xl text-black dark:text-blue-500 font-semibold ">
+                <h2 className="text-2xl md:text-3xl text-black dark:text_bg font-semibold ">
                   My Skills
                 </h2>
                 <Skills />
@@ -36,7 +36,7 @@ export default function AboutBottom({}: Props) {
           <Card>
             <div className="p-6">
               <div>
-                <h2 className="text-2xl md:text-3xl mb-7 text-black dark:text-blue-500 font-semibold ">
+                <h2 className="text-2xl md:text-3xl mb-7 text-black dark:text_bg font-semibold ">
                   My Education
                 </h2>
                 <div className="flex gap-7 items-center pl-3">
@@ -130,7 +130,7 @@ export default function AboutBottom({}: Props) {
           <Card>
             <div className="p-6">
               <div>
-                <h2 className="text-2xl md:text-3xl mb-7 text-black dark:text-blue-500  font-semibold ">
+                <h2 className="text-2xl md:text-3xl mb-7 text-black dark:text_bg  font-semibold ">
                   My Experience
                 </h2>
                 <div className="">
@@ -184,7 +184,7 @@ export default function AboutBottom({}: Props) {
         <div className="mt-6">
           <div className="p-6">
             <div>
-              <h2 className="text-2xl md:text-3xl mb-7 text-center text-black dark:text-white  font-semibold ">
+              <h2 className="text-2xl md:text-3xl mb-7 text-center text-black dark:text_bg  font-semibold ">
                 Works & Projects
               </h2>
               <Coverflow />

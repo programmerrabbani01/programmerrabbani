@@ -18,11 +18,11 @@ export default function About() {
           <div className="p-2 pt-2 text-justify container mx-auto max-w-5xl text-black dark:text-white">
             {/* top */}
             <div className="flex md:flex-row lg:flex-row xl:flex-row flex-col gap-4 flex-grow justify-between">
-              <h1 className="text-[30px] xl:text-[40px] text-[#1a1f2c] dark:text-myPrimary font-semibold mb-6 leading-[1.2em] order-2 md:order-none lg:order-none xl:order-none">
+              <h1 className="text-[30px] xl:text-[40px] text-[#1a1f2c] dark:text_bg font-semibold mb-6 leading-[1.2em] order-2 md:order-none lg:order-none xl:order-none">
                 About Me
               </h1>
               {/* available Button */}
-              <div className="text-base xl:text-lg font-medium text-[#4770ff] bg-[#f0f2f5] dark:bg-[#0e1018] py-2 px-4 w-fit h-full leading-[1.5em] rounded-lg flex items-center gap-2 order-1 md: lg:order-none xl:order-none">
+              <div className="text-base xl:text-lg font-medium text-myPrimary bg-myBgLight dark:bg-myBgDark py-2 px-4 w-fit h-full leading-[1.5em] rounded-lg flex items-center gap-2 order-1 md: lg:order-none xl:order-none">
                 <span className="relative flex h-2 w-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
                   <FaCircle className="relative inline-flex h-2 w-2" />
@@ -86,7 +86,7 @@ export default function About() {
               Let's connect and innovate together!"
             </p>
 
-            <h2 className="text-xl sm:text-2xl font-bold mb-4 text-black dark:text-myPrimary">
+            <h2 className="text-xl sm:text-2xl font-bold mb-4 text-black dark:text_bg">
               Technical Expertise:
             </h2>
             <ul className=" list-none mb-6">
@@ -148,7 +148,7 @@ export default function About() {
               </li>
             </ul>
 
-            <h2 className="text-xl sm:text-2xl font-bold mb-4 text-black dark:text-myPrimary">
+            <h2 className="text-xl sm:text-2xl font-bold mb-4 text-black dark:text_bg">
               Technical Skills
             </h2>
             <ul className=" list-none mb-6">
@@ -197,7 +197,7 @@ export default function About() {
               </li>
             </ul>
 
-            <h2 className="text-xl sm:text-2xl font-bold mb-4 text-black dark:text-myPrimary">
+            <h2 className="text-xl sm:text-2xl font-bold mb-4 text-black dark:text_bg">
               What Sets Me Apart
             </h2>
             <p className="sm:text-lg text-sm text-black dark:text-white mb-6">
@@ -209,7 +209,7 @@ export default function About() {
               into my projects.
             </p>
 
-            <h2 className="text-xl sm:text-2xl font-bold mb-4 text-black dark:text-myPrimary">
+            <h2 className="text-xl sm:text-2xl font-bold mb-4 text-black dark:text_bg">
               ✉️ {"Let’s"} Work Together
             </h2>
             <p className="sm:text-base text-sm text-black dark:text-white">
@@ -229,7 +229,7 @@ export default function About() {
               🌐
               <Link
                 href=""
-                className="text-myPrimary hover:underline transition-all duration-300 ml-1"
+                className="text_bg hover:underline transition-all duration-300 ml-1"
               >
                 Linkedin
               </Link>
@@ -241,7 +241,7 @@ export default function About() {
           {/* working with area start */}
 
           <div className="workingWithArea hidden">
-            <h2 className="text-2xl xl:text-3xl font-medium text-[#1a1f2c] dark:text-[#f0f2f5] leading-[1.2em] mb-8 ">
+            <h2 className="text-2xl xl:text-3xl font-medium text-[#1a1f2c] dark:text-myBgLight leading-[1.2em] mb-8 ">
               Working With 50+ Brands ✨ Worldwide
             </h2>
             {/* working area main */}
@@ -263,7 +263,7 @@ export default function About() {
 
           {/* Awards and Recognitions Start */}
           <div className="awardsRecognitions mt-[50px] hidden">
-            <h2 className="text-2xl xl:text-3xl font-medium text-[#1a1f2c] dark:text-[#f0f2f5] leading-[1.3em] xl:leading-[1.2em] mb-8 ">
+            <h2 className="text-2xl xl:text-3xl font-medium text-[#1a1f2c] dark:text-myBgLight leading-[1.3em] xl:leading-[1.2em] mb-8 ">
               Awards and Recognitions
             </h2>
             {/* Awards and Recognitions Items */}
@@ -273,7 +273,7 @@ export default function About() {
 
           {/* Article and Publications Start */}
           <div className="mt-[50px] hidden">
-            <h2 className="text-2xl xl:text-3xl font-medium text-[#1a1f2c] dark:text-[#f0f2f5] leading-[1.3em] xl:leading-[1.2em] mb-8 ">
+            <h2 className="text-2xl xl:text-3xl font-medium text-[#1a1f2c] dark:text-myBgLight leading-[1.3em] xl:leading-[1.2em] mb-8 ">
               Article and Publications
             </h2>
             {/* slider */}

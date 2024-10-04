@@ -62,9 +62,9 @@ export default function Portfolio() {
           {/* top info start */}
           <div className="block mb-12">
             <div className="w-full">
-              <h1 className="text-3xl xl:text-[40px] font-semibold text-myBgDarkTwo dark:text-myBgLight leading-[1.2em] xl:leading-[.9em] mb-6 ">
-                Check Out My Latest{" "}
-                <span className="text-myPrimary">Projects</span>
+              <h1 className="text-3xl xl:text-[40px] font-semibold text-myBgDarkTwo dark:text_bg leading-[1.2em] xl:leading-[.9em] mb-6 ">
+                Check Out My Latest
+                <span className="">Projects</span>
               </h1>
               {/* <p className="text-lg font-normal leading-[1.5em] text-justify text-myGray dark:text-myRgbaLight ">
                 I bring your ideas to life with custom web solutions using

@@ -70,6 +70,29 @@
   html {
     scroll-behavior: smooth;
   }
+
+  .text_bg {
+    background-image: linear-gradient(
+      to right,
+      rgba(13, 110, 253, 1) 0%,
+      #fafafa 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .custom_scrollBar::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  .custom_scrollBar::-webkit-scrollbar-track {
+    background: rgba(87, 96, 118, 0.5);
+  }
+  .custom_scrollBar::-webkit-scrollbar-thumb {
+    background: rgba(13, 110, 253, 1);
+    border-radius: 4px;
+  }
 }
 
 /* responsive */

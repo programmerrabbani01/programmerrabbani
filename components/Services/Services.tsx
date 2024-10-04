@@ -26,8 +26,8 @@ export default function Services({}: Props) {
           <div className="flex xl:flex-row flex-col gap-6 xl:gap-10 justify-between ">
             {/* text */}
             <div className="xl:max-w-[400px] w-full flex-grow order-2 xl:order-none">
-              <h1 className="text-[30px] xl:text-[40px] text-myBgDarkTwo dark:text-myBgLight font-semibold mb-6 leading-[1.2em] ">
-              My  Services{" "}
+              <h1 className="text-[30px] xl:text-[40px] text-myBgDarkTwo dark:text_bg font-semibold mb-6 leading-[1.2em] ">
+                My Services
               </h1>
             </div>
             {/* available Button */}

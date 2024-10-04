@@ -13,8 +13,8 @@ export default function Contact({}: Props) {
           {/* top info */}
           <div className="block mb-12">
             <div className="w-full max-w-none">
-              <h1 className="text-[40px] text-myBgDarkTwodark:text-[#f0f2f5] font-semibold mb-6 leading-[.9em] ">
-                Let's 👋 <span className="text-[#4770ff]">Work</span> Together
+              <h1 className="text-[40px] text-myBgDarkTwo dark:text_bg font-semibold mb-6 leading-[.9em] ">
+              I’d Love to Hear from You!
               </h1>
               <p className="text-lg font-normal leading-[1.5em] text-myGray dark:text-[rgba(240,242,245,.7)] ">
                 "Looking for a product designer to turn your vision into

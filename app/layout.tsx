@@ -13,7 +13,6 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import AnimationCursor from "@/components/AnimationCursor/AnimationCursor.tsx";
 
-
 // Define Helvetica font family
 const BricolageGrotesque = localFont({
   src: [
@@ -47,12 +46,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="custom_scrollBar">
       <body
         className={`${BricolageGrotesque.variable} font-bricolageGrotesque select-none`}
       >
         <div className="hidden md:block">
-         <AnimationCursor/>
+          <AnimationCursor />
         </div>
         <DarkLight>
           <ResponsiveNav />
