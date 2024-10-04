@@ -68,7 +68,7 @@ export default function MobileNav({ showNav, closeNav }: Props) {
       ></div>
       <div
         ref={navRef}
-        className={`fixed top-0 left-0 text-white ${navOpen} transform transition-transform duration-300 flex flex-col h-screen dark:bg-black  bg-[#fff] space-y-2  overflow-y-auto p-6 xl:hidden mobile_nav `}
+        className={`fixed top-0 left-0 text-white ${navOpen} transform transition-transform duration-300 flex flex-col h-screen dark:bg-black  bg-white space-y-2  overflow-y-auto p-6 xl:hidden mobile_nav `}
       >
         <div className="logo xl:w-32 pb-[24px]">
           <Link href="/">
@@ -85,7 +85,7 @@ export default function MobileNav({ showNav, closeNav }: Props) {
             <Link
               href={nav.url}
               key={nav.id}
-              className={`group flex items-center gap-[.25rem]  text-[#576076] leading-[120%] rounded-lg py-[10px] px-[12px] transition-all duration-300 ${
+              className={`group flex items-center gap-[.25rem]  text-myGray leading-[120%] rounded-lg py-[10px] px-[12px] transition-all duration-300 ${
                 isActive
                   ? currentTheme === "dark"
                     ? "my_active_dark"
@@ -108,7 +108,7 @@ export default function MobileNav({ showNav, closeNav }: Props) {
           <Link
             href="https://join.skype.com/invite/tgCbJLbOkYD8"
             target="_blank"
-            className="bg-[#1a1f2c] rounded-[8px] py-[16px] px-[24px] text-[16px] leading-[1.2em] font-semibold text-white dark:text-blue-500 flex items-center hover:bg-[#4770ff] transition-all duration-300 w-fit"
+            className="bg-[#1a1f2c] rounded-[8px] py-[16px] px-[24px] text-[16px] leading-[1.2em] font-semibold text-white flex items-center hover:bg-[#4770ff] transition-all duration-300 w-fit"
           >
             Let's Talk
             <IconBrandSkype stroke={2} className="ml-[8px]" />
