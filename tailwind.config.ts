@@ -11,6 +11,7 @@ const config: Config = {
     extend: {
       colors: {
         myPrimary: "#4770ff",
+        myPrimaryHover: "rgba(13,110,253,1)",
         myGray: "#576076",
         myBgLight:"#f0f2f5",
         myBgDark:"#0e1018",
@@ -18,7 +19,12 @@ const config: Config = {
         myHoverPrimary:"#2563eb",
         myBorder:"#dbdfe5",
         myRgbaLight:"rgba(240,242,245,.7)",
-        myDarkText:"#64748b"
+        myDarkText:"#64748b",
+        myRgbaDark:"rgba(87,96,118,.5)",
+        myTextDark:"#64748b",
+        myDarkTextTwo:"#616670",
+        myDarkTextThree:"#d1d5db",
+        myBgDarkThree:"#4b5563"
       },
       fontFamily: {
         bricolageGrotesque: ["var(--font-bricolageGrotesque)", "sans-serif"],

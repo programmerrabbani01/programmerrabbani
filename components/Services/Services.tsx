@@ -23,25 +23,15 @@ export default function Services({}: Props) {
       <Card>
         <div className="p-6 xl:pt-12 xl:px-10 xl:pb-10">
           {/* top info start */}
-          <div className="flex xl:flex-row flex-col gap-6 xl:gap-10 justify-between mb-10 xl:mb-12">
+          <div className="flex xl:flex-row flex-col gap-6 xl:gap-10 justify-between ">
             {/* text */}
             <div className="xl:max-w-[400px] w-full flex-grow order-2 xl:order-none">
-              <h1 className="text-[30px] xl:text-[40px] text-[#1a1f2c] dark:text-[#f0f2f5] font-semibold mb-6 leading-[1.2em] ">
-                Services I
-                <span className="text-[#4770ff] text-[30px] xl:text-[40px] ml-1">
-                  Offered
-                </span>{" "}
+              <h1 className="text-[30px] xl:text-[40px] text-myBgDarkTwo dark:text-myBgLight font-semibold mb-6 leading-[1.2em] ">
+              My  Services{" "}
               </h1>
-              <p className="mt-2 text-[#576076] dark:text-[rgba(240,242,245,.7)] text-base leading-[1.5em]  font-medium md:text-justify lg:text-justify xl:text-justify ">
-                 &nbsp;
-                <span className="font-semibold dark:text-white text-[#1a1f2c]">
-                  
-                </span>
-                
-              </p>
             </div>
             {/* available Button */}
-            <div className="text-base xl:text-lg font-medium text-[#4770ff] bg-[#f0f2f5] dark:bg-[#0e1018] py-2 px-4 w-fit h-full leading-[1.5em] rounded-lg flex items-center gap-2 order-1 xl:order-none">
+            <div className="text-base xl:text-lg font-medium text-myPrimary bg-myBgLight dark:bg-[#0e1018] py-2 px-4 w-fit h-full leading-[1.5em] rounded-lg flex items-center gap-2 order-1 xl:order-none">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
                 <FaCircle className="relative inline-flex h-2 w-2" />
@@ -57,9 +47,9 @@ export default function Services({}: Props) {
               return (
                 <Tilt
                   key={index}
-                  className="bg-[#F0F2F5] items-center flex flex-col justify-center p-4 rounded-md dark:bg-[#0E1018] cursor-pointer"
+                  className="bg-myBgLight items-center flex flex-col justify-center p-4 rounded-md dark:bg-[#0E1018] cursor-pointer"
                 >
-                  <div className="text-5xl text-[#4770ff] w-10 h-10 mb-3">
+                  <div className="text-5xl text-myPrimary w-10 h-10 mb-3">
                     {srv.icon}
                   </div>
                   <h6 className="text-[14px] text-center font-semibold mt-2 uppercase ">
@@ -82,7 +72,7 @@ export default function Services({}: Props) {
           {/* working with area start */}
 
           <div className="workingWithArea hidden">
-            <h2 className="text-2xl xl:text-3xl font-medium text-[#1a1f2c] dark:text-[#f0f2f5] leading-[1.2em] mb-8 ">
+            <h2 className="text-2xl xl:text-3xl font-medium text-myBgDarkTwo dark:text-myBgLight leading-[1.2em] mb-8 ">
               Working With 50+ Brands ✨ Worldwide
             </h2>
             {/* working area main */}
@@ -100,7 +90,7 @@ export default function Services({}: Props) {
               {testimonialItems.map((item) => {
                 return (
                   <div className="w-[340px] outline-none" key={item.id}>
-                    <div className="bg-[#f0f2f5] dark:bg-[#0e1018] p-6 mx-3 rounded-lg shadow-md">
+                    <div className="bg-myBgLight dark:bg-[#0e1018] p-6 mx-3 rounded-lg shadow-md">
                       {/* rating */}
                       <div className="flex items-center justify-between gap-[30px] mb-[20px]">
                         {/* rating */}
@@ -114,7 +104,7 @@ export default function Services({}: Props) {
                         <div className="website">
                           <Link
                             href={item.linkUrl}
-                            className="bg-white text-sm font-normal leading-[.9rem] py-1 px-2 rounded-[4px] text-[rgba(13,110,253,1)] hover:bg-[#4770ff] hover:text-white transition-all duration-300 "
+                            className="bg-white text-sm font-normal leading-[.9rem] py-1 px-2 rounded-[4px] text-[rgba(13,110,253,1)] hover:bg-myPrimary hover:text-white transition-all duration-300 "
                           >
                             {item.linkText}
                           </Link>
@@ -122,14 +112,14 @@ export default function Services({}: Props) {
                       </div>
                       {/* details */}
                       <div className="details mb-[30px]">
-                        <p className=" text-lg text-[#1a1f2c] dark:text-[#f0f2f5] font-normal leading-[1.5em] ">
+                        <p className=" text-lg text-myBgDarkTwo dark:text-myBgLight font-normal leading-[1.5em] ">
                           {item.reviewText}
                         </p>
                       </div>
                       {/* designation */}
 
                       <div className="text-base font-normal leading-[1.6em] text-[#616670]">
-                        <strong className="dark:text-[#f0f2f5] text-[#1a1f2c] text-base font-medium ">
+                        <strong className="dark:text-myBgLight text-myBgDarkTwo text-base font-medium ">
                           {item.authorName}
                         </strong>{" "}
                         - {item.authorProfession}
@@ -144,7 +134,7 @@ export default function Services({}: Props) {
 
           {/* Awards and Recognitions Start */}
           <div className="awardsRecognitions mt-[50px] hidden">
-            <h2 className="text-2xl xl:text-3xl font-medium text-[#1a1f2c] dark:text-[#f0f2f5] leading-[1.3em] xl:leading-[1.2em] mb-8 ">
+            <h2 className="text-2xl xl:text-3xl font-medium text-myBgDarkTwo dark:text-myBgLight leading-[1.3em] xl:leading-[1.2em] mb-8 ">
               Awards and Recognitions
             </h2>
             {/* Awards and Recognitions Items */}
@@ -154,7 +144,7 @@ export default function Services({}: Props) {
 
           {/* Accordion Start */}
           <div className="mt-[50px] hidden">
-            <h2 className="text-3xl font-medium leading-[1.2em] text-[#1a1f2c] dark:text-[#f0f2f5] mb-8 ">
+            <h2 className="text-3xl font-medium leading-[1.2em] text-myBgDarkTwo dark:text-myBgLight mb-8 ">
               Frequently Asked Questions
             </h2>
 
@@ -165,7 +155,7 @@ export default function Services({}: Props) {
           {/* Accordion End */}
 
           {/* work-together-slider start */}
-          <div className="bg-[#f0f2f5] dark:bg-[#0e1018] rounded-lg overflow-hidden p-6 mt-[50px] hidden">
+          <div className="bg-myBgLight dark:bg-[#0e1018] rounded-lg overflow-hidden p-6 mt-[50px] hidden">
             <div className="flex items-center gap-6">
               {/* slider item */}
               <div className="inline-block auto_scroll_list text_slider whitespace-nowrap">
@@ -176,13 +166,13 @@ export default function Services({}: Props) {
                     <div key={index} className="inline-block">
                       <Link
                         href=""
-                        className="inline-block text-[30px] md:text-[40px] lg:text-[40px] xl:text-[40px] font-medium text-[#576076] leading-[.9em] mx-[15px] relative before:absolute before:w-[10px] before:h-[10px] before:bg-[#576076] before:rounded-full before:top-1/2 before:left-[-32px] before:transform before:-translate-y-1/2 hover:text-[#1a1f2c] dark:hover:text-white transition-all duration-300 mr-10"
+                        className="inline-block text-[30px] md:text-[40px] lg:text-[40px] xl:text-[40px] font-medium text-[#576076] leading-[.9em] mx-[15px] relative before:absolute before:w-[10px] before:h-[10px] before:bg-[#576076] before:rounded-full before:top-1/2 before:left-[-32px] before:transform before:-translate-y-1/2 hover:text-myBgDarkTwo dark:hover:text-white transition-all duration-300 mr-10"
                       >
                         Let's 👋 Work Together
                       </Link>
                       <Link
                         href=""
-                        className="inline-block text-[30px] md:text-[40px] lg:text-[40px] xl:text-[40px]  font-medium text-[#576076] leading-[.9em] mx-[15px] relative before:absolute before:w-[10px] before:h-[10px] before:bg-[#576076] before:rounded-full before:top-1/2 before:left-[-32px] before:transform before:-translate-y-1/2 hover:text-[#1a1f2c] dark:hover:text-white transition-all duration-300 mr-10 "
+                        className="inline-block text-[30px] md:text-[40px] lg:text-[40px] xl:text-[40px]  font-medium text-[#576076] leading-[.9em] mx-[15px] relative before:absolute before:w-[10px] before:h-[10px] before:bg-[#576076] before:rounded-full before:top-1/2 before:left-[-32px] before:transform before:-translate-y-1/2 hover:text-myBgDarkTwo dark:hover:text-white transition-all duration-300 mr-10 "
                       >
                         Let's 👋 Work Together
                       </Link>

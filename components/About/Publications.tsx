@@ -27,7 +27,7 @@ export default function Publications({}: Props) {
                   </Link>
                   <Link
                     href=""
-                    className="bg-white text-xs font-normal leading-[.9rem] py-1 px-2 rounded-[4px] absolute bottom-4 left-4 inline-block text-[rgba(13,110,253,1)] hover:text-white hover:bg-[#4770ff] transition-all duration-300 "
+                    className="bg-white text-xs font-normal leading-[.9rem] py-1 px-2 rounded-[4px] absolute bottom-4 left-4 inline-block text-myPrimaryHover hover:text-white hover:bg-myPrimary transition-all duration-300 "
                   >
                     {blog.srcText}
                   </Link>
@@ -36,15 +36,15 @@ export default function Publications({}: Props) {
                 <div className="text">
                   <Link
                     href={blog.url}
-                    className="text-xl font-medium leading-[1.3em] text-[#1a1f2c] dark:text-[rgba(240,242,245,.7)] mb-[14px] inline-block hover:text-[#4770ff] transition-all duration-300 "
+                    className="text-xl font-medium leading-[1.3em] text-myBgDarkTwo dark:text-myRgbaLight mb-[14px] inline-block hover:text-myPrimary dark:hover:text-myPrimary transition-all duration-300 "
                   >
                     {blog.title}
                   </Link>
                   <div className="bottomText flex items-center">
-                    <div className="text-sm font-normal text-[rgba(87,96,118,.5)] dark:text-[#576076] leading-[1.4em] pl-[15px] pr-[5px] ml-[3px] ">
+                    <div className="text-sm font-normal text-myRgbaDark dark:text-white leading-[1.4em] pl-[15px] pr-[5px] ml-[3px] ">
                       {blog.readingTime}
                     </div>
-                    <div className="text-sm font-normal text-[rgba(87,96,118,.5)] dark:text-[#576076] leading-[1.4em] pl-[15px] pr-[5px] ml-[3px] ">
+                    <div className="text-sm font-normal text-myRgbaDark dark:text-white leading-[1.4em] pl-[15px] pr-[5px] ml-[3px] ">
                       {blog.date}
                     </div>
                   </div>

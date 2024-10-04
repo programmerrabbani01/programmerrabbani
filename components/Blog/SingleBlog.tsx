@@ -33,13 +33,13 @@ export default function SingleBlog({}: Props) {
 
           {/* date reading time */}
           <div className="bottomText flex flex-wrap items-center mt-3">
-            <div className="text-sm font-normal text-[rgba(87,96,118,.5)] dark:text-[#576076] leading-[1.4em] pl-[15px] pr-[5px] ml-[3px] ">
+            <div className="text-sm font-normal text-myRgbaDark dark:text-white leading-[1.4em] pl-[15px] pr-[5px] ml-[3px] ">
               15 min read
             </div>
-            <div className="text-sm font-normal text-[rgba(87,96,118,.5)] dark:text-[#576076] leading-[1.4em] pl-[15px] pr-[5px] ml-[3px] ">
+            <div className="text-sm font-normal text-myRgbaDark dark:text-white leading-[1.4em] pl-[15px] pr-[5px] ml-[3px] ">
               Nov 6, 2023
             </div>
-            <div className="text-sm font-normal text-[rgba(87,96,118,.5)] dark:text-[#576076] leading-[1.4em] pl-[15px] pr-[5px] ml-[3px] ">
+            <div className="text-sm font-normal text-myRgbaDark dark:text-white leading-[1.4em] pl-[15px] pr-[5px] ml-[3px] ">
               1.5k Views
             </div>
           </div>
@@ -50,7 +50,7 @@ export default function SingleBlog({}: Props) {
             <h3 className="text-base md:text-2xl lg:text-2xl xl:text-2xl leading-[1.3em] font-medium mb-6 lg:mb-8 xl:mb-8 ">
               Want To Upgrade Your Brain? Stop Doing 7 Things
             </h3>
-            <p className="text-sm md:text-base lg:text-base xl:text-base font-normal leading-[1.7em] text-[#616670] dark:text-[#d1d5db] mb-[25px] ">
+            <p className="text-sm md:text-base lg:text-base xl:text-base font-normal leading-[1.7em] text-myDarkTextTwo dark:text-myDarkTextThree mb-[25px] ">
               Mastering the Art of Email Marketing tips for Success pattern of
               living, including their behaviors, habits, and daily routines. It
               encompasses everything from their diet, exercise routines, and
@@ -62,7 +62,7 @@ export default function SingleBlog({}: Props) {
               includes a balanced diet, regular exercise, and a healthy sleep
               pattern, can improve an individual's quality of life
             </p>
-            <p className="text-sm md:text-base lg:text-base xl:text-base font-normal leading-[1.7em] text-[#616670] dark:text-[#d1d5db] mb-[25px] ">
+            <p className="text-sm md:text-base lg:text-base xl:text-base font-normal leading-[1.7em] text-myDarkTextTwo dark:text-myDarkTextThree mb-[25px] ">
               A healthy lifestyle, which includes a balanced diet, regular
               exercise, and a healthy sleep pattern, can improve an individual's
               quality of life and reduce the risk of chronic diseases. On the
@@ -72,14 +72,14 @@ export default function SingleBlog({}: Props) {
               choices about one's lifestyle can lead to improved health,
               happiness, and longevity.
             </p>
-            <blockquote className="text-sm md:text-base lg:text-base xl:text-base font-normal leading-[1.7em] text-[#1a1f2c] dark:text-[#d1d5db] border-l-4 border-l-[#4770ff] pl-5 mb-4 italic ">
+            <blockquote className="text-sm md:text-base lg:text-base xl:text-base font-normal leading-[1.7em] text-myBgDarkTwo dark:text-myDarkTextThree border-l-4 border-l-myPrimary pl-5 mb-4 italic ">
               <p>
                 " There are many different forms of travel, including road
                 trips, cruises, backpacking, and more, each offering its own
                 unique set of experiences and adventures. "
               </p>
             </blockquote>
-            <p className="text-sm md:text-base lg:text-base xl:text-base font-normal leading-[1.7em] text-[#616670] dark:text-[#d1d5db] mb-[25px]">
+            <p className="text-sm md:text-base lg:text-base xl:text-base font-normal leading-[1.7em] text-myDarkTextTwo dark:text-myDarkTextThree mb-[25px]">
               The Role of Storytelling in Email Marketing CampaignsEmail
               Marketing Automation: Streamlining Your Campaigns for Results can
               improve an individual's quality of life and reduce the risk of
@@ -92,7 +92,7 @@ export default function SingleBlog({}: Props) {
             <h3 className="text-base md:text-2xl lg:text-2xl xl:text-2xl leading-[1.3em] font-medium mb-6 lg:mb-8 xl:mb-8  mt-10 ">
               The Role of Storytelling in Email Marketing
             </h3>
-            <p className="text-sm md:text-base lg:text-base xl:text-base font-normal leading-[1.7em] text-[#616670] dark:text-[#d1d5db] mb-[25px]">
+            <p className="text-sm md:text-base lg:text-base xl:text-base font-normal leading-[1.7em] text-myDarkTextTwo dark:text-myDarkTextThree mb-[25px]">
               Lifestyle refers to an individual's habits, behaviors, and
               patterns of living. encompasses all aspects of a person's daily
               life, including their diet, exercise routine Lifestyle choices can
@@ -101,19 +101,19 @@ export default function SingleBlog({}: Props) {
               their overall health, happy happiness, and longevity.
             </p>
             <ul className="ml-[7px] pl-0 list-none m-0 p-0 ">
-              <li className="text-sm md:text-base lg:text-base xl:text-base pb-[10px] pl-7 font-normal leading-[1.7em] relative before:absolute before:w-[6px] before:h-[6px] before:bg-[#d1d5db] before:dark:bg-[#4b5563] before:rounded-full before:top-3 before:left-0 content:'' ">
+              <li className="text-sm md:text-base lg:text-base xl:text-base pb-[10px] pl-7 font-normal leading-[1.7em] relative before:absolute before:w-[6px] before:h-[6px] before:bg-myDarkTextThree before:dark:bg-myBgDarkThree before:rounded-full before:top-3 before:left-0 content:'' ">
                 Lifestyle refers to an individual's habits, behaviors, and
                 patterns of living.
               </li>
-              <li className="text-sm md:text-base lg:text-base xl:text-base pb-[10px] pl-7 font-normal leading-[1.7em] relative before:absolute before:w-[6px] before:h-[6px] before:bg-[#d1d5db] before:dark:bg-[#4b5563] before:rounded-full before:top-3 before:left-0 content:'' ">
+              <li className="text-sm md:text-base lg:text-base xl:text-base pb-[10px] pl-7 font-normal leading-[1.7em] relative before:absolute before:w-[6px] before:h-[6px] before:bg-myDarkTextThree before:dark:bg-myBgDarkThree before:rounded-full before:top-3 before:left-0 content:'' ">
                 It encompasses all aspects of a person's daily life, including
                 their diet, exercise routine.
               </li>
-              <li className="text-sm md:text-base lg:text-base xl:text-base pb-[10px] pl-7 font-normal leading-[1.7em] relative before:absolute before:w-[6px] before:h-[6px] before:bg-[#d1d5db] before:dark:bg-[#4b5563] before:rounded-full before:top-3 before:left-0 content:'' ">
+              <li className="text-sm md:text-base lg:text-base xl:text-base pb-[10px] pl-7 font-normal leading-[1.7em] relative before:absolute before:w-[6px] before:h-[6px] before:bg-myDarkTextThree before:dark:bg-myBgDarkThree before:rounded-full before:top-3 before:left-0 content:'' ">
                 Lifestyle choices can also impact a person's financial, social,
                 and environmental well-being.
               </li>
-              <li className="text-sm md:text-base lg:text-base xl:text-base pb-[10px] pl-7 font-normal leading-[1.7em] relative before:absolute before:w-[6px] before:h-[6px] before:bg-[#d1d5db] before:dark:bg-[#4b5563] before:rounded-full before:top-3 before:left-0 content:'' ">
+              <li className="text-sm md:text-base lg:text-base xl:text-base pb-[10px] pl-7 font-normal leading-[1.7em] relative before:absolute before:w-[6px] before:h-[6px] before:bg-myDarkTextThree before:dark:bg-myBgDarkThree before:rounded-full before:top-3 before:left-0 content:'' ">
                 A person's lifestyle plays a major role in determining their
                 overall health, happiness, and quality of life.
               </li>
@@ -122,14 +122,14 @@ export default function SingleBlog({}: Props) {
             <div className="flex  md:items-center lg:items-center xl:items-center justify-between gap-5 md:gap-[30px] lg:gap-[30px] xl:gap-[30px] mt-[30px] mb-[60px] flex-col md:flex-row lg:flex-row  xl:flex-row ">
               {/* tags */}
               <div className="flex gap-[22px] items-center ">
-                <h3 className="text-lg font-medium text-[#1a1f2c] dark:text-[#f0f2f5] leading-[1.5em] ">
+                <h3 className="text-lg font-medium text-myBgDarkTwo dark:text-myBgLight leading-[1.5em] ">
                   Tags:
                 </h3>
                 <ul className="pl-0 list-none m-0 p-0">
                   <li className="inline-block mr-1 mb-[5px] md:mb-0 lg:mb-0 xl:mb-0">
                     <Link
                       href="#"
-                      className="bg-white dark:bg-[#0e1018] border border-[#dbdfe5] dark:border-[#1a1f2c] dark:border-[#0e1018] text-[#1a1f2c] dark:text-[rgba(240,242,245,.7)] text-xs font-normal leading-[.9rem] py-1 px-2 rounded-[4px] inline-block hover:bg-[#4770ff] hover:text-white hover:border-[#4770ff] dark:hover:bg-[#4770ff] dark:hover:text-white dark:hover:border-[#4770ff] transition-all duration-300 "
+                      className="bg-white dark:bg-myBgDark border border-myBorder dark:border-myBgDark text-myBgDarkTwo dark:text-myRgbaLight text-xs font-normal leading-[.9rem] py-1 px-2 rounded-[4px] inline-block hover:bg-myPrimary hover:text-white hover:border-myPrimary dark:hover:bg-myPrimary dark:hover:text-white dark:hover:border-myPrimary transition-all duration-300 "
                     >
                       Development
                     </Link>
@@ -137,7 +137,7 @@ export default function SingleBlog({}: Props) {
                   <li className="inline-block mr-1">
                     <Link
                       href="#"
-                      className="bg-white dark:bg-[#0e1018] border border-[#dbdfe5] dark:border-[#0e1018] text-[#1a1f2c] dark:text-[rgba(240,242,245,.7)] text-xs font-normal leading-[.9rem] py-1 px-2 rounded-[4px] inline-block hover:bg-[#4770ff] hover:text-white hover:border-[#4770ff] dark:hover:bg-[#4770ff] dark:hover:text-white dark:hover:border-[#4770ff] transition-all duration-300"
+                      className="bg-white dark:bg-myBgDark border border-myBorder dark:border-myBgDark text-myBgDarkTwo dark:text-myRgbaLight text-xs font-normal leading-[.9rem] py-1 px-2 rounded-[4px] inline-block hover:bg-myPrimary hover:text-white hover:border-myPrimary dark:hover:bg-myPrimary dark:hover:text-white dark:hover:border-myPrimary transition-all duration-300"
                     >
                       Design Trend
                     </Link>
@@ -146,7 +146,7 @@ export default function SingleBlog({}: Props) {
               </div>
               {/* Share */}
               <div className="flex gap-[22px] items-center ">
-                <h3 className="text-lg font-medium text-[#1a1f2c] dark:text-[#f0f2f5] leading-[1.5em] ">
+                <h3 className="text-lg font-medium text-myBgDarkTwo dark:text-myBgLight leading-[1.5em] ">
                   Share:
                 </h3>
                 <div className="mt-0">
@@ -154,7 +154,7 @@ export default function SingleBlog({}: Props) {
                     <li className="inline-block mr-[6px] mb-[5px] md:mb-0 lg:mb-0 xl:mb-0">
                       <Link
                         href="#"
-                        className="text-[#384559] dark:text-[#64748b] text-xl w-10 h-10 rounded-lg border border-[#dbdfe5] text-center leading-10 flex justify-center items-center hover:text-[#4770ff] dark:hover:text-[#4770ff] transition-all duration-300 dark:bg-[#0e1018] dark:border-none "
+                        className="text-[#384559] dark:text-[#64748b] text-xl w-10 h-10 rounded-lg border border-myBorder text-center leading-10 flex justify-center items-center hover:text-myPrimary dark:hover:text-myPrimary transition-all duration-300 dark:bg-myBgDark dark:border-none "
                       >
                         <FaGithub />
                       </Link>
@@ -162,7 +162,7 @@ export default function SingleBlog({}: Props) {
                     <li className="inline-block mr-[6px] mb-[5px] md:mb-0 lg:mb-0 xl:mb-0">
                       <Link
                         href="#"
-                        className="text-[#384559] dark:text-[#64748b] text-xl w-10 h-10 rounded-lg border border-[#dbdfe5] text-center leading-10 flex justify-center items-center hover:text-[#4770ff] dark:hover:text-[#4770ff] transition-all duration-300 dark:bg-[#0e1018] dark:border-none "
+                        className="text-[#384559] dark:text-[#64748b] text-xl w-10 h-10 rounded-lg border border-myBorder text-center leading-10 flex justify-center items-center hover:text-myPrimary dark:hover:text-myPrimary transition-all duration-300 dark:bg-myBgDark dark:border-none "
                       >
                         <FaLinkedin />
                       </Link>
@@ -170,7 +170,7 @@ export default function SingleBlog({}: Props) {
                     <li className="inline-block mr-[6px] mb-[5px] md:mb-0 lg:mb-0 xl:mb-0">
                       <Link
                         href="#"
-                        className="text-[#384559] dark:text-[#64748b] text-xl w-10 h-10 rounded-lg border border-[#dbdfe5] text-center leading-10 flex justify-center items-center hover:text-[#4770ff] dark:hover:text-[#4770ff] transition-all duration-300 dark:bg-[#0e1018] dark:border-none "
+                        className="text-[#384559] dark:text-[#64748b] text-xl w-10 h-10 rounded-lg border border-myBorder text-center leading-10 flex justify-center items-center hover:text-myPrimary dark:hover:text-myPrimary transition-all duration-300 dark:bg-myBgDark dark:border-none "
                       >
                         <FaWhatsappSquare />
                       </Link>
@@ -178,7 +178,7 @@ export default function SingleBlog({}: Props) {
                     <li className="inline-block mr-[6px] mb-[5px] md:mb-0 lg:mb-0 xl:mb-0">
                       <Link
                         href="#"
-                        className="text-[#384559] dark:text-[#64748b] text-xl w-10 h-10 rounded-lg border border-[#dbdfe5] text-center leading-10 flex justify-center items-center hover:text-[#4770ff] dark:hover:text-[#4770ff] transition-all duration-300 dark:bg-[#0e1018] dark:border-none "
+                        className="text-[#384559] dark:text-[#64748b] text-xl w-10 h-10 rounded-lg border border-myBorder text-center leading-10 flex justify-center items-center hover:text-myPrimary dark:hover:text-myPrimary transition-all duration-300 dark:bg-myBgDark dark:border-none "
                       >
                         <FaYoutube />
                       </Link>
@@ -191,7 +191,7 @@ export default function SingleBlog({}: Props) {
 
             {/* related Blog */}
             <div className="mt-0 lg:mt-[50px] xl:mt-[50px]">
-              <h2 className="text-2xl xl:text-3xl font-medium text-[#1a1f2c] dark:text-[#f0f2f5] leading-[1.3em] xl:leading-[1.2em] mb-8 ">
+              <h2 className="text-2xl xl:text-3xl font-medium text-myBgDarkTwo dark:text-myBgLight leading-[1.3em] xl:leading-[1.2em] mb-8 ">
                 Related Post
               </h2>
               {/* slider */}
@@ -204,11 +204,11 @@ export default function SingleBlog({}: Props) {
             {/* leave a comment */}
 
             <div className="mt-[54px]">
-              <h2 className="text-2xl xl:text-3xl font-medium text-[#1a1f2c] dark:text-[#f0f2f5] leading-[1.2em] mb-8 ">
+              <h2 className="text-2xl xl:text-3xl font-medium text-myBgDarkTwo dark:text-myBgLight leading-[1.2em] mb-8 ">
                 Leave a Comment
               </h2>
               {/* comment box */}
-              <div className="p-6 bg-[#f0f2f5] dark:bg-[#0e1018] rounded-lg ">
+              <div className="p-6 bg-myBgLight dark:bg-myBgDark rounded-lg ">
                 <form action="">
                   <div className="flex items-center justify-center flex-wrap">
                     <div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2  px-2">
@@ -217,7 +217,7 @@ export default function SingleBlog({}: Props) {
                           Name
                         </label>
                         <input
-                          className="rounded-lg py-4 px-6 border border-[#dbdfe5] dark:border-[#1a1f2c] text-xs sm:text-base md:text-base lg:text-base xl:text-base font-normal text-[#576076] focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 ease-in-out "
+                          className="bg-white dark:bg-black rounded-lg py-4 px-6 border border-myBorder dark:border-myBgDarkTwo text-xs sm:text-base md:text-base lg:text-base xl:text-base font-normal text-myGray focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 ease-in-out "
                           placeholder="Enter your name"
                           type="text"
                         ></input>
@@ -229,7 +229,7 @@ export default function SingleBlog({}: Props) {
                           Email
                         </label>
                         <input
-                          className="rounded-lg py-4 px-6 border border-[#dbdfe5] dark:border-[#1a1f2c] text-xs sm:text-base md:text-base lg:text-base xl:text-base font-normal text-[#576076] focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 ease-in-out "
+                          className="bg-white dark:bg-black rounded-lg py-4 px-6 border border-myBorder dark:border-myBgDarkTwo text-xs sm:text-base md:text-base lg:text-base xl:text-base font-normal text-myGray focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 ease-in-out "
                           placeholder="Enter your email"
                           type="email"
                         ></input>
@@ -241,14 +241,14 @@ export default function SingleBlog({}: Props) {
                           Comment
                         </label>
                         <textarea
-                          className="rounded-lg py-4 px-6 border border-[#dbdfe5] dark:border-[#1a1f2c] text-xs sm:text-base md:text-base lg:text-base xl:text-base font-normal text-[#576076] focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 ease-in-out"
+                          className="bg-white dark:bg-black rounded-lg py-4 px-6 border border-myBorder dark:border-myBgDarkTwo text-xs sm:text-base md:text-base lg:text-base xl:text-base font-normal text-myGray focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 ease-in-out"
                           rows={4}
                           placeholder="Type details about your inquiry"
                         ></textarea>
                       </div>
                     </div>
                     <div className="w-full px-2">
-                      <button className="text-base font-medium text-white bg-[#4770ff] hover:bg-[#2563eb] transition-all duration-300 border-0 w-full rounded-lg py-4 px-6 flex items-center justify-center">
+                      <button className="text-base font-medium text-white bg-myPrimary hover:bg-[#2563eb] transition-all duration-300 border-0 w-full rounded-lg py-4 px-6 flex items-center justify-center">
                         Post Comment{" "}
                         <IconArrowElbowRight
                           stroke={2}

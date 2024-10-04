@@ -62,17 +62,17 @@ export default function Portfolio() {
           {/* top info start */}
           <div className="block mb-12">
             <div className="w-full">
-              <h1 className="text-3xl xl:text-[40px] font-semibold text-[#1a1f2c] dark:text-[#f0f2f5] leading-[1.2em] xl:leading-[.9em] mb-6 ">
+              <h1 className="text-3xl xl:text-[40px] font-semibold text-myBgDarkTwo dark:text-myBgLight leading-[1.2em] xl:leading-[.9em] mb-6 ">
                 Check Out My Latest{" "}
-                <span className="text-[#4770ff]">Projects</span>
+                <span className="text-myPrimary">Projects</span>
               </h1>
-              <p className="text-lg font-normal leading-[1.5em] text-justify text-[#576076] dark:text-[rgba(240,242,245,.7)] ">
+              {/* <p className="text-lg font-normal leading-[1.5em] text-justify text-myGray dark:text-myRgbaLight ">
                 I bring your ideas to life with custom web solutions using
                 modern technologies like JavaScript, Node.js, React, and more.
                 Whether starting from scratch or refining existing platforms, I
                 create intuitive and efficient experiences tailored to your
                 needs.
-              </p>
+              </p> */}
             </div>
           </div>
           {/* top info start */}
@@ -81,7 +81,7 @@ export default function Portfolio() {
           <div className="flex flex-wrap">
             {currentProjects.map((project) => (
               <div className="w-full " key={project.id}>
-                <div className="p-[14px] md:p-6 lg:p-6 xl:p-6 bg-[#f0f2f5] dark:bg-[#0e1018] rounded-2xl overflow-hidden relative group mt-6 px-3">
+                <div className="p-[14px] md:p-6 lg:p-6 xl:p-6 bg-myBgLight dark:bg-myBgDark rounded-2xl overflow-hidden relative group mt-6 px-3">
                   <div className="max-h-[300px] overflow-hidden">
                     <Image
                       src={project.imgSrc}
@@ -96,7 +96,7 @@ export default function Portfolio() {
                   >
                     <IconPlus
                       stroke={2}
-                      className="w-[22px] h-[22px] text-[#4770ff]"
+                      className="w-[22px] h-[22px] text-myPrimary"
                     />
                   </button> */}
                 </div>
@@ -104,18 +104,18 @@ export default function Portfolio() {
                   <div className="projectInfo">
                     <Link
                       href=""
-                      className="text-lg md:text-xl lg:text-xl xl:text-2xl leading-[1.3em] font-medium text-[#1a1f2c] dark:text-[rgba(240,242,245,.7)] mb-[2px] border-b border-b-transparent hover:text-[#4770ff] dark:hover:text-[#4770ff] hover:border-b-[#4770ff] transition-all duration-300"
+                      className="text-lg md:text-xl lg:text-xl xl:text-2xl leading-[1.3em] font-medium text-myBgDarkTwo dark:text-white mb-[2px] border-b border-b-transparent hover:text-myPrimary dark:hover:text-myPrimary hover:border-b-myPrimary transition-all duration-300"
                     >
                       {project.name}
                     </Link>
-                    <p className="text-base font-normal leading-[1.5em] text-[#576076]">
+                    <p className="text-base font-normal leading-[1.5em] text-myGray">
                       {project.category}
                     </p>
                   </div>
                   <div className="projectVisit">
                     <Link
                       href=""
-                      className="text-sm font-normal leading-[1em] text-[#576076] dark:text-[rgba(240,242,245,.7)] hover:text-[#4770ff] dark:hover:text-[#4770ff] transition-all duration-300"
+                      className="text-sm font-normal leading-[1em] text-myGray dark:text-white hover:text-myPrimary dark:hover:text-myPrimary transition-all duration-300"
                     >
                       Visit Site ↗
                     </Link>
@@ -134,7 +134,7 @@ export default function Portfolio() {
                 <button
                   onClick={handlePrevPage}
                   disabled={currentPage === 1}
-                  className={`w-9 h-9 border border-[#dbdfe5] bg-white dark:border-[#1a1f2c] dark:bg-black text-[#576076] rounded-lg text-base font-normal flex items-center justify-center hover:border-[#4770ff] dark:hover:border-[#4770ff] hover:text-[#4770ff] transition-all duration-300 ${
+                  className={`w-9 h-9 border border-[#dbdfe5] bg-white dark:border-myBgDarkTwo dark:bg-black text-myGray rounded-lg text-base font-normal flex items-center justify-center hover:border-myPrimary dark:hover:border-myPrimary hover:text-myPrimary transition-all duration-300 ${
                     currentPage === 1 ? "opacity-50 cursor-not-allowed" : ""
                   }`}
                 >
@@ -145,9 +145,9 @@ export default function Portfolio() {
                 <li key={index}>
                   <button
                     onClick={() => setCurrentPage(index + 1)}
-                    className={`w-9 h-9 border border-[#dbdfe5] bg-white dark:border-[#1a1f2c] dark:bg-black text-[#576076] rounded-lg text-base font-normal flex items-center justify-center hover:border-[#4770ff] dark:hover:border-[#4770ff] hover:text-[#4770ff] transition-all duration-300 ${
+                    className={`w-9 h-9 border border-[#dbdfe5] bg-white dark:border-myBgDarkTwo dark:bg-black text-myGray rounded-lg text-base font-normal flex items-center justify-center hover:border-myPrimary dark:hover:border-myPrimary hover:text-myPrimary transition-all duration-300 ${
                       currentPage === index + 1
-                        ? "text-[#4770ff] border-[#4770ff]"
+                        ? "text-myPrimary border-myPrimary"
                         : ""
                     }`}
                   >
@@ -159,7 +159,7 @@ export default function Portfolio() {
                 <button
                   onClick={handleNextPage}
                   disabled={currentPage === totalPages}
-                  className={`w-9 h-9 border border-[#dbdfe5] bg-white dark:border-[#1a1f2c] dark:bg-black text-[#576076] rounded-lg text-base font-normal flex items-center justify-center hover:border-[#4770ff] dark:hover:border-[#4770ff] hover:text-[#4770ff] transition-all duration-300 ${
+                  className={`w-9 h-9 border border-[#dbdfe5] bg-white dark:border-myBgDarkTwo dark:bg-black text-myGray rounded-lg text-base font-normal flex items-center justify-center hover:border-myPrimary dark:hover:border-myPrimary hover:text-myPrimary transition-all duration-300 ${
                     currentPage === totalPages
                       ? "opacity-50 cursor-not-allowed"
                       : ""
