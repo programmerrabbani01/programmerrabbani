@@ -80,7 +80,7 @@ export default function StaticSidebar({}: Props) {
             <h3 className="text-2xl mb-2 dark:text-myPrimary font-semibold leading-[1.333em]">
               Programmer Rabbani 👋
             </h3>
-            <p className="mt-2 text-myGray text-base leading-[1.5em] font-medium text-justify ">
+            <p className="mt-2 text-myGray dark:text-white sm:text-base text-sm leading-[1.5em] font-medium text-justify ">
               I transform ideas into custom web solutions that engage your
               audience. Services include &nbsp;
               <b className="text-black dark:text-white ">

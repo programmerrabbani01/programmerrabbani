@@ -12,13 +12,13 @@ export default function About() {
   return (
     <>
       <Card>
-        <div className="p-6 xl:pt-12 xl:px-10 xl:pb-10">
+        <div className="p-2 sm:pt-12 sm:px-10 sm:pb-10 md:pt-12 md:px-10 md:pb-10 lg:pt-12 lg:px-10 lg:pb-10 xl:pt-12 xl:px-10 xl:pb-10">
           {/* top info start */}
 
-          <div className="p-6 pt-2 text-justify container mx-auto max-w-5xl text-black dark:text-[rgba(240,242,245,.7)]">
+          <div className="p-2 pt-2 text-justify container mx-auto max-w-5xl text-black dark:text-white">
             {/* top */}
             <div className="flex md:flex-row lg:flex-row xl:flex-row flex-col gap-4 flex-grow justify-between">
-              <h1 className="text-[30px] xl:text-[40px] text-[#1a1f2c] dark:text-blue-500 font-semibold mb-6 leading-[1.2em] order-2 md:order-none lg:order-none xl:order-none">
+              <h1 className="text-[30px] xl:text-[40px] text-[#1a1f2c] dark:text-myPrimary font-semibold mb-6 leading-[1.2em] order-2 md:order-none lg:order-none xl:order-none">
                 About Me
               </h1>
               {/* available Button */}
@@ -31,49 +31,49 @@ export default function About() {
               </div>
             </div>
             {/* top */}
-            <div className="xl:text-[15px] text-lg font-semibold xl:leading-[1.333em] leading-[1.5em] text-black dark:text-[rgba(240,242,245,.7)] text-justify mb-4">
+            <div className="sm:text-[15px] text-sm font-semibold xl:leading-[1.333em] leading-[1.5em] text-black dark:text-white text-justify mb-4">
               👨‍💻 MERN Stack Developer | Full Stack Engineer | Problem Solver |
               Tech Enthusiast
             </div>
-            <p className="xl:text-base text-lg font-normal xl:leading-[1.333em] leading-[1.5em] text-black dark:text-[rgba(240,242,245,.7)] text-justify">
+            <p className="sm:text-base text-sm font-normal xl:leading-[1.333em] leading-[1.5em] text-black dark:text-white text-justify">
               👋
               <span className="font-semibold text-dark dark:text-white">
                 Greetings! {"I'm"} G M GOLAM RABBANI, aka Rabbani
               </span>
               , a passionate and results-driven &nbsp;
               <span className="text-dark dark:text-white font-semibold">
-                Full-Stack MERN Developer
+                Full-Stack MERN Developer &nbsp;
               </span>
               specializing in robust web apps. with expertise in creating
               feature-rich, scalable web applications. I specialize in building
-              dynamic and intuitive user interfaces using
+              dynamic and intuitive user interfaces using &nbsp;
               <span className="font-semibold text-dark dark:text-white">
-                React
+                React &nbsp;
               </span>
-              and
+              and &nbsp;
               <span className="font-semibold text-dark dark:text-white">
                 Next.js
               </span>
-              , backed by robust server-side logic powered by
+              , backed by robust server-side logic powered by &nbsp;
               <span className="font-semibold text-dark dark:text-white">
-                Node.js
+                Node.js &nbsp;
               </span>
-              and
+              and &nbsp;
               <span className="font-semibold text-dark dark:text-white">
                 Express.js
               </span>
-              , Prisma and managing data with
+              , Prisma and managing data with &nbsp;
               <span className="font-semibold text-dark dark:text-white">
-                MongoDB
+                MongoDB &nbsp;
               </span>
-              , and
+              , and &nbsp;
               <span className="font-semibold text-dark dark:text-white">
                 MySQL
               </span>
               .
             </p>
 
-            <p className="text-base text-black dark:text-[rgba(240,242,245,.7)] mb-6 mt-2">
+            <p className="sm:text-base text-sm text-black dark:text-white mb-6 mt-2">
               "I specialize in optimizing code and design to create seamless
               user experiences. I'm always seeking challenging projects where I
               can apply my expertise, especially with cutting-edge technology.
@@ -86,11 +86,11 @@ export default function About() {
               Let's connect and innovate together!"
             </p>
 
-            <h2 className="text-xl sm:text-2xl font-bold mb-4 text-black dark:text-blue-500">
+            <h2 className="text-xl sm:text-2xl font-bold mb-4 text-black dark:text-myPrimary">
               Technical Expertise:
             </h2>
             <ul className=" list-none mb-6">
-              <li className="text-base text-black dark:text-[rgba(240,242,245,.7)] mb-2">
+              <li className="sm:text-base text-sm text-black dark:text-white mb-2">
                 🚀
                 <span className="font-semibold text-black dark:text-white">
                   Frontend Expertise:
@@ -107,9 +107,9 @@ export default function About() {
                 , My focus is on delivering engaging, visually striking
                 experiences that are intuitive and user-friendly.
               </li>
-              <li className="text-base text-black dark:text-[rgba(240,242,245,.7)] mb-2">
+              <li className="sm:text-base text-sm text-black dark:text-white mb-2">
                 💻{" "}
-                <span className="font-semibold text-black dark:text-[rgba(240,242,245,.7)]">
+                <span className="font-semibold text-black dark:text-white">
                   Backend Development:
                 </span>{" "}
                 I specialize in building scalable, secure RESTful APIs using
@@ -129,9 +129,9 @@ export default function About() {
                 server-side logic, providing seamless integration between the
                 front-end and back-end.
               </li>
-              <li className="text-base text-black dark:text-[rgba(240,242,245,.7)]">
+              <li className="sm:text-base text-sm text-black dark:text-white">
                 📊{" "}
-                <span className="font-semibold text-black dark:text-[rgba(240,242,245,.7)]">
+                <span className="font-semibold text-black dark:text-white">
                   Database Management:{" "}
                 </span>
                 Proficient in{" "}
@@ -148,59 +148,59 @@ export default function About() {
               </li>
             </ul>
 
-            <h2 className="text-xl sm:text-2xl font-bold mb-4 text-black dark:text-blue-500">
+            <h2 className="text-xl sm:text-2xl font-bold mb-4 text-black dark:text-myPrimary">
               Technical Skills
             </h2>
             <ul className=" list-none mb-6">
-              <li className="text-base items-center text-black dark:text-[rgba(240,242,245,.7)] mb-2">
-              
+              <li className="sm:text-base text-sm items-center text-black dark:text-white mb-2">
                 <span className="flex items-center gap-1 font-semibold text-black dark:text-white">
-                <FaCheck />Frontend Development:
+                  <FaCheck />
+                  Frontend Development:
                 </span>
                 React.js, Next.js, TypeScript, Redux Toolkit & Toolkit Query,
                 Tailwind CSS, Shadcn ui, Bootstrap, API integration
               </li>
-              <li className="text-base text-black dark:text-[rgba(240,242,245,.7)] mb-2">
-                
+              <li className="sm:text-base text-sm text-black dark:text-white mb-2">
                 <span className="font-semibold flex items-center gap-1 text-black dark:text-white">
-                <FaCheck />Backend Development:
+                  <FaCheck />
+                  Backend Development:
                 </span>{" "}
                 Node.js, Express.js, Prisma, MySQL, MongoDB, REST API
               </li>
-              <li className="text-base text-black dark:text-[rgba(240,242,245,.7)] mb-2">
-               
+              <li className="sm:text-base text-sm text-black dark:text-white mb-2">
                 <span className="font-semibold flex items-center gap-1 text-black dark:text-white">
-                <FaCheck />Project Management Tools:
+                  <FaCheck />
+                  Project Management Tools:
                 </span>{" "}
                 Firebase, Heroku, Netlify, Vercel, Postman, Trello
               </li>
-              <li className="text-base text-black dark:text-[rgba(240,242,245,.7)] mb-2">
-              
+              <li className="sm:text-base text-sm text-black dark:text-white mb-2">
                 <span className="font-semibold flex items-center gap-1 text-black dark:text-white">
-                <FaCheck />Version Control:
+                  <FaCheck />
+                  Version Control:
                 </span>{" "}
                 Git, GitHub
               </li>
-              <li className="text-base text-black dark:text-[rgba(240,242,245,.7)] mb-2">
-                
+              <li className="sm:text-base text-sm text-black dark:text-white mb-2">
                 <span className="font-semibold flex items-center gap-1 text-black dark:text-white">
-                <FaCheck />Design:
+                  <FaCheck />
+                  Design:
                 </span>{" "}
                 Responsive Web Design, UI
               </li>
-              <li className="text-base text-black dark:text-[rgba(240,242,245,.7)]">
-                
+              <li className="sm:text-base text-sm text-black dark:text-white">
                 <span className="font-semibold flex items-center gap-1 text-black dark:text-white">
-                <FaCheck />Problem Solving:
+                  <FaCheck />
+                  Problem Solving:
                 </span>{" "}
                 Debugging, troubleshooting, performance optimization
               </li>
             </ul>
 
-            <h2 className="text-xl sm:text-2xl font-bold mb-4 text-black dark:text-blue-500">
+            <h2 className="text-xl sm:text-2xl font-bold mb-4 text-black dark:text-myPrimary">
               What Sets Me Apart
             </h2>
-            <p className="text-lg text-black dark:text-[rgba(240,242,245,.7)] mb-6">
+            <p className="sm:text-lg text-sm text-black dark:text-white mb-6">
               {"I’m"} not just a developer. {"I’m"} a problem solver. I excel at
               tackling challenges head-on and discovering innovative solutions
               that enhance both functionality and performance. My commitment to
@@ -209,27 +209,27 @@ export default function About() {
               into my projects.
             </p>
 
-            <h2 className="text-xl sm:text-2xl font-bold mb-4 text-black dark:text-blue-500">
+            <h2 className="text-xl sm:text-2xl font-bold mb-4 text-black dark:text-myPrimary">
               ✉️ {"Let’s"} Work Together
             </h2>
-            <p className="text-base text-black dark:text-[rgba(240,242,245,.7)]">
+            <p className="sm:text-base text-sm text-black dark:text-white">
               If you're interested in discussing collaboration opportunities,
               web development projects, or simply want to connect, feel free to
               reach out. {"I’m"} always excited to engage with like-minded
               professionals and explore new avenues together!
             </p>
 
-            <p className="text-base text-black dark:text-[rgba(240,242,245,.7)] mt-6">
-              📧{" "}
+            <p className="sm:text-base text-[12px] text-black dark:text-white mt-6">
+              📧
               <span className="font-semibold text-black dark:text-white">
-                Email:{" "}
+                Email:
               </span>
               programmerrabbani@gmail.com
               <br />
               🌐
               <Link
                 href=""
-                className="text-blue-500 hover:underline transition-all duration-300 ml-1"
+                className="text-myPrimary hover:underline transition-all duration-300 ml-1"
               >
                 Linkedin
               </Link>
