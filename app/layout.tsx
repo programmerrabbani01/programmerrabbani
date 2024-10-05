@@ -37,7 +37,8 @@ const BricolageGrotesque = localFont({
 
 export const metadata: Metadata = {
   title: "Programmerrabbani",
-  description: "This is my portfolio created by Next JS 14",
+  description:
+    "👋 Hi, I'm Programmer Rabbani, a Full-Stack MERN Developer passionate about crafting scalable and feature-rich web applications. My expertise lies in building dynamic, user-friendly interfaces with React and Next.js, powered by the robust back-end logic of Node.js, Express.js, and Prisma. Whether integrating MongoDB or MySQL for seamless data management, I create solutions that efficiently handle data flow and user interactions.",
 };
 
 export default function RootLayout({
