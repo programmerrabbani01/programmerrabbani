@@ -1,6 +1,8 @@
-import project1 from "@/public/images/download.png";
-import project2 from "@/public/images/projects/project-2.png";
-import project3 from "@/public/images/projects/project-3.png";
+import shopapp from "@/public/images/projects/project-1.jpeg";
+import webdev from "@/public/images/projects/project-2.jpeg";
+import chawala from "@/public/images/projects/project-3.jpeg";
+import healthcare from "@/public/images/projects/project-4.jpeg";
+import timekeeper from "@/public/images/projects/project-5.jpeg";
 import { StaticImageData } from "next/image";
 
 type Project = {
@@ -17,68 +19,58 @@ type Project = {
 export const homeProjects: Project[] = [
   {
     id: 1,
-    src: project1,
-    alt: "Project1",
-    title: "Brand Identity and Motion Design",
-    description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.Lorem ipsum dolor sit, amet consectetur adipisicing elit.Lorem ipsum dolor sit, amet consectetur adipisicing elit.Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-    technologies: ["React", "Next.js", "TailwindCSS", "Framer Motion"],
-    projectLink: "/",
-    githubLink: "/",
+    src: shopapp,
+    alt: "shopapp",
+    title: "Shop App Website Development",
+    description: "",
+    technologies: ["Next.js", "TypeScript", "TailwindCSS", "Clerk"],
+    projectLink: "https://shopapp-aone.vercel.app/",
+    githubLink: "https://github.com/programmerrabbani01/shopapp",
   },
   {
     id: 2,
-    src: project2,
-    alt: "Project2",
-    title: "Brand Identity and Motion Design",
-    description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.Lorem ipsum dolor sit, amet consectetur adipisicing elit.Lorem ipsum dolor sit, amet consectetur adipisicing elit.Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-    technologies: ["React", "Next.js", "TailwindCSS", "Framer Motion"],
-    projectLink: "/",
-    githubLink: "/",
+    src: webdev,
+    alt: "webdev",
+    title: "Web-Dev Portfolio",
+    description: "",
+    technologies: ["Next.js", "TypeScript", "TailwindCSS", "Aos"],
+    projectLink: "https://web-dev-portfolio-smoky-nu.vercel.app/",
+    githubLink: "https://github.com/programmerrabbani01/webDev-portfolio",
   },
   {
     id: 3,
-    src: project3,
-    alt: "Project3",
-    title: "Brand Identity and Motion Design",
-    description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.Lorem ipsum dolor sit, amet consectetur adipisicing elit.Lorem ipsum dolor sit, amet consectetur adipisicing elit.Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-    technologies: ["React", "Next.js", "TailwindCSS", "Framer Motion"],
-    projectLink: "/",
-    githubLink: "/",
+    src: chawala,
+    alt: "chawala",
+    title: "Chawla Architectural and Engineering",
+    description: "",
+    technologies: ["Javascript", "Jquery", "HTML5", "CSS3"],
+    projectLink: "https://programmerrabbani01.github.io/chawla/",
+    githubLink: "https://github.com/programmerrabbani01/chawla",
   },
   {
     id: 4,
-    src: project1,
-    alt: "Project1",
-    title: "Brand Identity and Motion Design",
-    description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.Lorem ipsum dolor sit, amet consectetur adipisicing elit.Lorem ipsum dolor sit, amet consectetur adipisicing elit.Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-    technologies: ["React", "Next.js", "TailwindCSS", "Framer Motion"],
-    projectLink: "/",
-    githubLink: "/",
+    src: healthcare,
+    alt: "healthcare",
+    title: "Health Care Website Development",
+    description: "",
+    technologies: ["React", "Bootstrap", "React Router Dom", "React Bootstrap"],
+    projectLink: "https://test-app-783b7.web.app/",
+    githubLink: "https://github.com/programmerrabbani01/gym-heroes",
   },
   {
     id: 5,
-    src: project2,
-    alt: "Project2",
-    title: "Brand Identity and Motion Design",
-    description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.Lorem ipsum dolor sit, amet consectetur adipisicing elit.Lorem ipsum dolor sit, amet consectetur adipisicing elit.Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-    technologies: ["React", "Next.js", "TailwindCSS", "Framer Motion"],
-    projectLink: "/",
-    githubLink: "/",
-  },
-  {
-    id: 6,
-    src: project3,
-    alt: "Project3",
-    title: "Brand Identity and Motion Design",
-    description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.Lorem ipsum dolor sit, amet consectetur adipisicing elit.Lorem ipsum dolor sit, amet consectetur adipisicing elit.Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-    technologies: ["React", "Next.js", "TailwindCSS", "Framer Motion"],
-    projectLink: "/",
-    githubLink: "/",
+    src: timekeeper,
+    alt: "timekeeper",
+    title: "Time Keeper Website Development",
+    description: "",
+    technologies: [
+      "React",
+      "Bootstrap",
+      "React Router Dom",
+      "React Bootstrap",
+      "React Rating Stars",
+    ],
+    projectLink: "https://timekeeper-bfc3b.web.app/",
+    githubLink: "https://github.com/programmerrabbani01/timekeeper",
   },
 ];
