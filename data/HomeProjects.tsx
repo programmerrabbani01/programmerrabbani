@@ -22,7 +22,8 @@ export const homeProjects: Project[] = [
     src: shopapp,
     alt: "shopapp",
     title: "Shop App Website Development",
-    description: "",
+    description:
+      "This project is built using Next.js, Clerk, TypeScript and  TailwindCSS, combining powerful technologies to create a modern, responsive, and secure web application.",
     technologies: ["Next.js", "TypeScript", "TailwindCSS", "Clerk"],
     projectLink: "https://shopapp-aone.vercel.app/",
     githubLink: "https://github.com/programmerrabbani01/shopapp",
@@ -32,7 +33,8 @@ export const homeProjects: Project[] = [
     src: webdev,
     alt: "webdev",
     title: "Web-Dev Portfolio",
-    description: "",
+    description:
+      "This project is built using Next.js, Aos, TypeScript and  TailwindCSS, combining powerful technologies to create a modern, responsive, and secure web application.",
     technologies: ["Next.js", "TypeScript", "TailwindCSS", "Aos"],
     projectLink: "https://web-dev-portfolio-smoky-nu.vercel.app/",
     githubLink: "https://github.com/programmerrabbani01/webDev-portfolio",
@@ -42,7 +44,8 @@ export const homeProjects: Project[] = [
     src: chawala,
     alt: "chawala",
     title: "Chawla Architectural and Engineering",
-    description: "",
+    description:
+      "This project is built using Javascript, Jquery, HTML5 and  CSS3, combining powerful technologies to create a modern, responsive, and secure web application.",
     technologies: ["Javascript", "Jquery", "HTML5", "CSS3"],
     projectLink: "https://programmerrabbani01.github.io/chawla/",
     githubLink: "https://github.com/programmerrabbani01/chawla",
@@ -52,7 +55,8 @@ export const homeProjects: Project[] = [
     src: healthcare,
     alt: "healthcare",
     title: "Health Care Website Development",
-    description: "",
+    description:
+      "This project is built using React, React Router Dom, React Bootstrap and  Bootstrap, combining powerful technologies to create a modern, responsive, and secure web application.",
     technologies: ["React", "Bootstrap", "React Router Dom", "React Bootstrap"],
     projectLink: "https://test-app-783b7.web.app/",
     githubLink: "https://github.com/programmerrabbani01/gym-heroes",
@@ -62,7 +66,8 @@ export const homeProjects: Project[] = [
     src: timekeeper,
     alt: "timekeeper",
     title: "Time Keeper Website Development",
-    description: "",
+    description:
+      "This project is built using React, React Router Dom, React Rating Stars, React Bootstrap and  Bootstrap, combining powerful technologies to create a modern, responsive, and secure web application.",
     technologies: [
       "React",
       "Bootstrap",

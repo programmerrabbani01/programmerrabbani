@@ -25,7 +25,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
     <>
       <div className="relative overflow-hidden group rounded-tl-lg rounded-tr-lg">
         {/* Project Image */}
-        <Link target="_blank" href="#">
+        <Link target="_blank" href={project.projectLink}>
           <div className="max-h-[250px] overflow-hidden">
             <Image
               className="w-full transform hover:translate-y-[-200px] rounded-tl-lg transition-transform duration-[2000ms] rounded-tr-lg "
@@ -59,7 +59,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           <h2 className="text-center pt-2 pb-1 text-base text-black dark:text-white">
             {project.title}
           </h2>
-          <div className="text-myGray dark:text-myRgbaLight line-clamp-2">
+          <div className="text-myGray dark:text-myRgbaLight line-clamp-2 text-center">
             {project.description}
           </div>
 

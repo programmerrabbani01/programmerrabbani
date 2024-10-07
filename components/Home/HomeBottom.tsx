@@ -60,7 +60,7 @@ export default function HomeBottom({}: Props) {
       {/* projects */}
 
       {/* Blog */}
-      <div className="mt-6">
+      <div className="mt-6 hidden">
         <Card>
           <div className="p-6">
             <div className="flex justify-between sm:items-center flex-col sm:flex-row mb-7">
