@@ -86,7 +86,7 @@ export default function Portfolio() {
                     <Image
                       src={project.imgSrc}
                       alt={project.name}
-                      className="w-full rounded-lg rounded-b-none transform hover:translate-y-[-800px] rounded-tl-lg transition-transform duration-[2000ms] rounded-tr-lg"
+                      className="w-full rounded-lg rounded-b-none transform hover:translate-y-[-500px] rounded-tl-lg transition-transform duration-[2000ms] rounded-tr-lg"
                     />
                   </div>
 
@@ -108,7 +108,7 @@ export default function Portfolio() {
                     >
                       {project.name}
                     </Link>
-                    <p className="text-base font-normal leading-[1.5em] text-myGray">
+                    <p className="text-base font-normal leading-[1.5em] text-myGray max-w-md text-justify">
                       {project.category}
                     </p>
                   </div>
