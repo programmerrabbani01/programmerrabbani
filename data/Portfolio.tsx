@@ -4,6 +4,7 @@ import project3 from "@/public/images/projects/project-3.png";
 
 export const projects = [
   {
+    
     id: 1,
     name: "FlowSaaS - SaaS Application Tools",
     category: "SaaS App | UI UX Design",
