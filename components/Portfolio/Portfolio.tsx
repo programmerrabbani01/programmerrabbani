@@ -117,7 +117,7 @@ export default function Portfolio() {
                     <Link
                       href={project.visitLink}
                       target="_blank"
-                      className="text-sm font-normal leading-[1em] text-myGray dark:text-white hover:text-myPrimary dark:hover:text-myPrimary transition-all duration-300"
+                      className="text-sm font-normal leading-[1em] text-myGray dark:text-white hover:text-white hover:bg-myPrimaryHover dark:hover:text-white dark:hover:bg-myPrimaryHover transition-all duration-300 bg-myBgLight dark:bg-myBgDark py-2 px-3 rounded-[4px]"
                     >
                       Visit Site ↗
                     </Link>
