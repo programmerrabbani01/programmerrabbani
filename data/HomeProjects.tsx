@@ -107,7 +107,8 @@ export const homeProjects: Project[] = [
     src: hondacbr,
     alt: "hondacbr",
     title: "Honda CBR Website Development",
-    description: "Figma To HTML",
+    description:
+      "This project is built using Figma, Jquery, Bootstrap, HTML and  CSS3, combining powerful technologies to create a modern, responsive, and secure web application.",
     technologies: ["Figma", "Jquery", "Bootstrap", "HTML", "CSS3"],
     projectLink: "https://programmerrabbani01.github.io/honda-cbr/",
     githubLink: "https://github.com/programmerrabbani01/honda-cbr",
@@ -117,7 +118,8 @@ export const homeProjects: Project[] = [
     src: school,
     alt: "school",
     title: "School Resources Website Development",
-    description: "Figma To HTML",
+    description:
+      "This project is built using Figma, Jquery, Bootstrap, HTML and  CSS3, combining powerful technologies to create a modern, responsive, and secure web application.",
     technologies: ["Figma", "Jquery", "Bootstrap", "HTML", "CSS3"],
     projectLink: "https://programmerrabbani01.github.io/school-resources/",
     githubLink: "https://github.com/programmerrabbani01/school-resources",
@@ -127,7 +129,8 @@ export const homeProjects: Project[] = [
     src: hotGadgets,
     alt: "hotGadgets",
     title: "Hot Gadgets Website Development",
-    description: "Figma To HTML",
+    description:
+      "This project is built using Figma, Jquery, Bootstrap, HTML and  CSS3, combining powerful technologies to create a modern, responsive, and secure web application.",
     technologies: ["Figma", "Jquery", "Bootstrap", "HTML", "CSS3"],
     projectLink: "https://programmerrabbani01.github.io/hot-gadgets/",
     githubLink: "https://github.com/programmerrabbani01/hot-gadgets",
@@ -137,7 +140,8 @@ export const homeProjects: Project[] = [
     src: panda,
     alt: "panda",
     title: "Panda Commerce Website Development",
-    description: "Figma To HTML",
+    description:
+      "This project is built using Figma, Jquery, Bootstrap, HTML and  CSS3, combining powerful technologies to create a modern, responsive, and secure web application.",
     technologies: ["Figma", "Jquery", "Bootstrap", "HTML", "CSS3"],
     projectLink: "https://programmerrabbani01.github.io/panda-commerce/",
     githubLink: "https://github.com/programmerrabbani01/panda-commerce",
@@ -147,7 +151,8 @@ export const homeProjects: Project[] = [
     src: hermes,
     alt: "hermes",
     title: "Hermes HTML Template Development",
-    description: "Figma To HTML",
+    description:
+      "This project is built using Figma, Javascript, Bootstrap, Slick Slider, HTML and  CSS3, combining powerful technologies to create a modern, responsive, and secure web application.",
     technologies: [
       "Figma",
       "Javascript",
@@ -163,8 +168,9 @@ export const homeProjects: Project[] = [
     id: 12,
     src: social,
     alt: "social",
-    title: "Social Website Development",
-    description: "Figma To HTML",
+    title: "Social Gram Website Development",
+    description:
+      "This project is built using Figma, Jquery, Bootstrap, HTML and  CSS3, combining powerful technologies to create a modern, responsive, and secure web application.",
     technologies: ["Figma", "Jquery", "HTML", "CSS3"],
     projectLink: "https://programmerrabbani01.github.io/social/",
     githubLink: "https://github.com/programmerrabbani01/social",

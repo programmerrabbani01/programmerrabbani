@@ -103,18 +103,20 @@ export default function Portfolio() {
                 <div className="project_text p-6 flex gap-[30px] justify-between">
                   <div className="projectInfo">
                     <Link
-                      href=""
+                      href={project.visitLink}
+                      target="_blank"
                       className="text-lg md:text-xl lg:text-xl xl:text-2xl leading-[1.3em] font-medium text-myBgDarkTwo dark:text-white mb-[2px] border-b border-b-transparent hover:text-myPrimary dark:hover:text-myPrimary hover:border-b-myPrimary transition-all duration-300"
                     >
                       {project.name}
                     </Link>
                     <p className="text-base font-normal leading-[1.5em] text-myGray max-w-md text-justify">
-                      {project.category}
+                      {project.description}
                     </p>
                   </div>
                   <div className="projectVisit">
                     <Link
-                      href=""
+                      href={project.visitLink}
+                      target="_blank"
                       className="text-sm font-normal leading-[1em] text-myGray dark:text-white hover:text-myPrimary dark:hover:text-myPrimary transition-all duration-300"
                     >
                       Visit Site ↗
