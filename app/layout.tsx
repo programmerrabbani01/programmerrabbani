@@ -12,6 +12,7 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import AnimationCursor from "@/components/AnimationCursor/AnimationCursor.tsx";
+import FullLoader from "@/components/FullLoader/FullLoader.tsx";
 
 // Define Helvetica font family
 const BricolageGrotesque = localFont({
@@ -51,6 +52,7 @@ export default function RootLayout({
       <body
         className={`${BricolageGrotesque.variable} font-bricolageGrotesque select-none`}
       >
+        <FullLoader>
         <div className="hidden md:block">
           <AnimationCursor />
         </div>
@@ -59,6 +61,7 @@ export default function RootLayout({
           {children}
           <Footer />
         </DarkLight>
+        </FullLoader>
       </body>
     </html>
   );
