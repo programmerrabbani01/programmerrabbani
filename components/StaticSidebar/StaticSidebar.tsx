@@ -4,7 +4,7 @@ import Image from "next/image";
 import React from "react";
 import profile from "@/public/images/hero.png";
 import Link from "next/link";
-import { IconBrandSkype, IconCopy } from "@tabler/icons-react";
+import { IconBrandSkype, IconCopy, IconDownload } from "@tabler/icons-react";
 import {
   FaGithub,
   FaLinkedin,
@@ -107,27 +107,12 @@ export default function StaticSidebar({}: Props) {
                 Copy Email
               </button>
             </div>
-            {/* social icon */}
-            <div className="mt-[30px]">
-              <ul className="list-none">
-                {socialLinks.map((social) => {
-                  return (
-                    <li
-                      key={social.id}
-                      className="inline-block mr-[6px] rounded-lg border border-myBorder dark:border-none dark:bg-myBgDark"
-                    >
-                      <Link
-                        target="_blank"
-                        href={social.url}
-                        className="text-xl text-center flex items-center justify-center leading-10 w-10 h-10  dark:hover:text-myPrimary"
-                      >
-                        {social.icon}
-                      </Link>
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
+            {/* cv Button */}
+            <button className="py-4 px-6 xl:px-[13px] text-base sm:text-lg rounded-lg font-medium leading-[1.5em] bg-transparent hover:bg-myBgLight dark:hover:bg-myBgDarkTwo dark:hover:text-white transition-all duration-300 border border-myBorder dark:border-myBgDarkTwo text-myBgDarkTwo dark:text-myRgbaLight flex items-center mt-2 ">
+              Download Resume
+              <IconDownload stroke={2} className="ml-2" />
+            </button>
+            {/*  */}
           </div>
         </div>
       </div>

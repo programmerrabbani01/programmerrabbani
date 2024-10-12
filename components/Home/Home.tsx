@@ -6,7 +6,8 @@ import Link from "next/link";
 import { IconArrowRightSquare, IconPlus, IconX } from "@tabler/icons-react";
 import { expert } from "@/data/Expert.tsx";
 import { HomeServices } from "@/data/HomeService.tsx";
-
+import { socialItems } from "@/data/Social.tsx";
+import Marquee from "react-fast-marquee";
 
 export default function Home() {
   return (
@@ -67,7 +68,7 @@ export default function Home() {
         </div>
       </div>
       {/* Expert area */}
-      <div className="w-full mt-6 hidden">
+      <div className="w-full mt-6">
         <Card>
           <div className="p-6">
             <h3 className="flex xl:flex-row dark:text-white lg:flex-row md:flex-row sm:flex-row flex-col items-start xl:items-center lg:items-center md:items-center sm:items-center gap-[5px] xl:gap-[15px] lg:gap-[15px] md:gap-[15px] sm:gap-[15px]  justify-between text-2xl font-semibold leading-[1.333em] mb-[15px]">
@@ -80,8 +81,7 @@ export default function Home() {
               </Link> */}
             </h3>
             {/* items */}
-
-            <div className="overflow-hidden">
+            <Marquee>
               <div className="flex flex-row justify-center flex-wrap">
                 {HomeServices.map((service) => {
                   return (
@@ -97,7 +97,8 @@ export default function Home() {
                           <Image
                             src={service.src}
                             alt={service.alt}
-                            className="mx-auto object-cover"
+                            height={84}
+                            className="mx-auto object-contain"
                           />
                         </div>
                         <div className="text-base font-medium text-[#1a1f2c] dark:text-white leading-[1.5em] mt-4 ">
@@ -108,20 +109,11 @@ export default function Home() {
                   );
                 })}
               </div>
-            </div>
+            </Marquee>
           </div>
         </Card>
       </div>
-      {/* hire Me */}
-      <div className="w-full mt-6">
-        <Card>
-          <div className="p-6">
-            <h3 className=" dark:text-white text-2xl font-semibold leading-[1.333em] mb-[15px]">
-              Hire Me
-            </h3>
-           </div>
-        </Card>
-      </div>
+      {/*  */}
     </>
   );
 }
