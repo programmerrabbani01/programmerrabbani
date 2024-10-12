@@ -27,7 +27,7 @@ export default function Services({}: Props) {
             {/* text */}
             <div className="xl:max-w-[400px] w-full flex-grow order-2 xl:order-none">
               <h1 className="text-[30px] xl:text-[40px] text-myBgDarkTwo dark:text_bg font-semibold mb-6 leading-[1.2em] ">
-                My Services
+                Why Me
               </h1>
             </div>
             {/* available Button */}

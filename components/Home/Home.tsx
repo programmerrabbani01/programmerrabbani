@@ -7,6 +7,7 @@ import { IconArrowRightSquare, IconPlus, IconX } from "@tabler/icons-react";
 import { expert } from "@/data/Expert.tsx";
 import { HomeServices } from "@/data/HomeService.tsx";
 
+
 export default function Home() {
   return (
     <>
@@ -65,48 +66,60 @@ export default function Home() {
           </Card>
         </div>
       </div>
-      {/*  */}
-      <div className="w-full mt-6">
+      {/* Expert area */}
+      <div className="w-full mt-6 hidden">
         <Card>
           <div className="p-6">
             <h3 className="flex xl:flex-row dark:text-white lg:flex-row md:flex-row sm:flex-row flex-col items-start xl:items-center lg:items-center md:items-center sm:items-center gap-[5px] xl:gap-[15px] lg:gap-[15px] md:gap-[15px] sm:gap-[15px]  justify-between text-2xl font-semibold leading-[1.333em] mb-[15px]">
-              My Services
-              <Link
+              My Expertise
+              {/* <Link
                 href="/services"
-                className="text-base font-normal text-myPrimary leading-[1.5em] flex items-center border-b border-myBorder dark:border-myGray hover:border-myPrimary dark:hover:border-myPrimary transition-all duration-300"
+                className="hidden text-base font-normal text-myPrimary leading-[1.5em] flex items-center border-b border-myBorder dark:border-myGray hover:border-myPrimary dark:hover:border-myPrimary transition-all duration-300"
               >
                 See All Services <IconArrowRightSquare stroke={2} />
-              </Link>
+              </Link> */}
             </h3>
             {/* items */}
 
-            <div className="flex flex-row justify-center flex-wrap service_items">
-              {HomeServices.map((service) => {
-                return (
-                  <div
-                    className="xl:w-1/4 lg:w-1/4 md:w-1/4 sm:w-2/4  mt-6 px-3 flex  "
-                    key={service.id}
-                  >
+            <div className="overflow-hidden">
+              <div className="flex flex-row justify-center flex-wrap">
+                {HomeServices.map((service) => {
+                  return (
                     <div
-                      className="p-4 px-4 pb-4 bg-myBgLight dark:bg-myBgDark
-                  rounded-2xl text-center"
+                      className="xl:w-1/4 lg:w-1/4 md:w-1/4 sm:w-2/4  mt-6 px-3 flex  "
+                      key={service.id}
                     >
-                      <div className="py-6 px-[14px] bg-[#fff] dark:bg-[#000] rounded-lg ">
-                        <Image
-                          src={service.src}
-                          alt={service.alt}
-                          className="mx-auto object-cover"
-                        />
-                      </div>
-                      <div className="text-base font-medium text-[#1a1f2c] dark:text-white leading-[1.5em] mt-4 ">
-                        {service.title}
+                      <div
+                        className="p-4 px-4 pb-4 bg-myBgLight dark:bg-myBgDark
+                  rounded-2xl text-center"
+                      >
+                        <div className="py-6 px-[14px] bg-[#fff] dark:bg-[#000] rounded-lg ">
+                          <Image
+                            src={service.src}
+                            alt={service.alt}
+                            className="mx-auto object-cover"
+                          />
+                        </div>
+                        <div className="text-base font-medium text-[#1a1f2c] dark:text-white leading-[1.5em] mt-4 ">
+                          {service.title}
+                        </div>
                       </div>
                     </div>
-                  </div>
-                );
-              })}
+                  );
+                })}
+              </div>
             </div>
           </div>
+        </Card>
+      </div>
+      {/* hire Me */}
+      <div className="w-full mt-6">
+        <Card>
+          <div className="p-6">
+            <h3 className=" dark:text-white text-2xl font-semibold leading-[1.333em] mb-[15px]">
+              Hire Me
+            </h3>
+           </div>
         </Card>
       </div>
     </>

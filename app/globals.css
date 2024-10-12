@@ -57,6 +57,20 @@
       transform: translateX(-50%);
     }
   }
+
+  .text_slider_expert {
+    display: flex;
+    animation: textSliderExpert 6s linear infinite;
+  }
+
+  @keyframes textSliderExpert {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
   /* text Slider */
 
   html.light {

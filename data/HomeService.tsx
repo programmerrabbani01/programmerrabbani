@@ -27,5 +27,5 @@ export const HomeServices = [
     src: nextJS,
     alt: "nextJS",
     title: "Next.JS",
-  },
+  }
 ];
