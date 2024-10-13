@@ -6,6 +6,7 @@ import Link from "next/link";
 import BlogCard from "./BlogCard.tsx";
 import { blogItems } from "@/data/Blog.tsx";
 import WorkingTogether from "./WorkingTogether.tsx";
+import PricingSection from "../PricingCard/PricingSection.tsx";
 
 type Props = {};
 
@@ -41,6 +42,12 @@ export default function HomeBottom({}: Props) {
         </Card>
       </div>
       {/* slider */}
+
+      {/* pricing */}
+      <div className="mt-6">
+        <PricingSection />
+      </div>
+      {/* pricing */}
 
       {/* counter */}
       <Counter />
