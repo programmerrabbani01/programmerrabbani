@@ -81,7 +81,7 @@ export default function Home() {
               </Link> */}
             </h3>
             {/* items */}
-            <Marquee>
+            <Marquee pauseOnHover={true}>
               <div className="flex flex-row justify-center flex-wrap">
                 {HomeServices.map((service) => {
                   return (

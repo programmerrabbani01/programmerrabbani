@@ -63,6 +63,10 @@ export default function StaticSidebar({}: Props) {
     );
   };
 
+  const openResume = () => {
+    window.open("/Resume.pdf", "_blank", "noopener,noreferrer");
+  };
+
   return (
     <>
       <div className=" bg-white dark:bg-black card_shadow h-full border-none rounded-2xl">
@@ -108,10 +112,14 @@ export default function StaticSidebar({}: Props) {
               </button>
             </div>
             {/* cv Button */}
-            <button className="py-4 px-6 xl:px-[13px] text-base sm:text-lg rounded-lg font-medium leading-[1.5em] bg-transparent hover:bg-myBgLight dark:hover:bg-myBgDarkTwo dark:hover:text-white transition-all duration-300 border border-myBorder dark:border-myBgDarkTwo text-myBgDarkTwo dark:text-myRgbaLight flex items-center mt-2 ">
+            <button
+              onClick={openResume}
+              className="py-4 px-6 xl:px-[13px] text-base sm:text-lg rounded-lg font-medium leading-[1.5em] bg-transparent hover:bg-myBgLight dark:hover:bg-myBgDarkTwo dark:hover:text-white transition-all duration-300 border border-myBorder dark:border-myBgDarkTwo text-myBgDarkTwo dark:text-myRgbaLight flex items-center mt-2 "
+            >
               Download Resume
               <IconDownload stroke={2} className="ml-2" />
             </button>
+
             {/*  */}
           </div>
         </div>
