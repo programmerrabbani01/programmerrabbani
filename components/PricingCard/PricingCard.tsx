@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaCheckCircle } from "react-icons/fa";
 
 type PricingOption = {
@@ -35,15 +36,17 @@ export default function PricingCard({ option }: PricingCardProps) {
           ))}
         </ul>
         <div className="text-center">
-          <a
-            href={option.link}
-            target="_blank"
+          <Link
+            href={{
+              pathname: "/contact",
+              query: { subject: option.title, budget: option.price },
+            }}
             rel="noopener noreferrer"
             // className="px-4 py-2 bg-success text-black rounded-lg hover:bg-green-600 transition-colors"
             className="py-3 px-6 xl:px-[13px] bg-transparent hover:bg-myBgLight dark:hover:bg-myBgDarkTwo dark:hover:text-white transition-all duration-300 border border-myBorder dark:border-myBgDarkTwo text-myBgDarkTwo dark:text-myRgbaLight rounded-lg"
           >
             Select Plan
-          </a>
+          </Link>
         </div>
       </div>
     </div>
