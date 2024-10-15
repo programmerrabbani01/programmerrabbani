@@ -14,7 +14,7 @@ export default function Counter({}: Props) {
         <div className="hidden md:flex justify-between gap-3 items-center mt-6 p-6 ">
           <div className="flex justify-center items-center w-full gap-4 bg-myBgLight dark:bg-myBgDark px-4 rounded-md py-2">
             <h3 className="font-bold text-myBgDarkTwo dark:text-white text-6xl ">
-              <CountUp start={0} end={3} />
+              <CountUp start={0} end={2} />
             </h3>
             <p className="text-lg dark:text-myGray text-myBgDarkTwo ">
               Years of Experience
@@ -23,7 +23,7 @@ export default function Counter({}: Props) {
 
           <div className="flex w-full justify-center items-center gap-4 dark:bg-myBgDark bg-myBgLight  px-4 rounded-md py-2">
             <h3 className="font-bold text-myBgDarkTwo dark:text-white text-6xl flex ">
-              <CountUp start={0} end={125} /> <span className="text-lg">+</span>
+              <CountUp start={0} end={15} /> <span className="text-lg">+</span>
             </h3>
             <p className="text-lg dark:text-myGray text-myBgDarkTwo ">
               Project Completed
@@ -32,7 +32,7 @@ export default function Counter({}: Props) {
 
           <div className="flex items-center justify-center gap-4 dark:bg-myBgDark bg-myBgLight w-full px-4 rounded-md py-2">
             <h3 className="font-bold text-myBgDarkTwo dark:text-white text-6xl flex ">
-              <CountUp start={0} end={85} />
+              <CountUp start={0} end={20} />
               <span className="text-lg">+</span>
             </h3>
             <p className="text-lg text-myBgDarkTwo dark:text-myGray ">

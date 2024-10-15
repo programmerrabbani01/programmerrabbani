@@ -27,13 +27,13 @@ export default function Services({}: Props) {
             {/* text */}
             <div className="xl:max-w-[400px] w-full flex-grow order-2 xl:order-none">
               <h1 className="text-[30px] xl:text-[40px] text-myBgDarkTwo dark:text_bg font-semibold mb-6 leading-[1.2em] ">
-                Why Me
+                My Expertise
               </h1>
             </div>
             {/* available Button */}
-            <div className="text-base xl:text-lg font-medium text-myPrimary bg-myBgLight dark:bg-[#0e1018] py-2 px-4 w-fit h-full leading-[1.5em] rounded-lg flex items-center gap-2 order-1 xl:order-none">
+            <div className="text-base xl:text-lg font-medium dark:text-white text-myPrimary bg-myBgLight dark:bg-[#0e1018] py-2 px-4 w-fit h-full leading-[1.5em] rounded-lg flex items-center gap-2 order-1 xl:order-none">
               <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 dark:bg-white opacity-75"></span>
                 <FaCircle className="relative inline-flex h-2 w-2" />
               </span>
               Available For Hire

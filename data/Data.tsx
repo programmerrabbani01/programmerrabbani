@@ -40,8 +40,8 @@ export const navLinks = [
   },
   {
     id: 3,
-    label: "Services",
-    url: "/services",
+    label: "Expertise",
+    url: "/expertise",
     icon: <IconDeviceMobileVibration stroke={2} className="mr-[4px] icon" />,
   },
   {

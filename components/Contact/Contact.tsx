@@ -7,6 +7,7 @@ import Accordion from "../Accordion/Accordion.tsx";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { useSearchParams } from "next/navigation";
+import Swal from "sweetalert2";
 
 type Props = {};
 
@@ -16,6 +17,10 @@ export default function Contact({}: Props) {
   const [budget, setBudget] = useState<string | undefined>("");
   const [selectedDate, setSelectedDate] = useState<Date | null>(null);
   const [meetingLink, setMeetingLink] = useState<string>("");
+  const [name, setName] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
+  const [comment, setComment] = useState<string>("");
+  const [status, setStatus] = useState<string>("");
 
   // Extract query parameters using searchParams
   useEffect(() => {
@@ -25,6 +30,49 @@ export default function Contact({}: Props) {
     if (subjectParam) setSubject(subjectParam);
     if (budgetParam) setBudget(budgetParam);
   }, [searchParams]);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus("Sending...");
+
+    try {
+      const res = await fetch("/api/contactForm", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name,
+          email,
+          subject,
+          budget,
+          selectedDate,
+          meetingLink,
+          comment,
+        }),
+      });
+
+      const { message } = await res.json();
+      setStatus(message);
+
+      // SweetAlert2 success alert
+      Swal.fire({
+        title: "Success!",
+        text: "Your message has been sent successfully.",
+        icon: "success",
+        confirmButtonText: "OK",
+      });
+
+      // Reset all form fields after successful submission
+      setName("");
+      setEmail("");
+      setSubject("");
+      setBudget("");
+      setSelectedDate(null);
+      setMeetingLink("");
+      setComment("");
+    } catch (error) {
+      setStatus("Error submitting form");
+    }
+  };
 
   return (
     <>
@@ -52,7 +100,7 @@ export default function Contact({}: Props) {
           <div className="mt-[54px]">
             {/* contact box */}
             <div className="p-6 bg-myBgLight dark:bg-myBgDark rounded-lg ">
-              <form action="">
+              <form onSubmit={handleSubmit}>
                 <div className="flex items-center justify-center flex-wrap">
                   <div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2  px-2">
                     <div className="mb-6 flex flex-col">
@@ -63,6 +111,8 @@ export default function Contact({}: Props) {
                         className="bg-white dark:bg-black rounded-lg py-4 px-6 border border-myBorder dark:border-myBgDarkTwo text-xs sm:text-base md:text-base lg:text-base xl:text-base font-normal text-myGray  focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 ease-in-out "
                         placeholder="Enter your name"
                         type="text"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
                       ></input>
                     </div>
                   </div>
@@ -76,6 +126,8 @@ export default function Contact({}: Props) {
                         className="bg-white dark:bg-black rounded-lg py-4 px-6 border border-myBorder dark:border-myBgDarkTwo text-xs sm:text-base md:text-base lg:text-base xl:text-base font-normal text-myGray focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 ease-in-out "
                         placeholder="Enter your email"
                         type="email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
                       ></input>
                     </div>
                   </div>
@@ -90,7 +142,8 @@ export default function Contact({}: Props) {
                         placeholder="Subject"
                         type="text"
                         value={subject || ""}
-                        readOnly
+                        // readOnly
+                        onChange={(e) => setSubject(e.target.value)}
                       ></input>
                     </div>
                   </div>
@@ -105,22 +158,9 @@ export default function Contact({}: Props) {
                         placeholder="Budget"
                         type="text"
                         value={budget || ""}
-                        readOnly
+                        // readOnly
+                        onChange={(e) => setBudget(e.target.value)}
                       />
-                      {/* <select
-                        name="budget"
-                        className="bg-white dark:bg-black rounded-lg py-4 px-6 border border-myBorder dark:border-myBgDarkTwo text-xs sm:text-base md:text-base lg:text-base xl:text-base font-normal text-myGray dark:text-white  focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 ease-in-out"
-                      >
-                        <option disabled value="select">
-                          Select budget...
-                        </option>
-                        <option value="$5000" selected>
-                          $5000
-                        </option>
-                        <option value="$5000 - $1000">$5000 - $10000</option>
-                        <option value="$10000 - $2000">$10000 - $20000</option>
-                        <option value="$20000">$20000+</option>
-                      </select> */}
                     </div>
                   </div>
 
@@ -171,11 +211,16 @@ export default function Contact({}: Props) {
                         className="bg-white dark:bg-black rounded-lg py-4 px-6 border border-myBorder dark:border-myBgDarkTwo text-xs sm:text-base md:text-base lg:text-base xl:text-base font-normal text-myGray  focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 ease-in-out"
                         rows={4}
                         placeholder="Type details about your inquiry"
+                        value={comment}
+                        onChange={(e) => setComment(e.target.value)}
                       ></textarea>
                     </div>
                   </div>
                   <div className="w-full px-2">
-                    <button className="text-base font-medium text-white bg-[#4770ff] hover:bg-[#2563eb] transition-all duration-300 border-0 w-full rounded-lg py-4 px-6 flex items-center justify-center">
+                    <button
+                      type="submit"
+                      className="text-base font-medium text-white bg-[#4770ff] hover:bg-[#2563eb] transition-all duration-300 border-0 w-full rounded-lg py-4 px-6 flex items-center justify-center"
+                    >
                       Send A Message
                       <IconArrowElbowRight
                         stroke={2}

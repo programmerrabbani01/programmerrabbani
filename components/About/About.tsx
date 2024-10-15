@@ -22,9 +22,9 @@ export default function About() {
                 About Me
               </h1>
               {/* available Button */}
-              <div className="text-base xl:text-lg font-medium text-myPrimary bg-myBgLight dark:bg-myBgDark py-2 px-4 w-fit h-full leading-[1.5em] rounded-lg flex items-center gap-2 order-1 md: lg:order-none xl:order-none">
+              <div className="text-base xl:text-lg font-medium text-myPrimary dark:text-white bg-myBgLight dark:bg-myBgDark py-2 px-4 w-fit h-full leading-[1.5em] rounded-lg flex items-center gap-2 order-1 md: lg:order-none xl:order-none">
                 <span className="relative flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 dark:vg-white opacity-75"></span>
                   <FaCircle className="relative inline-flex h-2 w-2" />
                 </span>
                 Available For Hire

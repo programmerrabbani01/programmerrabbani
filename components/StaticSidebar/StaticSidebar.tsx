@@ -114,7 +114,7 @@ export default function StaticSidebar({}: Props) {
             {/* cv Button */}
             <button
               onClick={openResume}
-              className="py-4 px-6 xl:px-[13px] text-base sm:text-lg rounded-lg font-medium leading-[1.5em] bg-transparent hover:bg-myBgLight dark:hover:bg-myBgDarkTwo dark:hover:text-white transition-all duration-300 border border-myBorder dark:border-myBgDarkTwo text-myBgDarkTwo dark:text-myRgbaLight flex items-center mt-2 "
+              className="py-4 px-6 xl:px-[13px] text-base sm:text-lg rounded-lg font-medium leading-[1.5em] bg-transparent hover:bg-myBgLight dark:hover:bg-myBgDarkTwo dark:hover:text-white transition-all duration-300 border border-myBorder dark:border-myBgDarkTwo text-myBgDarkTwo dark:text-myRgbaLight flex items-center mt-5 xl:mx-auto "
             >
               Download Resume
               <IconDownload stroke={2} className="ml-2" />
