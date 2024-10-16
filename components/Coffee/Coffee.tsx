@@ -23,7 +23,7 @@ export default function Coffee({}: Props) {
         "data-message",
         "Thanks for visiting my portfolio!  Your support helps me continue building innovative web applications. I truly appreciate it!"
       );
-      script.setAttribute("data-color", "rgba(13,110,253,1)");
+      script.setAttribute("data-color", "#5F7FFF");
       script.setAttribute("data-position", "Right");
       script.setAttribute("data-x_margin", "18");
       script.setAttribute("data-y_margin", "18");
