@@ -10,6 +10,7 @@ import DarkModeSwitch from "../DarkLightSwitch/DarkLightSwitch.tsx";
 import { navLinks } from "@/data/Data.tsx";
 import { IconBrandSkype, IconMenu2 } from "@tabler/icons-react";
 import Logo from "../Logo/Logo.tsx";
+import { useTheme } from "next-themes";
 
 type Props = {
   openNav: () => void;
@@ -45,6 +46,15 @@ export default function NavBar({ openNav }: Props) {
 
   const isScrolled = scrollY > 50;
 
+  // for isActive
+  const { theme } = useTheme();
+  const currentTheme =
+    theme === "system"
+      ? window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark"
+        : "light"
+      : theme;
+
   return (
     <>
       <div
@@ -70,8 +80,12 @@ export default function NavBar({ openNav }: Props) {
                     key={nav.id}
                     className={`group flex items-center gap-[.25rem] xl:text-[16px] xl:font-medium text-[#576076]  leading-[120%] rounded-lg py-[10px] px-[12px] transition-all duration-300 ${
                       isActive
-                        ? " my_active_dark my_active"
-                        : "my_link_hover_dark my_link_hover"
+                        ? currentTheme === "dark"
+                          ? "my_active_dark"
+                          : "my_active"
+                        : currentTheme === "dark"
+                        ? "my_link_hover_dark"
+                        : "my_link_hover"
                     } `}
                   >
                     {nav.icon}
