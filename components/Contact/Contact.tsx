@@ -8,11 +8,14 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { useSearchParams } from "next/navigation";
 import Swal from "sweetalert2";
+import moment from "moment-timezone";
+import Select, { SingleValue } from "react-select";
+import { getTimezone } from "countries-and-timezones";
 
 type Props = {};
 
 export default function Contact({}: Props) {
-  const searchParams = useSearchParams(); // Use useSearchParams to access the query params
+  const searchParams = useSearchParams();
   const [subject, setSubject] = useState<string | undefined>("");
   const [budget, setBudget] = useState<string | undefined>("");
   const [selectedDate, setSelectedDate] = useState<Date | null>(null);
@@ -20,15 +23,33 @@ export default function Contact({}: Props) {
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [comment, setComment] = useState<string>("");
+  const [country, setCountry] = useState<string>("");
   const [status, setStatus] = useState<string>("");
+  const [timezones, setTimezones] = useState<
+    { label: string; value: string }[]
+  >([]);
 
-  // Extract query parameters using searchParams
   useEffect(() => {
     const subjectParam = searchParams.get("subject");
     const budgetParam = searchParams.get("budget");
 
     if (subjectParam) setSubject(subjectParam);
     if (budgetParam) setBudget(budgetParam);
+
+    // Populate timezones using moment-timezone and countries-and-timezones
+    const timezonesList = moment.tz.names().map((tz) => {
+      const countryInfo = getTimezone(tz); // Use getTimezone function
+      const countryName = countryInfo
+        ? countryInfo.countries.join(", ")
+        : "Unknown";
+
+      return {
+        label: `${countryName} - ${tz} (${moment.tz(tz).format("Z")})`,
+        value: tz,
+      };
+    });
+
+    setTimezones(timezonesList);
   }, [searchParams]);
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -47,6 +68,7 @@ export default function Contact({}: Props) {
           selectedDate,
           meetingLink,
           comment,
+          country,
         }),
       });
 
@@ -69,6 +91,7 @@ export default function Contact({}: Props) {
       setSelectedDate(null);
       setMeetingLink("");
       setComment("");
+      setCountry("");
     } catch (error) {
       setStatus("Error submitting form");
     }
@@ -165,29 +188,106 @@ export default function Contact({}: Props) {
                   </div>
 
                   {/* Date and Time Picker */}
-                  <div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2  px-2">
+
+                  <div className="w-full px-2">
                     <div className="mb-6 flex flex-col">
                       <label className="text-sm dark:text-white font-medium leading-[1.4em] mb-2">
                         Schedule Date & Time
                       </label>
                       <DatePicker
                         selected={selectedDate}
-                        onChange={(
-                          date: Date | null,
-                          event: React.SyntheticEvent<any> | undefined
-                        ) => {
-                          setSelectedDate(date); // Use the date as normal
+                        onChange={(date: Date | null) => {
+                          setSelectedDate(date);
                         }}
                         showTimeSelect
                         dateFormat="Pp"
-                        className="w-full bg-white dark:bg-black rounded-lg py-4 px-6 border border-myBorder dark:border-myBgDarkTwo text-xs sm:text-base md:text-base lg:text-base xl:text-base font-normal text-myGray  focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 ease-in-out "
+                        className="w-full bg-white dark:bg-black rounded-lg py-4 px-6 border border-myBorder dark:border-myBgDarkTwo text-xs sm:text-base md:text-base lg:text-base xl:text-base font-normal text-myGray dark:text-white  focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 ease-in-out "
                         placeholderText="Select Date & Time"
+                      />
+                    </div>
+
+                    <div className="mb-6 flex flex-col">
+                      <label className="text-sm dark:text-white font-medium leading-[1.4em] mb-2">
+                        Select Country/Time Zone
+                      </label>
+
+                      <Select
+                        options={timezones}
+                        value={
+                          timezones.find((tz) => tz.value === country) || null
+                        }
+                        onChange={(
+                          selectedOption: SingleValue<{
+                            label: string;
+                            value: string;
+                          }>
+                        ) =>
+                          setCountry(selectedOption ? selectedOption.value : "")
+                        }
+                        placeholder="Search for your time zone"
+                        classNamePrefix="react-select"
+                        isClearable
+                        className="bg-white dark:bg-black rounded-lg py-4 px-6 text-xs sm:text-base md:text-base lg:text-base xl:text-base font-normal text-myGray dark:text-white transition duration-300 ease-in-out"
+                        styles={{
+                          control: (provided) => ({
+                            ...provided,
+                            backgroundColor:
+                              document.documentElement.classList.contains(
+                                "dark"
+                              )
+                                ? "black"
+                                : "white",
+                            border: "none", // Remove border
+                            boxShadow: "none", // Remove focus effect
+                          }),
+                          menu: (provided) => ({
+                            ...provided,
+                            backgroundColor:
+                              document.documentElement.classList.contains(
+                                "dark"
+                              )
+                                ? "black"
+                                : "white",
+                            color: document.documentElement.classList.contains(
+                              "dark"
+                            )
+                              ? "white"
+                              : "black",
+                          }),
+                          option: (provided, state) => ({
+                            ...provided,
+                            backgroundColor: state.isSelected
+                              ? document.documentElement.classList.contains(
+                                  "dark"
+                                )
+                                ? "gray"
+                                : "lightgray"
+                              : document.documentElement.classList.contains(
+                                  "dark"
+                                )
+                              ? "black"
+                              : "white",
+                            color: document.documentElement.classList.contains(
+                              "dark"
+                            )
+                              ? "white"
+                              : "black",
+                            "&:hover": {
+                              backgroundColor:
+                                document.documentElement.classList.contains(
+                                  "dark"
+                                )
+                                  ? "gray"
+                                  : "lightgray",
+                            },
+                          }),
+                        }}
                       />
                     </div>
                   </div>
 
                   {/* Meeting Link Input */}
-                  <div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2  px-2">
+                  <div className="w-full px-2">
                     <div className="mb-6 flex flex-col">
                       <label className="text-sm dark:text-white font-medium leading-[1.4em] mb-2">
                         Meeting Link (Zoom, Google Meet, Skype)

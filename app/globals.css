@@ -78,7 +78,7 @@
   }
 
   html.dark {
-    --cursor-color: #F0F2F5;
+    --cursor-color: #f0f2f5;
   }
 
   html {
@@ -107,6 +107,8 @@
     background: rgba(13, 110, 253, 1);
     border-radius: 4px;
   }
+
+  
 }
 
 /* responsive */
